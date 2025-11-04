@@ -11,7 +11,7 @@ html {
 
 /* Tema oscuro y tipografía */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     background-color: #0d1117;
     color: #C9D1D9;
     line-height: 1.6;
@@ -247,4 +247,86 @@ section h3 {
     color: #8b949e;
     font-style: italic;
     font-size: 0.85rem;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #8b949e;
+    line-height: 1.8;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.cta-button.email {
+    background-color: #007BFF;
+    color: white;
+    border: 2px solid #007BFF;
+}
+
+.cta-button.email:hover {
+    background-color: #0056b3;
+}
+
+.cta-button.linkedin {
+    background-color: transparent;
+    color: #007BFF;
+    border: 2px solid #007BFF;
+}
+
+.cta-button.linkedin:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 10%;
+    border-top: 1px solid #30363d;
+    margin-top: 100px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-socials img {
+    width: 30px;
+    margin: 0 10px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.footer-socials img:hover {
+    opacity: 1;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #8b949e;
 }
