@@ -1,0 +1,113 @@
+/* Reset y configuración base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Tema oscuro y tipografía */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d1117;
+    color: #C9D1D9;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: #0d1117;
+    z-index: 1000;
+    border-bottom: 1px solid #30363d;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #58a6ff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #C9D1D9;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #58a6ff;
+}
+
+.cv-link {
+    padding: 0.5rem 1.5rem;
+    background-color: #238636;
+    border-radius: 6px;
+    font-weight: 700 !important;
+}
+
+.cv-link:hover {
+    background-color: #2ea043;
+    color: #ffffff !important;
+}
+
+/* Hero Section */
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #8b949e;
+}
+
+blockquote {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #58a6ff;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-left: 4px solid #58a6ff;
+    background-color: #161b22;
+    border-radius: 8px;
+    line-height: 1.5;
+}
+
+blockquote i {
+    font-style: italic;
+}
