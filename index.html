@@ -424,9 +424,10 @@
         
         // Close menu when clicking on a link
         document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
+            link.addEventListener('click', (e) => {
                 hamburger.classList.remove('active');
                 navLinks.classList.remove('active');
+                // Don't prevent default for CV download link
             });
         });
         
