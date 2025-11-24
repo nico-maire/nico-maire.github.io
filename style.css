@@ -399,42 +399,46 @@ footer {
 @media screen and (max-width: 767px) {
     /* Navigation - Mobile Menu */
     nav {
-        padding: 1rem 4%;
-        flex-direction: column;
-        gap: 1rem;
+        padding: 0.8rem 3%;
+        flex-wrap: wrap;
+        gap: 0.5rem;
     }
 
     .nav-brand {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
     }
 
     .nav-links {
-        flex-direction: column;
-        gap: 0.8rem;
-        text-align: center;
+        flex-direction: row;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
         width: 100%;
+        font-size: 0.75rem;
     }
 
     .nav-links li {
-        width: 100%;
+        flex: 0 0 auto;
     }
 
     .nav-links a {
         display: block;
-        padding: 0.5rem;
-        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+        white-space: nowrap;
     }
 
     .cv-link {
-        width: 100%;
-        text-align: center;
+        padding: 0.4rem 1rem !important;
     }
 
     /* Hero Section */
     header {
         height: auto;
         min-height: 100vh;
-        padding: 8rem 1.5rem 2rem;
+        padding: 10rem 1.5rem 2rem;
     }
 
     .hero-content h1 {
@@ -554,20 +558,29 @@ footer {
 @media screen and (max-width: 480px) {
     /* Navigation */
     nav {
-        padding: 0.8rem 3%;
+        padding: 0.8rem 2%;
     }
 
     .nav-brand {
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .nav-links {
+        gap: 0.3rem;
     }
 
     .nav-links a {
-        font-size: 0.85rem;
+        font-size: 0.7rem;
+        padding: 0.35rem 0.6rem;
+    }
+
+    .cv-link {
+        padding: 0.35rem 0.8rem !important;
     }
 
     /* Hero Section */
     header {
-        padding: 7rem 1rem 2rem;
+        padding: 9rem 1rem 2rem;
     }
 
     .hero-content h1 {
