@@ -352,62 +352,53 @@ UniBO feb-jun 2026, UADE, Beca Santander), Idiomas (5), Contacto.
 
 ---
 
-## 6. Preguntas abiertas
+## 6. Decisiones tomadas (respuestas del 6 oct 2026)
 
-⭐ = mi recomendación. Las de la sección A bloquean el inicio; las de la B pueden llegar durante las
-fases 1-4.
+| # | Decisión |
+|---|---|
+| P1-P2 | Escena **realista**: la imagen la genera Nicolás con IA (prompt del anexo A). Mientras tanto se usa un despacho dibujado en SVG; el cambio es solo de configuración (`data/scene.json`). |
+| P3 | SO estilo **DOS + Windows 3.1** en fósforo. |
+| P4 | Escena apagada → botón de encendido → BIOS → escritorio, con una **llamada a la acción muy visible** ("Pulsa el botón de encendido"). |
+| P5 | Móvil con **LCD Nokia** (fósforo como opción en Ajustes). |
+| P6 | HTML/CSS/JS puro con módulos ES y datos JSON, sin build. |
+| P7 | **5 idiomas**: ES, EN, IT, FR, 中文. |
+| P8 | Sonido opcional, apagado por defecto (sintetizado con Web Audio, sin archivos). |
+| P9 | Sí a: objetos del despacho clicables (diploma, Nokia, mapa Madrid–Bolonia–Buenos Aires, CV…), terminal, selector de color (verde/ámbar/blanco, también por accesibilidad) y parallax suave solo en la vista general. Una **imagen o vídeo por proyecto**. Sin buscaminas ni Snake. |
+| P10 | **Guía paso a paso** al primer arranque + **vista rápida imprimible** (estilo listado de impresora matricial). |
+| P11 | LinkedIn: `https://www.linkedin.com/in/nicol%C3%A1s-maire-bravo/` |
+| P12 / P19 | Los repos creados desde agosto de 2026 **no se publican todavía**: aparecen como una carpeta "EN CURSO" genérica (UADE, Buenos Aires) sin enlaces. |
+| P13 | El "AI Detector Bypass" se reenfoca como investigación sobre la robustez de los detectores de texto IA, **confidencial** (sin código). |
+| P14 | Vídeo de Mario jugado (lo intento grabar yo), vídeo de demo de CitaSalon (sale de su repo) y una imagen o vídeo por proyecto, sacados de los repos. |
+| P15 | Foto del CV tratada con *dithering* en fósforo (en "Sobre mí"). |
+| P16 | **Busca empleo**: Madrid (presencial o híbrido) o remoto desde cualquier parte del mundo. |
+| P17 | CV descargable en **ES, EN, IT, FR y 中文**, generado desde la fuente Typst del repo `CV`. Por defecto en el idioma de la web, con selector. |
+| P18 | Textos reescritos en los 5 idiomas. Sin métricas de clientes. Certificado: **Cambridge C1 Advanced**. Beca Santander por expediente. |
+| P20 | Contacto: correo, LinkedIn y GitHub (y un "redactar correo" que abre `mailto:`). |
 
-### A. Diseño (bloqueantes)
+### 6.1 Hallazgos en los repos (análisis del 6 oct 2026)
 
-- **P1. Estilo visual de la escena**
-  A) ⭐ Realista: foto/render de despacho de los 90 con el PC beige frontal y la pantalla "viva" encima ·
-  B) Pixel-art ilustrado (tipo videojuego 16 bits) · C) 3D real con Three.js (lo más espectacular, pero
-  mucho más pesado y costoso) · D) Todo dibujado en CSS/SVG (estilo ilustración plana, sin imágenes).
-- **P2. ¿Quién consigue la imagen?**
-  A) ⭐ Tú la generas con IA (ChatGPT, Midjourney…) con mi prompt (anexo A) · B) Busco una foto libre
-  (Unsplash/Pexels) y dibujo el PC en SVG · C) Intento generarla yo con las herramientas que tengo
-  disponibles (resultado no garantizado).
-- **P3. Estilo del SO**
-  A) ⭐ DOS + Windows 3.1 en verde · B) Mac clásico (System 7) en verde · C) Terminal puro tipo
-  Fallout/RobCo (solo menús de texto, sin ventanas).
-- **P4. Entrada**
-  A) ⭐ Escena apagada → botón de encendido → BIOS → escritorio (saltable y recordado) · B) Se enciende
-  solo al cargar · C) Directo al escritorio.
-- **P5. Paleta del móvil**
-  A) ⭐ LCD Nokia clásico (píxeles oscuros sobre verde claro, con fósforo como opción en Ajustes) ·
-  B) Fósforo verde sobre negro, igual que el PC.
-- **P6. Tecnología**
-  A) ⭐ HTML/CSS/JS puro + JSON, sin build · B) Vite + TypeScript + GitHub Actions.
-- **P7. Idiomas**
-  A) ⭐ ES + EN (ampliable) · B) ES + EN + IT · C) ES + EN + IT + FR + ZH. Idioma por defecto: el del
-  navegador y, si no, inglés.
-- **P8. Sonido**
-  A) ⭐ Sí, apagado por defecto con botón 🔊 · B) Encendido tras el primer clic · C) Sin sonido.
-- **P9. Extras** (elige los que quieras): terminal · buscaminas · Snake en el Nokia · objetos clicables del
-  despacho · demos de terminal grabadas · temas de color · parallax. ⭐ Todos, en la fase 6, después del
-  MVP.
-- **P10. Vista rápida** para reclutadores: A) ⭐ Sí · B) No.
-
-### B. Contenido
-
-- **P11.** ¿Cuál es tu URL buena de LinkedIn: `/in/nicolás-maire-bravo` o `/in/nicolas-maire-bravo`?
-- **P12.** ¿Añadimos alguno de los proyectos no listados (UADE, Spring Boot, Fudus, app_match,
-  dpp-sd-benchmark…)? Pásame 2-3 líneas de cada uno.
-- **P13.** "AI Detector Bypass Tool": A) Quitarlo · B) ⭐ Reenfocarlo como investigación (p. ej. "Análisis
-  de robustez de detectores de texto IA mediante probabilidad de tokens") · C) Dejarlo igual.
-- **P14.** ¿Qué proyectos tienen (o pueden tener) vídeo o capturas? ¿Dónde los alojamos? A) ⭐ Clips cortos
-  (15-40 s, < 10 MB, WebM/MP4) en el repo con reproductor propio · B) YouTube oculto embebido. Puedo
-  sacar capturas de citasalon.online automáticamente.
-- **P15.** ¿Quieres una foto tuya en "Sobre mí" (tratada en verde con *dithering*, tipo ficha de los 90)?
-- **P16.** ¿Qué buscas ahora (prácticas/empleo, áreas, ciudad o remoto, desde cuándo)? Para un estado del
-  tipo "DISPONIBLE PARA…".
-- **P17.** ¿Tienes el CV en español? ¿Actualizamos el CV (UADE ya en curso, "Università")?
-- **P18.** ¿Reescribo todos los textos en ES/EN, con tu rol y logros concretos, para que los revises?
-  ⭐ Sí. ¿Tienes datos o métricas (clientes de CitaSalon, notas, premios, qué certificado C1 es)?
-- **P19.** Duplicados: ¿qué repo enlazo para el Buscaminas y para el Ray Tracing? ¿Contexto del
-  "AI Agent Auditor" (¿empresa, Celonis, hackathon?)? ¿Años y contexto (UC3M o no) de los proyectos marcados con "~" o "?"?
-- **P20.** Contacto: A) ⭐ `mailto:` + enlaces · B) Formulario real (Formspree, gratis). ¿Estadísticas de
-  visitas sin cookies (GoatCounter)? ¿Dominio propio (p. ej. `nicolasmaire.dev`)?
+- Los repos limpios (1-2 commits, README cuidado) son los de `nico-maire/…` y son los que se enlazan. El
+  Buscaminas enlaza a `DS--Distributed-Minesweeper` (copia limpia con informe PDF), no a
+  `distributed-minesweeper` (historial original).
+- **Ray tracing**: se enlaza `nico-maire/Performance-Oriented-Ray-Tracing` (limpio, README en inglés). Los
+  renders de las escenas salen del repo del equipo `Toriomg/ray-tracing-renderer` (Héctor Molina),
+  que añadió la galería el 4 oct 2026.
+- ⚠ **Los dos repos de C están cruzados**: `Multi-threaded-Factory-Simulator` contiene en realidad la
+  práctica de llamadas al sistema (`crear`/`combine`), y `C-Based-Script-Interpreter` contiene la fábrica
+  multihilo (`factory_manager.c`, `process_manager.c`, `queue.c`). El intérprete de scripts (fork/pipes)
+  no está en ningún repo público. **Acción para Nicolás**: renombrar los repos en GitHub (GitHub
+  redirige las URLs antiguas) y, si tiene el código del intérprete, subirlo. Mientras tanto la web enlaza
+  cada proyecto al repo que contiene su código real, y el intérprete no aparece.
+- Los READMEs de `Binairo…`, `Linear-Programming…` y `RAG-Database-Encryption-Engine` tienen restos
+  `[cite: N]` de texto generado. Los de `LLM-Security…`, `ML-Neural-Calculator` y `RAG…` tienen URLs de
+  `git clone` que no corresponden a su repo. El de Mario solo tiene 2 líneas.
+- El PDF del CV está desactualizado respecto a su fuente Typst (UADE ya figura con fechas en la fuente).
+  El enlace de LinkedIn del CV apunta bien; solo el texto visible va sin tilde.
+- Media reutilizable: vídeo de demo de CitaSalon (Remotion, 30 s), 4 vídeos de los labs de IoT,
+  renders y gráficas del ray tracer, capturas del PoC de seguridad LLM, gráficas del ILP y el diagrama
+  UML de CryptoSafe.
+- Limitaciones de red del entorno de trabajo: no hay acceso a `citasalon.online`, `cdn.jsdelivr.net` ni
+  `packages.typst.org`. Iconos y fuentes se obtienen de npm, y los vídeos de CitaSalon del propio repo.
 
 ---
 
@@ -492,16 +483,18 @@ lo apruebes.
 
 ## Anexo A: prompt para generar la imagen del despacho
 
-> Photorealistic late-1980s / early-1990s home office at night. **Straight-on frontal view** of a beige
-> IBM-PC-style computer centered on a wooden desk: 14-inch CRT monitor sitting on a horizontal desktop
-> case, beige keyboard and a corded mouse in front. **The monitor faces the camera perfectly frontally,
-> the screen is completely black and switched off, with no reflections or glare**, and occupies roughly
-> the central 30% of the image width. Warm desk-lamp light from the left. Around it: a stack of 3.5"
-> floppy disks, a coffee mug, a small grey Nokia mobile phone lying on the desk, a printed CV sheet, a
-> potted plant, a cork board with sticky notes, a framed diploma on the wall, a world map with pins,
-> bookshelves, and a window with blinds and city lights. Shallow depth of field: the computer is sharp,
-> the background softly blurred. Cinematic, cozy, slightly desaturated. 16:9, at least 3840×2160. No
-> text, no logos, no watermark.
+> Photorealistic cozy late-1980s home office at night, cinematic. **Perfectly frontal, straight-on view**
+> of a beige IBM-PC-style computer centered on a wooden desk: a 14-inch beige CRT monitor sitting on a
+> horizontal desktop case (with a visible power button and a small LED on the front), beige keyboard and
+> a corded mouse in front. **The monitor faces the camera exactly frontally; its screen is completely
+> black and switched off, with no reflections, glare or text.** The monitor occupies about 35–40% of the
+> image width. Warm light from an angle-poise desk lamp on the left. On the wall: a framed university
+> diploma (left) and a framed world map with three red pins (right). On the desk: a small grey Nokia
+> 3310-style phone, a coffee mug, a stack of 3.5" floppy disks, a printed CV sheet, a potted plant.
+> Window with blinds and blurred city lights in the background. Shallow depth of field (the computer
+> sharp, background softly blurred). 16:9, 4K (3840×2160), no text, no logos, no watermark.
 
 Si es posible, pide también una **segunda versión idéntica con la pantalla en verde liso (#00FF00)**:
-me permite detectar las cuatro esquinas de la pantalla con precisión de píxel.
+me permite detectar las cuatro esquinas de la pantalla con precisión de píxel. Con la imagen, se
+actualizan en `data/scene.json` la ruta, el rectángulo de la pantalla, el botón de encendido y las
+zonas clicables de los objetos.
