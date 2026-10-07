@@ -1,0 +1,65 @@
+{
+  "name": "Nicolás Maire Bravo",
+  "shortName": "Nicolás Maire",
+  "email": "nico.maibra@gmail.com",
+  "links": {
+    "github": "https://github.com/nico-maire",
+    "linkedin": "https://www.linkedin.com/in/nicol%C3%A1s-maire-bravo/",
+    "web": "https://nico-maire.github.io/"
+  },
+  "photo": "assets/img/photo-dither.png",
+  "quote": "Your idea. Your code. Your reality.",
+  "role": {
+    "es": "Ingeniería Informática (UC3M) · Desarrollo de software · IA y Ciberseguridad · Emprendimiento",
+    "en": "Computer Science Student · Developer · AI & Cybersecurity · Entrepreneur",
+    "it": "Ingegneria Informatica (UC3M) · Sviluppo software · IA e Cybersecurity · Imprenditorialità",
+    "fr": "Informatique (UC3M) · Développement logiciel · IA et cybersécurité · Entrepreneuriat",
+    "zh": "计算机科学学生 · 开发者 · 人工智能与网络安全 · 创业者"
+  },
+  "status": {
+    "es": "Buscando empleo",
+    "en": "Open to work",
+    "it": "In cerca di lavoro",
+    "fr": "En recherche d'emploi",
+    "zh": "正在求职"
+  },
+  "location": {
+    "es": "Madrid (presencial o híbrido) · Remoto desde cualquier lugar del mundo",
+    "en": "Madrid (on-site or hybrid) · Fully remote from anywhere in the world",
+    "it": "Madrid (in presenza o ibrido) · Da remoto da qualsiasi parte del mondo",
+    "fr": "Madrid (sur site ou hybride) · Entièrement à distance, partout dans le monde",
+    "zh": "马德里（现场或混合办公）· 全球任意地点远程办公"
+  },
+  "about": {
+    "es": [
+      "¡Hola! Soy Nicolás Maire Bravo, estudiante de Ingeniería Informática en la Universidad Carlos III de Madrid (programa bilingüe), con estancias de intercambio en la Università di Bologna (Italia) y en la UADE (Buenos Aires, Argentina).",
+      "Me centro sobre todo en la Inteligencia Artificial y la Ciberseguridad, pero disfruto de cada disciplina: me encanta bajar al nivel más bajo (concurrencia, sistemas distribuidos, rendimiento) y también construir productos completos de principio a fin.",
+      "Construyo mis propias herramientas y productos. Fundé CitaSalon.online, un SaaS que digitaliza la gestión de citas de negocios locales. Creo en convertir las ideas en realidad, y emprender es en lo que más pienso.",
+      "Me definen el carisma, la puntualidad y la organización. Aprendo rápido, me adapto con facilidad a entornos nuevos, trabajo bien en equipo y disfruto resolviendo problemas complejos de arquitectura."
+    ],
+    "en": [
+      "Hi! I'm Nicolás Maire Bravo, a Computer Science student at Universidad Carlos III de Madrid (bilingual programme), with exchange semesters at the Università di Bologna (Italy) and UADE (Buenos Aires, Argentina).",
+      "My main focus is Artificial Intelligence and Cybersecurity, but I enjoy every discipline: I love going down to the low level (concurrency, distributed systems, performance) as much as building complete products end to end.",
+      "I build my own tools and products. I founded CitaSalon.online, a SaaS that digitises appointment management for local businesses. I believe in turning ideas into reality, and entrepreneurship is what I think about most.",
+      "Charismatic, punctual and organised. I learn fast, adapt easily to new environments, work well in teams and enjoy solving complex architectural problems."
+    ],
+    "it": [
+      "Ciao! Sono Nicolás Maire Bravo e studio Ingegneria Informatica all'Universidad Carlos III de Madrid (corso bilingue), con periodi di scambio all'Università di Bologna (Italia) e all'UADE (Buenos Aires, Argentina).",
+      "Mi concentro soprattutto su Intelligenza Artificiale e Cybersecurity, ma mi appassiona ogni disciplina: amo scendere al livello più basso (concorrenza, sistemi distribuiti, prestazioni) tanto quanto costruire prodotti completi dall'inizio alla fine.",
+      "Costruisco i miei strumenti e i miei prodotti. Ho fondato CitaSalon.online, un SaaS che digitalizza la gestione degli appuntamenti delle attività locali. Credo nel trasformare le idee in realtà, e fare impresa è ciò a cui penso di più.",
+      "Carisma, puntualità e organizzazione mi contraddistinguono. Imparo in fretta, mi adatto facilmente ai nuovi ambienti, lavoro bene in squadra e mi piace risolvere problemi architetturali complessi."
+    ],
+    "fr": [
+      "Bonjour ! Je m'appelle Nicolás Maire Bravo et j'étudie l'informatique à l'Universidad Carlos III de Madrid (cursus bilingue), avec des séjours d'échange à l'Università di Bologna (Italie) et à l'UADE (Buenos Aires, Argentine).",
+      "Je me concentre surtout sur l'Intelligence Artificielle et la Cybersécurité, mais j'aime chaque discipline : descendre au plus bas niveau (concurrence, systèmes distribués, performance) me passionne autant que construire des produits complets de bout en bout.",
+      "Je crée mes propres outils et produits. J'ai fondé CitaSalon.online, un SaaS qui numérise la gestion des rendez-vous des commerces de proximité. Je crois qu'il faut transformer les idées en réalité, et l'entrepreneuriat est ce à quoi je pense le plus.",
+      "Charisme, ponctualité et organisation me caractérisent. J'apprends vite, je m'adapte facilement à de nouveaux environnements, je travaille bien en équipe et j'aime résoudre des problèmes d'architecture complexes."
+    ],
+    "zh": [
+      "你好！我是 Nicolás Maire Bravo，马德里卡洛斯三世大学（双语项目）计算机科学专业的学生，曾在博洛尼亚大学（意大利）和 UADE（阿根廷布宜诺斯艾利斯）交换学习。",
+      "我主要专注于人工智能和网络安全，但我喜欢每一个方向：我既热衷于深入底层（并发、分布式系统、性能优化），也喜欢从零到一构建完整的产品。",
+      "我会自己打造工具和产品。我创办了 CitaSalon.online，一个帮助本地商家实现预约管理数字化的 SaaS 平台。我相信要把想法变成现实，而创业是我最常思考的事情。",
+      "我外向、守时、有条理。学习能力强，能快速适应新环境，善于团队合作，喜欢解决复杂的架构问题。"
+    ]
+  }
+}

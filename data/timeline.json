@@ -1,0 +1,95 @@
+{
+  "experience": [
+    {
+      "id": "citasalon",
+      "period": { "es": "2026 – hoy", "en": "2026 – present", "it": "2026 – oggi", "fr": "2026 – aujourd'hui", "zh": "2026 年至今" },
+      "title": "CitaSalon.online",
+      "role": { "es": "Fundación y desarrollo full-stack", "en": "Founder & full-stack developer", "it": "Fondazione e sviluppo full-stack", "fr": "Fondation et développement full-stack", "zh": "创始人兼全栈开发者" },
+      "text": {
+        "es": "Fundé y desarrollo un SaaS B2B que digitaliza las reservas y la agenda de negocios locales.",
+        "en": "I founded and build a B2B SaaS that digitises bookings and scheduling for local businesses.",
+        "it": "Ho fondato e sviluppo un SaaS B2B che digitalizza prenotazioni e agenda delle attività locali.",
+        "fr": "J'ai fondé et je développe un SaaS B2B qui numérise les réservations et l'agenda des commerces de proximité.",
+        "zh": "创办并开发了一款 B2B SaaS，帮助本地商家实现预约和日程管理的数字化。"
+      },
+      "project": "citasalon"
+    },
+    {
+      "id": "via",
+      "period": "2025 – 2026",
+      "title": "VIA · VisiónIAutomatización",
+      "role": { "es": "Desarrollo principal y arquitectura de automatización", "en": "Lead developer & automation architect", "it": "Sviluppo principale e architettura dell'automazione", "fr": "Développement principal et architecture de l'automatisation", "zh": "首席开发者兼自动化架构师" },
+      "text": {
+        "es": "Diseñé la plataforma full-stack (React y FastAPI) y los servicios que conectan flujos de n8n con scripts en Python y modelos de Hugging Face.",
+        "en": "I architected the full-stack platform (React and FastAPI) and the services connecting n8n workflows with Python scripts and Hugging Face models.",
+        "it": "Ho progettato la piattaforma full-stack (React e FastAPI) e i servizi che collegano i flussi n8n a script Python e modelli di Hugging Face.",
+        "fr": "J'ai conçu la plateforme full-stack (React et FastAPI) et les services reliant les workflows n8n à des scripts Python et à des modèles Hugging Face.",
+        "zh": "设计了全栈平台（React 与 FastAPI），以及连接 n8n 工作流、Python 脚本和 Hugging Face 模型的服务。"
+      },
+      "project": "via"
+    },
+    {
+      "id": "agent-builder",
+      "period": "2025",
+      "title": "AI Agent Automation Builder",
+      "role": { "es": "Proyecto personal", "en": "Personal project", "it": "Progetto personale", "fr": "Projet personnel", "zh": "个人项目" },
+      "text": {
+        "es": "Herramienta propia de agentes de IA que analizan la lógica de un negocio y generan flujos de automatización.",
+        "en": "My own tool of AI agents that analyse business logic and generate automation workflows.",
+        "it": "Uno strumento mio di agenti IA che analizzano la logica di business e generano flussi di automazione.",
+        "fr": "Mon propre outil d'agents IA qui analysent la logique métier et génèrent des workflows d'automatisation.",
+        "zh": "自研的 AI 智能体工具，可分析业务逻辑并生成自动化工作流。"
+      },
+      "project": "agent-builder"
+    }
+  ],
+  "education": [
+    {
+      "id": "uade",
+      "period": { "es": "jul – dic 2026", "en": "Jul – Dec 2026", "it": "lug – dic 2026", "fr": "juil. – déc. 2026", "zh": "2026 年 7 月 – 12 月" },
+      "title": "UADE · Universidad Argentina de la Empresa",
+      "place": { "es": "Buenos Aires, Argentina", "en": "Buenos Aires, Argentina", "it": "Buenos Aires, Argentina", "fr": "Buenos Aires, Argentine", "zh": "阿根廷 布宜诺斯艾利斯" },
+      "role": { "es": "Movilidad internacional", "en": "International mobility", "it": "Mobilità internazionale", "fr": "Mobilité internationale", "zh": "国际交换" },
+      "text": {
+        "es": "Semestre de intercambio centrado en Inteligencia Artificial y desarrollo de APIs.",
+        "en": "Exchange semester focused on Artificial Intelligence and API development.",
+        "it": "Semestre di scambio dedicato all'Intelligenza Artificiale e allo sviluppo di API.",
+        "fr": "Semestre d'échange axé sur l'intelligence artificielle et le développement d'API.",
+        "zh": "交换学期，主修人工智能与 API 开发。"
+      }
+    },
+    {
+      "id": "unibo",
+      "period": { "es": "feb – jun 2026", "en": "Feb – Jun 2026", "it": "feb – giu 2026", "fr": "févr. – juin 2026", "zh": "2026 年 2 月 – 6 月" },
+      "title": "Università di Bologna (UniBO)",
+      "place": { "es": "Bolonia, Italia", "en": "Bologna, Italy", "it": "Bologna, Italia", "fr": "Bologne, Italie", "zh": "意大利 博洛尼亚" },
+      "role": { "es": "Erasmus+", "en": "Erasmus+ exchange", "it": "Erasmus+", "fr": "Échange Erasmus+", "zh": "伊拉斯谟+ 交换项目" },
+      "text": {
+        "es": "Machine Learning, Sistemas Distribuidos, Seguridad de la Información, Ciberseguridad e IoT.",
+        "en": "Machine Learning, Distributed Systems, Information Security, Cybersecurity and IoT.",
+        "it": "Machine Learning, Sistemi Distribuiti, Sicurezza dell'Informazione, Cybersecurity e IoT.",
+        "fr": "Machine Learning, systèmes distribués, sécurité de l'information, cybersécurité et IoT.",
+        "zh": "机器学习、分布式系统、信息安全、网络安全和物联网。"
+      }
+    },
+    {
+      "id": "uc3m",
+      "period": { "es": "2023 – hoy", "en": "2023 – present", "it": "2023 – oggi", "fr": "2023 – aujourd'hui", "zh": "2023 年至今" },
+      "title": "Universidad Carlos III de Madrid (UC3M)",
+      "place": { "es": "Madrid, España", "en": "Madrid, Spain", "it": "Madrid, Spagna", "fr": "Madrid, Espagne", "zh": "西班牙 马德里" },
+      "role": { "es": "Grado en Ingeniería Informática (bilingüe)", "en": "B.Sc. in Computer Science (bilingual programme)", "it": "Laurea in Ingegneria Informatica (bilingue)", "fr": "Licence en informatique (cursus bilingue)", "zh": "计算机科学学士（双语项目）" },
+      "text": {
+        "es": "Beca Santander por expediente académico.",
+        "en": "Santander Grant awarded for academic record.",
+        "it": "Borsa di studio Santander per merito accademico.",
+        "fr": "Bourse Santander obtenue pour mon dossier académique.",
+        "zh": "因学业成绩优异获得桑坦德奖学金。"
+      }
+    }
+  ],
+  "certificates": [
+    { "id": "cae", "title": "Cambridge C1 Advanced (CAE)", "text": { "es": "Inglés, nivel C1", "en": "English, C1 level", "it": "Inglese, livello C1", "fr": "Anglais, niveau C1", "zh": "英语 C1 水平" } },
+    { "id": "hsk", "title": "HSK 3", "text": { "es": "Chino mandarín (estudiado hasta HSK 5)", "en": "Mandarin Chinese (studied up to HSK 5)", "it": "Cinese mandarino (studiato fino all'HSK 5)", "fr": "Chinois mandarin (étudié jusqu'au HSK 5)", "zh": "汉语水平考试三级（学习至 HSK 5 水平）" } },
+    { "id": "santander", "title": { "es": "Beca Santander", "en": "Santander Grant", "it": "Borsa Santander", "fr": "Bourse Santander", "zh": "桑坦德奖学金" }, "text": { "es": "Por expediente académico", "en": "For academic record", "it": "Per merito accademico", "fr": "Pour le dossier académique", "zh": "表彰学业成绩" } }
+  ]
+}

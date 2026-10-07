@@ -1,0 +1,303 @@
+/* ==========================================================================
+   Office scene: stage, layers, monitor screen, power button, hotspots
+   ========================================================================== */
+
+.scene {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: var(--room);
+  cursor: var(--cur-arrow-classic, default);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 0 0;
+  transition: transform 1.35s cubic-bezier(.62, .02, .22, 1);
+}
+.scene.no-anim .stage { transition: none; }
+
+.layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: transform .4s ease-out;
+}
+.layer-back { transform: scale(1.03); }
+
+/* Phosphor light that the CRT casts on the bezel and the desk */
+.screen-glow {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, var(--glow-soft), transparent 75%);
+  mix-blend-mode: screen;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+.scene[data-power="on"] .screen-glow,
+.scene[data-power="booting"] .screen-glow { opacity: .9; }
+
+/* ---------- Monitor screen (positioned in stage coordinates) ---------- */
+.screen {
+  position: absolute;
+  overflow: hidden;
+  background: #050705;
+  box-shadow: inset 0 0 18px rgba(0, 0, 0, .9);
+  cursor: var(--cur-arrow, default);
+}
+.scene[data-power="off"] .screen { background: transparent; box-shadow: none; }
+.scene[data-power="on"] .screen { background: var(--bg); }
+
+.crt-tube {
+  position: absolute;
+  inset: 0;
+  transform-origin: 50% 50%;
+}
+.scene[data-power="off"] .crt-tube { visibility: hidden; }
+.crt-tube.turning-on { animation: crt-on .7s cubic-bezier(.2, .7, .3, 1) both; }
+.crt-tube.turning-off { animation: crt-off .45s ease-in both; }
+
+@keyframes crt-on {
+  0% { transform: scale(0, .004); filter: brightness(6); }
+  35% { transform: scale(1, .004); filter: brightness(5); }
+  70% { transform: scale(1, 1); filter: brightness(1.8); }
+  100% { transform: scale(1, 1); filter: brightness(1); }
+}
+@keyframes crt-off {
+  0% { transform: scale(1, 1); filter: brightness(1); }
+  45% { transform: scale(1, .005); filter: brightness(4); }
+  80% { transform: scale(.02, .005); filter: brightness(6); }
+  100% { transform: scale(0, 0); filter: brightness(8); }
+}
+
+/* The OS lives in a fixed 1024x768 logical box scaled to the glass */
+.os-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1024px;
+  height: 768px;
+  transform-origin: 0 0;
+  background: var(--bg);
+}
+
+/* Screen click target while powered on but zoomed out */
+.screen-zoom-target {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  display: none;
+  cursor: var(--cur-hand-classic, pointer);
+}
+.scene[data-view="overview"][data-power="on"] .screen-zoom-target { display: block; }
+.screen-zoom-target:hover { box-shadow: inset 0 0 0 3px rgba(255, 230, 160, .7); }
+
+/* ---------- Power button and LEDs ---------- */
+.power-btn {
+  position: absolute;
+  border-radius: 8px;
+  cursor: var(--cur-hand-classic, pointer);
+  z-index: 5;
+}
+.power-btn::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 12px;
+  border: 3px solid rgba(255, 214, 120, .95);
+  box-shadow: 0 0 18px 4px rgba(255, 200, 90, .55);
+  opacity: 0;
+}
+.scene[data-power="off"] .power-btn::after { animation: power-pulse 1.6s ease-in-out infinite; }
+.power-btn:hover::after, .power-btn:focus-visible::after { opacity: 1; animation: none; }
+.power-btn:active { transform: translateY(1px); }
+
+@keyframes power-pulse {
+  0%, 100% { opacity: .15; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+
+.led {
+  position: absolute;
+  border-radius: 50%;
+  background: #2f2f28;
+  pointer-events: none;
+  transition: background .2s, box-shadow .2s;
+}
+.scene[data-power="on"] .led,
+.scene[data-power="booting"] .led {
+  background: #48ff6e;
+  box-shadow: 0 0 6px 2px rgba(72, 255, 110, .75), 0 0 16px 4px rgba(72, 255, 110, .25);
+}
+.scene[data-power="booting"] .led-case { animation: hdd 0.18s steps(2) infinite; background: #ffb020; box-shadow: 0 0 6px 2px rgba(255, 176, 32, .8); }
+@keyframes hdd { 50% { opacity: .25; } }
+
+/* ---------- "Press here" callout ---------- */
+.callout {
+  position: absolute;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transform: translate(-100%, -50%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .4s;
+}
+.scene[data-power="off"] .callout { opacity: 1; }
+.callout-box {
+  padding: 6px 14px 8px;
+  background: #f7e36b;
+  color: #26220f;
+  font-size: 34px;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow: 4px 5px 0 rgba(0, 0, 0, .45);
+  transform: rotate(-2deg);
+  animation: callout-bob 1.2s ease-in-out infinite;
+}
+.callout-box small { display: block; font-size: 22px; opacity: .75; margin-top: 2px; }
+.callout-arrow {
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 26px solid #f7e36b;
+  filter: drop-shadow(3px 4px 0 rgba(0, 0, 0, .45));
+  animation: callout-poke 1.2s ease-in-out infinite;
+}
+@keyframes callout-bob { 50% { transform: rotate(-2deg) translateY(-4px); } }
+@keyframes callout-poke { 50% { transform: translateX(8px); } }
+
+/* ---------- Hotspots (clickable objects in the office) ---------- */
+.hotspot {
+  position: absolute;
+  z-index: 4;
+  border-radius: 10px;
+  cursor: var(--cur-hand-classic, pointer);
+  outline: none;
+}
+.hotspot::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 3px dashed rgba(255, 228, 160, .9);
+  box-shadow: 0 0 22px 4px rgba(255, 210, 120, .35), inset 0 0 22px rgba(255, 210, 120, .2);
+  opacity: 0;
+  transition: opacity .15s;
+}
+.hotspot:hover::before, .hotspot:focus-visible::before, .hotspot.is-hinted::before { opacity: 1; }
+.hotspot.is-hinted::before { animation: hint 1s ease-in-out 3; }
+@keyframes hint { 50% { opacity: .2; } }
+.hotspot-label {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%);
+  padding: 4px 12px 6px;
+  background: rgba(10, 8, 6, .92);
+  color: #ffe9b5;
+  border: 2px solid rgba(255, 228, 160, .85);
+  font-size: 28px;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .15s;
+}
+.hotspot[data-below] .hotspot-label { bottom: auto; top: calc(100% + 10px); }
+.hotspot:hover .hotspot-label, .hotspot:focus-visible .hotspot-label { opacity: 1; }
+
+/* Hide office-only hotspots while zoomed into the monitor (except those on the bezel) */
+.scene[data-view="zoomed"] .hotspot:not([data-bezel]) { visibility: hidden; }
+
+/* ---------- Vignette + overlay UI (viewport coordinates) ---------- */
+.vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 46%, transparent 52%, rgba(0, 0, 0, .55) 100%);
+  transition: opacity 1s;
+}
+.scene[data-view="zoomed"] .vignette { opacity: .7; }
+
+.scene-ui {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 20;
+  font-size: 24px;
+}
+.scene-ui > * { pointer-events: auto; }
+
+.scene-bar {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 12px 2px;
+  background: rgba(8, 7, 5, .78);
+  color: #ffe9b5;
+  border: 2px solid rgba(255, 228, 160, .55);
+  font-size: 22px;
+  line-height: 1;
+  cursor: var(--cur-hand-classic, pointer);
+  backdrop-filter: blur(3px);
+}
+.chip:hover, .chip:focus-visible { border-color: #ffe9b5; background: rgba(40, 30, 14, .9); }
+.chip[aria-pressed="true"] { background: #ffe9b5; color: #1c160b; border-color: #ffe9b5; }
+.chip .px-ico { width: 20px; height: 20px; }
+.chip-group { display: inline-flex; gap: 0; }
+.chip-group .chip + .chip { border-left-width: 0; }
+
+.cta {
+  position: absolute;
+  left: 50%;
+  bottom: 22px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  max-width: calc(100vw - 32px);
+  text-align: center;
+  transition: opacity .4s, transform .4s;
+}
+.cta-main {
+  padding: 10px 22px 12px;
+  background: rgba(8, 7, 5, .86);
+  color: #ffe9b5;
+  border: 2px solid rgba(255, 228, 160, .75);
+  font-size: 30px;
+  line-height: 1.05;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, .5);
+}
+.cta-main .blink { animation: blink 1s steps(1) infinite; }
+.cta-sub { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.scene:not([data-power="off"]) .cta { opacity: 0; transform: translate(-50%, 20px); pointer-events: none; }
+
+.view-toggle {
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  display: none;
+}
+.scene[data-mode="scene"][data-power="on"] .view-toggle { display: inline-flex; }
+
+@keyframes blink { 50% { opacity: 0; } }

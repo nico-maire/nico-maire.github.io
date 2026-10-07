@@ -1,0 +1,1182 @@
+[
+  {
+    "id": "citasalon",
+    "file": "CITASALON",
+    "title": "CitaSalon.online",
+    "year": "2026 –",
+    "sort": 2026.9,
+    "context": "startup",
+    "visibility": "product",
+    "featured": true,
+    "categories": ["startup", "web"],
+    "skills": ["nextjs", "react", "typescript", "supabase", "postgresql", "tailwindcss"],
+    "role": {
+      "es": "Fundación y desarrollo full-stack",
+      "en": "Founder & full-stack developer",
+      "it": "Fondazione e sviluppo full-stack",
+      "fr": "Fondation et développement full-stack",
+      "zh": "创始人兼全栈开发者"
+    },
+    "summary": {
+      "es": "SaaS B2B para que los negocios de servicios (peluquerías, barberías…) reciban reservas online: el cliente reserva desde el móvil sin instalar nada y el negocio gestiona toda la agenda desde un único panel.",
+      "en": "B2B SaaS that lets service businesses (hair salons, barbers…) take bookings online: customers book from their phone without installing anything, and the business manages its whole agenda from a single panel.",
+      "it": "SaaS B2B che permette alle attività di servizi (parrucchieri, barbieri…) di ricevere prenotazioni online: il cliente prenota dal telefono senza installare nulla e l'attività gestisce tutta l'agenda da un unico pannello.",
+      "fr": "SaaS B2B qui permet aux commerces de services (salons de coiffure, barbiers…) de recevoir des réservations en ligne : le client réserve depuis son téléphone sans rien installer et le commerce gère tout son agenda depuis un seul panneau.",
+      "zh": "面向服务类商家（美发店、理发店等）的 B2B SaaS 平台：顾客无需安装任何应用即可用手机预约，商家在一个后台中管理全部日程。"
+    },
+    "highlights": {
+      "es": [
+        "Plataforma multi-negocio: cada negocio tiene su propia página de reservas, un cartel con código QR y un panel de administración (servicios, profesionales, horarios).",
+        "Frontend en Next.js, React y TypeScript con experiencia móvil tipo app; backend en Supabase (PostgreSQL) con seguridad a nivel de fila.",
+        "Suscripciones integradas (Paddle), confirmaciones por email (Resend) y avisos por WhatsApp/SMS (Twilio).",
+        "Vídeo promocional generado por código con Remotion."
+      ],
+      "en": [
+        "Multi-tenant platform: every business gets its own booking page, a QR-code poster and an admin panel (services, staff, opening hours).",
+        "Next.js, React and TypeScript frontend with an app-like mobile experience; Supabase (PostgreSQL) backend with row-level security.",
+        "Built-in subscriptions (Paddle), email confirmations (Resend) and WhatsApp/SMS notifications (Twilio).",
+        "Promo video generated in code with Remotion."
+      ],
+      "it": [
+        "Piattaforma multi-attività: ogni attività ha la propria pagina di prenotazione, un poster con codice QR e un pannello di amministrazione (servizi, personale, orari).",
+        "Frontend in Next.js, React e TypeScript con un'esperienza mobile simile a un'app; backend su Supabase (PostgreSQL) con sicurezza a livello di riga.",
+        "Abbonamenti integrati (Paddle), conferme via email (Resend) e notifiche WhatsApp/SMS (Twilio).",
+        "Video promozionale generato via codice con Remotion."
+      ],
+      "fr": [
+        "Plateforme multi-commerces : chaque commerce dispose de sa propre page de réservation, d'une affiche avec QR code et d'un panneau d'administration (services, personnel, horaires).",
+        "Frontend en Next.js, React et TypeScript avec une expérience mobile proche d'une app ; backend Supabase (PostgreSQL) avec sécurité au niveau des lignes.",
+        "Abonnements intégrés (Paddle), confirmations par e-mail (Resend) et notifications WhatsApp/SMS (Twilio).",
+        "Vidéo promotionnelle générée par code avec Remotion."
+      ],
+      "zh": [
+        "多租户平台：每个商家都有自己的预约页面、带二维码的海报和管理后台（服务、员工、营业时间）。",
+        "前端采用 Next.js、React 和 TypeScript，提供类原生应用的移动端体验；后端基于 Supabase（PostgreSQL），启用行级安全。",
+        "集成订阅支付（Paddle）、邮件确认（Resend）以及 WhatsApp/短信通知（Twilio）。",
+        "用 Remotion 以代码方式制作宣传视频。"
+      ]
+    },
+    "links": [
+      { "type": "web", "url": "https://citasalon.online" }
+    ],
+    "media": [
+      { "type": "video", "src": "assets/media/citasalon/demo.mp4", "poster": "assets/media/citasalon/poster.jpg" }
+    ]
+  },
+  {
+    "id": "via",
+    "file": "VIA",
+    "title": "VIA · VisiónIAutomatización",
+    "year": "2025 – 2026",
+    "sort": 2026.1,
+    "context": "startup",
+    "visibility": "confidential",
+    "featured": true,
+    "categories": ["startup", "ai", "web"],
+    "skills": ["react", "fastapi", "n8n", "huggingface", "python"],
+    "role": {
+      "es": "Desarrollo principal y arquitectura de automatización",
+      "en": "Lead developer & automation architect",
+      "it": "Sviluppo principale e architettura dell'automazione",
+      "fr": "Développement principal et architecture de l'automatisation",
+      "zh": "首席开发者兼自动化架构师"
+    },
+    "summary": {
+      "es": "Plataforma full-stack de una marca de automatización con IA: web pública animada con chatbot de IA integrado, portal privado para clientes y flujos de automatización en el backend.",
+      "en": "Full-stack platform for an AI-automation brand: an animated public website with a built-in AI chatbot, a private client portal and backend automation workflows.",
+      "it": "Piattaforma full-stack di un marchio di automazione con IA: sito pubblico animato con chatbot IA integrato, portale privato per i clienti e flussi di automazione nel backend.",
+      "fr": "Plateforme full-stack d'une marque d'automatisation par IA : site public animé avec chatbot IA intégré, portail client privé et workflows d'automatisation côté backend.",
+      "zh": "为一个 AI 自动化品牌打造的全栈平台：带有内置 AI 聊天机器人的动态官网、私有客户门户以及后端自动化工作流。"
+    },
+    "highlights": {
+      "es": [
+        "Web pública en React con animaciones y un chatbot de IA.",
+        "Portal seguro para clientes y backend en FastAPI.",
+        "Servicios de automatización que conectan flujos de n8n con scripts propios en Python y modelos de Hugging Face."
+      ],
+      "en": [
+        "Public website in React with animations and an AI chatbot.",
+        "Secure client portal and FastAPI backend.",
+        "Automation services connecting n8n workflows with custom Python scripts and Hugging Face models."
+      ],
+      "it": [
+        "Sito pubblico in React con animazioni e un chatbot IA.",
+        "Portale clienti sicuro e backend in FastAPI.",
+        "Servizi di automazione che collegano i flussi di n8n con script Python personalizzati e modelli di Hugging Face."
+      ],
+      "fr": [
+        "Site public en React avec animations et chatbot IA.",
+        "Portail client sécurisé et backend FastAPI.",
+        "Services d'automatisation reliant des workflows n8n à des scripts Python sur mesure et à des modèles Hugging Face."
+      ],
+      "zh": [
+        "使用 React 构建、带动画和 AI 聊天机器人的官网。",
+        "安全的客户门户和 FastAPI 后端。",
+        "将 n8n 工作流与自定义 Python 脚本及 Hugging Face 模型连接起来的自动化服务。"
+      ]
+    },
+    "links": [],
+    "media": []
+  },
+  {
+    "id": "agent-builder",
+    "file": "AGENTBLD",
+    "title": "AI Agent Automation Builder",
+    "year": "2025",
+    "sort": 2025.8,
+    "context": "personal",
+    "visibility": "private",
+    "categories": ["startup", "ai"],
+    "skills": ["python", "n8n"],
+    "role": {
+      "es": "Proyecto personal",
+      "en": "Personal project",
+      "it": "Progetto personale",
+      "fr": "Projet personnel",
+      "zh": "个人项目"
+    },
+    "summary": {
+      "es": "Herramienta personal con interfaz visual en la que varios agentes de IA interconectados analizan la lógica de un negocio y generan automáticamente flujos de automatización complejos.",
+      "en": "Personal tool with a visual interface where several interconnected AI agents analyse a business's logic and automatically generate complex automation workflows.",
+      "it": "Strumento personale con interfaccia visuale in cui diversi agenti IA interconnessi analizzano la logica di un'attività e generano automaticamente flussi di automazione complessi.",
+      "fr": "Outil personnel à interface visuelle dans lequel plusieurs agents IA interconnectés analysent la logique d'une entreprise et génèrent automatiquement des workflows d'automatisation complexes.",
+      "zh": "一款带可视化界面的个人工具：多个相互协作的 AI 智能体分析企业业务逻辑，并自动生成复杂的自动化工作流。"
+    },
+    "highlights": {
+      "es": [
+        "Cadena de agentes especializados: análisis del negocio, diseño de la solución y generación del flujo.",
+        "Interfaz visual para revisar y ajustar el trabajo de cada agente.",
+        "Produce flujos de automatización listos para importar."
+      ],
+      "en": [
+        "Chain of specialised agents: business analysis, solution design and workflow generation.",
+        "Visual interface to review and fine-tune each agent's output.",
+        "Produces ready-to-import automation workflows."
+      ],
+      "it": [
+        "Catena di agenti specializzati: analisi del business, progettazione della soluzione e generazione del flusso.",
+        "Interfaccia visuale per rivedere e regolare il lavoro di ogni agente.",
+        "Produce flussi di automazione pronti da importare."
+      ],
+      "fr": [
+        "Chaîne d'agents spécialisés : analyse métier, conception de la solution et génération du workflow.",
+        "Interface visuelle pour relire et ajuster le travail de chaque agent.",
+        "Produit des workflows d'automatisation prêts à importer."
+      ],
+      "zh": [
+        "由专业智能体组成的流水线：业务分析、方案设计和工作流生成。",
+        "可视化界面，用于查看并调整每个智能体的输出。",
+        "生成可直接导入的自动化工作流。"
+      ]
+    },
+    "links": [],
+    "media": []
+  },
+  {
+    "id": "agent-auditor",
+    "file": "AUDITOR",
+    "title": "AI Agent Auditor Framework",
+    "year": "",
+    "sort": 2025.7,
+    "context": "personal",
+    "visibility": "confidential",
+    "categories": ["startup", "ai"],
+    "skills": ["python", "celonis"],
+    "summary": {
+      "es": "Diseño de un sistema de agentes de IA interconectados para auditar procesos de negocio complejos, combinando datos de minería de procesos (Celonis) con análisis automatizado.",
+      "en": "Design of a system of interconnected AI agents for auditing complex business processes, combining process-mining data (Celonis) with automated analysis.",
+      "it": "Progettazione di un sistema di agenti IA interconnessi per l'audit di processi aziendali complessi, che combina dati di process mining (Celonis) con analisi automatizzate.",
+      "fr": "Conception d'un système d'agents IA interconnectés pour auditer des processus métier complexes, en combinant des données de process mining (Celonis) et une analyse automatisée.",
+      "zh": "设计一个由多个互联 AI 智能体组成的系统，用于审计复杂的业务流程，将流程挖掘数据（Celonis）与自动化分析相结合。"
+    },
+    "highlights": {
+      "es": [
+        "Arquitectura de agentes especializados que colaboran en una auditoría.",
+        "Los datos de minería de procesos de Celonis como fuente de verdad."
+      ],
+      "en": [
+        "Architecture of specialised agents that collaborate on an audit.",
+        "Process-mining data from Celonis as the source of truth."
+      ],
+      "it": [
+        "Architettura di agenti specializzati che collaborano a un audit.",
+        "I dati di process mining di Celonis come fonte di verità."
+      ],
+      "fr": [
+        "Architecture d'agents spécialisés qui collaborent à un audit.",
+        "Les données de process mining de Celonis comme source de vérité."
+      ],
+      "zh": [
+        "由多个专业智能体协同完成审计的架构。",
+        "以 Celonis 的流程挖掘数据作为可信数据源。"
+      ]
+    },
+    "links": [],
+    "media": []
+  },
+  {
+    "id": "detector-research",
+    "file": "DETECTOR",
+    "title": {
+      "es": "Estudio de robustez de detectores de texto IA",
+      "en": "AI-Text Detector Robustness Study",
+      "it": "Studio sulla robustezza dei rilevatori di testo IA",
+      "fr": "Étude de robustesse des détecteurs de texte IA",
+      "zh": "AI 文本检测器稳健性研究"
+    },
+    "year": "",
+    "sort": 2025.6,
+    "context": "personal",
+    "visibility": "confidential",
+    "categories": ["ai", "security"],
+    "skills": ["python", "huggingface"],
+    "summary": {
+      "es": "Investigación sobre cómo funcionan los detectores de texto generado por IA: análisis de las señales de probabilidad de tokens en las que se basan y evaluación de cómo la reescritura afecta a su fiabilidad.",
+      "en": "Research into how AI-generated-text detectors work: analysis of the token-probability signals they rely on and evaluation of how rewriting affects their reliability.",
+      "it": "Ricerca su come funzionano i rilevatori di testo generato dall'IA: analisi dei segnali di probabilità dei token su cui si basano e valutazione di come la riscrittura ne influenzi l'affidabilità.",
+      "fr": "Recherche sur le fonctionnement des détecteurs de texte généré par IA : analyse des signaux de probabilité de tokens sur lesquels ils s'appuient et évaluation de l'effet de la reformulation sur leur fiabilité.",
+      "zh": "研究 AI 生成文本检测器的工作原理：分析其依赖的词元概率信号，并评估改写对其可靠性的影响。"
+    },
+    "highlights": {
+      "es": [
+        "Análisis de probabilidad de tokens (perplejidad) en textos generados por LLM.",
+        "Evaluación de las debilidades de los detectores: falsos positivos y falsos negativos.",
+        "Conclusiones sobre los límites de la detección automática como herramienta de integridad académica."
+      ],
+      "en": [
+        "Token-probability (perplexity) analysis of LLM-generated text.",
+        "Evaluation of detector weaknesses: false positives and false negatives.",
+        "Conclusions on the limits of automatic detection as an academic-integrity tool."
+      ],
+      "it": [
+        "Analisi della probabilità dei token (perplessità) nei testi generati da LLM.",
+        "Valutazione dei punti deboli dei rilevatori: falsi positivi e falsi negativi.",
+        "Conclusioni sui limiti del rilevamento automatico come strumento di integrità accademica."
+      ],
+      "fr": [
+        "Analyse de la probabilité des tokens (perplexité) dans les textes générés par des LLM.",
+        "Évaluation des faiblesses des détecteurs : faux positifs et faux négatifs.",
+        "Conclusions sur les limites de la détection automatique comme outil d'intégrité académique."
+      ],
+      "zh": [
+        "对大语言模型生成文本进行词元概率（困惑度）分析。",
+        "评估检测器的弱点：误报与漏报。",
+        "总结自动检测作为学术诚信工具的局限性。"
+      ]
+    },
+    "links": [],
+    "media": []
+  },
+  {
+    "id": "crypto",
+    "file": "CRYPTOSF",
+    "title": "CryptoSafe · Hybrid Cryptography App",
+    "year": "2025",
+    "sort": 2025.9,
+    "context": "uc3m",
+    "visibility": "public",
+    "categories": ["security"],
+    "skills": ["python", "sqlite"],
+    "summary": {
+      "es": "Aplicación de línea de comandos para intercambiar archivos de forma segura con su propia PKI de dos niveles: registro de usuarios, firma, cifrado híbrido y verificación de extremo a extremo.",
+      "en": "Command-line app for exchanging files securely with its own two-level PKI: user registration, signing, hybrid encryption and end-to-end verification.",
+      "it": "Applicazione a riga di comando per lo scambio sicuro di file con una propria PKI a due livelli: registrazione utenti, firma, cifratura ibrida e verifica end-to-end.",
+      "fr": "Application en ligne de commande pour échanger des fichiers en toute sécurité avec sa propre PKI à deux niveaux : enregistrement des utilisateurs, signature, chiffrement hybride et vérification de bout en bout.",
+      "zh": "一款命令行应用，借助自建的两级 PKI 安全地交换文件：用户注册、签名、混合加密和端到端验证。"
+    },
+    "highlights": {
+      "es": [
+        "Cifrado híbrido: AES-256-GCM para los datos y RSA-OAEP para encapsular la clave de sesión; firmas RSA-PSS.",
+        "PKI de dos niveles (CA raíz y CA subordinada) con verificación de la cadena de certificados X.509.",
+        "Contraseñas guardadas como PBKDF2-HMAC-SHA256 (600 000 iteraciones) con sal y claves privadas cifradas en disco (PKCS#8).",
+        "Arquitectura por capas (orquestador y servicios) con tests de integración."
+      ],
+      "en": [
+        "Hybrid encryption: AES-256-GCM for the data and RSA-OAEP to encapsulate the session key; RSA-PSS signatures.",
+        "Two-level PKI (root CA and subordinate CA) with X.509 certificate-chain verification.",
+        "Passwords stored as salted PBKDF2-HMAC-SHA256 (600,000 iterations) and private keys encrypted at rest (PKCS#8).",
+        "Layered architecture (orchestrator and services) with integration tests."
+      ],
+      "it": [
+        "Cifratura ibrida: AES-256-GCM per i dati e RSA-OAEP per incapsulare la chiave di sessione; firme RSA-PSS.",
+        "PKI a due livelli (CA radice e CA subordinata) con verifica della catena di certificati X.509.",
+        "Password salvate come PBKDF2-HMAC-SHA256 (600.000 iterazioni) con sale e chiavi private cifrate su disco (PKCS#8).",
+        "Architettura a livelli (orchestratore e servizi) con test di integrazione."
+      ],
+      "fr": [
+        "Chiffrement hybride : AES-256-GCM pour les données et RSA-OAEP pour encapsuler la clé de session ; signatures RSA-PSS.",
+        "PKI à deux niveaux (AC racine et AC subordonnée) avec vérification de la chaîne de certificats X.509.",
+        "Mots de passe stockés en PBKDF2-HMAC-SHA256 salé (600 000 itérations) et clés privées chiffrées sur disque (PKCS#8).",
+        "Architecture en couches (orchestrateur et services) avec tests d'intégration."
+      ],
+      "zh": [
+        "混合加密：数据使用 AES-256-GCM，会话密钥用 RSA-OAEP 封装；签名采用 RSA-PSS。",
+        "两级 PKI（根 CA 与下级 CA），并验证 X.509 证书链。",
+        "密码以加盐的 PBKDF2-HMAC-SHA256（60 万次迭代）存储，私钥在磁盘上加密保存（PKCS#8）。",
+        "分层架构（编排层与服务层），并配有集成测试。"
+      ]
+    },
+    "links": [
+      { "type": "github", "url": "https://github.com/nico-maire/Hybrid-Cryptography-Application" }
+    ],
+    "media": [
+      { "type": "image", "src": "assets/media/crypto/uml.png", "tint": true }
+    ]
+  },
+  {
+    "id": "factory",
+    "file": "FACTORY",
+    "title": "Multi-threaded Factory Simulator",
+    "year": "2025",
+    "sort": 2025.3,
+    "context": "uc3m",
+    "course": {
+      "es": "Sistemas Operativos",
+      "en": "Operating Systems",
+      "it": "Sistemi Operativi",
+      "fr": "Systèmes d'exploitation",
+      "zh": "操作系统"
+    },
+    "visibility": "public",
+    "categories": ["systems"],
+    "skills": ["c", "posix", "linux"],
+    "summary": {
+      "es": "Simulación concurrente en C de una fábrica con varias cintas transportadoras: el problema productor-consumidor resuelto con hilos POSIX y semáforos.",
+      "en": "Concurrent simulation in C of a factory with several conveyor belts: the producer–consumer problem solved with POSIX threads and semaphores.",
+      "it": "Simulazione concorrente in C di una fabbrica con diversi nastri trasportatori: il problema produttore-consumatore risolto con thread POSIX e semafori.",
+      "fr": "Simulation concurrente en C d'une usine à plusieurs tapis roulants : le problème producteur-consommateur résolu avec des threads POSIX et des sémaphores.",
+      "zh": "用 C 语言并发模拟一座拥有多条传送带的工厂：使用 POSIX 线程和信号量解决生产者-消费者问题。"
+    },
+    "highlights": {
+      "es": [
+        "Un gestor de fábrica lanza un hilo gestor de proceso por cinta y los coordina con semáforos POSIX.",
+        "Cola circular segura para hilos con mutex y variables de condición.",
+        "Arranque y fin ordenados de las cintas, liberación controlada de recursos y tests automáticos contra salidas esperadas."
+      ],
+      "en": [
+        "A factory manager launches one process-manager thread per belt and coordinates them with POSIX semaphores.",
+        "Thread-safe circular queue with mutexes and condition variables.",
+        "Ordered start and shutdown of the belts, controlled release of resources and automated tests against expected outputs."
+      ],
+      "it": [
+        "Un gestore della fabbrica avvia un thread gestore di processo per ogni nastro e li coordina con semafori POSIX.",
+        "Coda circolare thread-safe con mutex e variabili di condizione.",
+        "Avvio e arresto ordinati dei nastri, rilascio controllato delle risorse e test automatici sugli output attesi."
+      ],
+      "fr": [
+        "Un gestionnaire d'usine lance un thread gestionnaire de processus par tapis et les coordonne avec des sémaphores POSIX.",
+        "File circulaire thread-safe avec mutex et variables de condition.",
+        "Démarrage et arrêt ordonnés des tapis, libération contrôlée des ressources et tests automatiques sur les sorties attendues."
+      ],
+      "zh": [
+        "工厂管理器为每条传送带启动一个进程管理线程，并用 POSIX 信号量进行协调。",
+        "使用互斥锁和条件变量实现的线程安全环形队列。",
+        "传送带有序启动与关闭、资源受控释放，并针对预期输出进行自动化测试。"
+      ]
+    },
+    "links": [
+      { "type": "github", "url": "https://github.com/nico-maire/C-Based-Script-Interpreter" }
+    ],
+    "media": [
+      { "type": "terminal", "src": "assets/media/factory/run.txt" }
+    ]
+  },
+  {
+    "id": "syscalls",
+    "file": "SYSCALLS",
+    "title": "POSIX System Calls Toolkit",
+    "year": "2025",
+    "sort": 2025.2,
+    "context": "uc3m",
+    "course": {
+      "es": "Sistemas Operativos",
+      "en": "Operating Systems",
+      "it": "Sistemi Operativi",
+      "fr": "Systèmes d'exploitation",
+      "zh": "操作系统"
+    },
+    "visibility": "public",
+    "categories": ["systems"],
+    "skills": ["c", "posix", "linux"],
+    "summary": {
+      "es": "Utilidades de línea de comandos en C construidas directamente sobre llamadas al sistema: creación atómica de archivos con permisos exactos y procesamiento de registros binarios con estadísticas.",
+      "en": "Command-line utilities in C built directly on system calls: atomic file creation with exact permissions and processing of binary records with statistics.",
+      "it": "Utility a riga di comando in C costruite direttamente sulle chiamate di sistema: creazione atomica di file con permessi esatti ed elaborazione di record binari con statistiche.",
+      "fr": "Utilitaires en ligne de commande en C construits directement sur les appels système : création atomique de fichiers avec des permissions exactes et traitement d'enregistrements binaires avec statistiques.",
+      "zh": "直接基于系统调用编写的 C 语言命令行工具：以精确权限原子化创建文件，并处理二进制记录、生成统计数据。"
+    },
+    "highlights": {
+      "es": [
+        "crear: creación atómica (O_CREAT | O_EXCL) con permisos octales exactos, gestionando umask en todos los caminos.",
+        "combine: une archivos de registros binarios, detecta corrupción y duplicados, ordena y genera estadísticas en CSV.",
+        "Solo open, read, write y close, comprobando cada valor de retorno."
+      ],
+      "en": [
+        "crear: atomic creation (O_CREAT | O_EXCL) with exact octal permissions, handling umask on every path.",
+        "combine: merges binary record files, detects corruption and duplicates, sorts and writes CSV statistics.",
+        "Only open, read, write and close, with every return value checked."
+      ],
+      "it": [
+        "crear: creazione atomica (O_CREAT | O_EXCL) con permessi ottali esatti, gestendo umask in ogni percorso.",
+        "combine: unisce file di record binari, rileva corruzione e duplicati, ordina e genera statistiche in CSV.",
+        "Solo open, read, write e close, controllando ogni valore di ritorno."
+      ],
+      "fr": [
+        "crear : création atomique (O_CREAT | O_EXCL) avec des permissions octales exactes, en gérant umask sur chaque chemin.",
+        "combine : fusionne des fichiers d'enregistrements binaires, détecte corruption et doublons, trie et génère des statistiques CSV.",
+        "Uniquement open, read, write et close, en vérifiant chaque valeur de retour."
+      ],
+      "zh": [
+        "crear：以 O_CREAT | O_EXCL 原子化创建文件并设置精确的八进制权限，在每条路径上妥善处理 umask。",
+        "combine：合并二进制记录文件，检测损坏与重复，排序并输出 CSV 统计。",
+        "只使用 open、read、write 和 close，并检查每一个返回值。"
+      ]
+    },
+    "links": [
+      { "type": "github", "url": "https://github.com/nico-maire/Multi-threaded-Factory-Simulator" }
+    ],
+    "media": [
+      { "type": "terminal", "src": "assets/media/syscalls/run.txt" }
+    ]
+  },
+  {
+    "id": "raytracing",
+    "file": "RAYTRACE",
+    "title": "Performance-Oriented Ray Tracing",
+    "year": "2025",
+    "sort": 2025.95,
+    "context": "uc3m",
+    "featured": true,
+    "course": {
+      "es": "Arquitectura de Computadores",
+      "en": "Computer Architecture",
+      "it": "Architettura dei Calcolatori",
+      "fr": "Architecture des ordinateurs",
+      "zh": "计算机体系结构"
+    },
+    "team": {
+      "es": "Proyecto en equipo de 4 personas",
+      "en": "Team project (4 people)",
+      "it": "Progetto di squadra (4 persone)",
+      "fr": "Projet d'équipe (4 personnes)",
+      "zh": "4 人团队项目"
+    },
+    "visibility": "public",
+    "categories": ["systems"],
+    "skills": ["cplusplus", "tbb", "cmake", "linux", "python"],
+    "summary": {
+      "es": "Motor de ray tracing escrito desde cero en C++ para estudiar el rendimiento: organización de memoria (AOS frente a SOA), paralelismo con Intel TBB y medición de energía en un clúster.",
+      "en": "Ray-tracing engine written from scratch in C++ to study performance: memory layout (AOS vs SOA), parallelism with Intel TBB and energy measurements on a cluster.",
+      "it": "Motore di ray tracing scritto da zero in C++ per studiare le prestazioni: organizzazione della memoria (AOS contro SOA), parallelismo con Intel TBB e misure energetiche su un cluster.",
+      "fr": "Moteur de ray tracing écrit de zéro en C++ pour étudier la performance : organisation mémoire (AOS contre SOA), parallélisme avec Intel TBB et mesures d'énergie sur un cluster.",
+      "zh": "用 C++ 从零编写的光线追踪引擎，用于研究性能：内存布局（AOS 与 SOA 对比）、基于 Intel TBB 的并行化，以及在集群上的能耗测量。"
+    },
+    "highlights": {
+      "es": [
+        "Comparación de dos representaciones de memoria: Array of Structures frente a Structure of Arrays.",
+        "Renderizado paralelo con Intel TBB (parallel_for sobre bloques 2D), ajustando particionadores y tamaño de grano.",
+        "Medidas de tiempo, speedup y energía en el clúster Slurm de la universidad, con un pipeline de análisis en Python.",
+        "Matemáticas, cámara, materiales, parser de escenas y escritor PPM propios; tests unitarios y clang-tidy."
+      ],
+      "en": [
+        "Comparison of two memory layouts: Array of Structures versus Structure of Arrays.",
+        "Parallel rendering with Intel TBB (parallel_for over 2D blocks), tuning partitioners and grain size.",
+        "Time, speedup and energy benchmarks on the university's Slurm cluster, with a Python analysis pipeline.",
+        "Own maths, camera, materials, scene parser and PPM writer; unit tests and clang-tidy."
+      ],
+      "it": [
+        "Confronto tra due rappresentazioni in memoria: Array of Structures e Structure of Arrays.",
+        "Rendering parallelo con Intel TBB (parallel_for su blocchi 2D), regolando partitioner e granularità.",
+        "Misure di tempo, speedup ed energia sul cluster Slurm dell'università, con una pipeline di analisi in Python.",
+        "Matematica, camera, materiali, parser delle scene e writer PPM propri; test unitari e clang-tidy."
+      ],
+      "fr": [
+        "Comparaison de deux organisations mémoire : Array of Structures et Structure of Arrays.",
+        "Rendu parallèle avec Intel TBB (parallel_for sur des blocs 2D), en ajustant partitionneurs et granularité.",
+        "Mesures de temps, de speedup et d'énergie sur le cluster Slurm de l'université, avec un pipeline d'analyse en Python.",
+        "Mathématiques, caméra, matériaux, parseur de scènes et writer PPM maison ; tests unitaires et clang-tidy."
+      ],
+      "zh": [
+        "比较两种内存布局：结构体数组（AOS）与数组结构体（SOA）。",
+        "使用 Intel TBB 并行渲染（对二维块执行 parallel_for），调优分区器与粒度。",
+        "在学校的 Slurm 集群上测量耗时、加速比和能耗，并用 Python 搭建分析流水线。",
+        "自研数学库、相机、材质、场景解析器和 PPM 输出；配有单元测试和 clang-tidy 检查。"
+      ]
+    },
+    "links": [
+      { "type": "github", "url": "https://github.com/nico-maire/Performance-Oriented-Ray-Tracing" }
+    ],
+    "media": [
+      { "type": "image", "src": "assets/media/raytracing/scene3.jpg" },
+      { "type": "image", "src": "assets/media/raytracing/scene5.jpg" },
+      { "type": "image", "src": "assets/media/raytracing/scene4.jpg" },
+      { "type": "image", "src": "assets/media/raytracing/speedup.png", "tint": true }
+    ]
+  },
+  {
+    "id": "binairo",
+    "file": "BINAIRO",
+    "title": "Binairo CSP & US Pathfinding Engine",
+    "year": "2025",
+    "sort": 2025.92,
+    "context": "uc3m",
+    "course": {
+      "es": "Heurística y Optimización",
+      "en": "Heuristics & Optimisation",
+      "it": "Euristica e Ottimizzazione",
+      "fr": "Heuristique et optimisation",
+      "zh": "启发式与优化"
+    },
+    "visibility": "public",
+    "categories": ["algorithms", "ai"],
+    "skills": ["python", "numpy", "opencv"],
+    "summary": {
+      "es": "Dos módulos: un resolutor de satisfacción de restricciones para el puzle Binairo y un motor de búsqueda que calcula rutas óptimas sobre redes de carreteras reales de EE. UU.",
+      "en": "Two modules: a constraint-satisfaction solver for the Binairo puzzle and a search engine that computes optimal routes over real US road networks.",
+      "it": "Due moduli: un risolutore a vincoli per il puzzle Binairo e un motore di ricerca che calcola percorsi ottimali su reti stradali reali degli Stati Uniti.",
+      "fr": "Deux modules : un solveur par satisfaction de contraintes pour le puzzle Binairo et un moteur de recherche qui calcule des itinéraires optimaux sur de vrais réseaux routiers américains.",
+      "zh": "两个模块：用于求解 Binairo 谜题的约束满足求解器，以及在美国真实道路网络上计算最优路线的搜索引擎。"
+    },
+    "highlights": {
+      "es": [
+        "Modelo CSP del Binairo (restricciones de equilibrio y de adyacencia) con benchmark multinúcleo.",
+        "A*, IDA*, BFS y Hill Climbing con heurísticas Haversine, euclídea y Manhattan.",
+        "Pensado para escalar: lista abierta por cubos (Dial), lista cerrada O(1) y arrays compactos para millones de nodos.",
+        "Render en 4K de las rutas con NumPy y OpenCV."
+      ],
+      "en": [
+        "CSP model of Binairo (balance and adjacency constraints) with a multi-core benchmark.",
+        "A*, IDA*, BFS and Hill Climbing with Haversine, Euclidean and Manhattan heuristics.",
+        "Built to scale: bucket-based open list (Dial), O(1) closed list and compact arrays for millions of nodes.",
+        "4K rendering of the routes with NumPy and OpenCV."
+      ],
+      "it": [
+        "Modello CSP del Binairo (vincoli di bilanciamento e di adiacenza) con benchmark multicore.",
+        "A*, IDA*, BFS e Hill Climbing con euristiche Haversine, euclidea e Manhattan.",
+        "Pensato per scalare: lista aperta a bucket (Dial), lista chiusa O(1) e array compatti per milioni di nodi.",
+        "Rendering in 4K dei percorsi con NumPy e OpenCV."
+      ],
+      "fr": [
+        "Modèle CSP du Binairo (contraintes d'équilibre et d'adjacence) avec benchmark multicœur.",
+        "A*, IDA*, BFS et Hill Climbing avec les heuristiques Haversine, euclidienne et Manhattan.",
+        "Conçu pour passer à l'échelle : liste ouverte par seaux (Dial), liste fermée en O(1) et tableaux compacts pour des millions de nœuds.",
+        "Rendu 4K des itinéraires avec NumPy et OpenCV."
+      ],
+      "zh": [
+        "Binairo 的 CSP 模型（平衡约束与相邻约束），并进行多核基准测试。",
+        "实现 A*、IDA*、BFS 和爬山算法，使用 Haversine、欧氏和曼哈顿启发函数。",
+        "面向大规模设计：基于桶的开放列表（Dial）、O(1) 关闭列表以及可容纳数百万节点的紧凑数组。",
+        "使用 NumPy 和 OpenCV 以 4K 分辨率渲染路线。"
+      ]
+    },
+    "links": [
+      { "type": "github", "url": "https://github.com/nico-maire/Binairo-CSP---US-Pathfinding-Engine" }
+    ],
+    "media": [
+      { "type": "image", "src": "assets/media/binairo/board.png" }
+    ]
+  },
+  {
+    "id": "fleet-ilp",
+    "file": "FLEETILP",
+    "title": {
+      "es": "Programación lineal: optimización de flota",
+      "en": "Linear Programming: Fleet Optimisation",
+      "it": "Programmazione lineare: ottimizzazione della flotta",
+      "fr": "Programmation linéaire : optimisation de flotte",
+      "zh": "线性规划：车队优化"
+    },
+    "year": "2025",
+    "sort": 2025.85,
+    "context": "uc3m",
+    "course": {
+      "es": "Heurística y Optimización",
+      "en": "Heuristics & Optimisation",
+      "it": "Euristica e Ottimizzazione",
+      "fr": "Heuristique et optimisation",
+      "zh": "启发式与优化"
+    },
+    "visibility": "public",
+    "categories": ["algorithms"],
+    "skills": ["python", "typst"],
+    "summary": {
+      "es": "Modelos de programación lineal entera para optimizar la asignación de una flota de autobuses, desde el prototipo en hoja de cálculo hasta GLPK/MathProg, con pruebas de escalabilidad.",
+      "en": "Integer linear programming models to optimise the allocation of a bus fleet, from a spreadsheet prototype to GLPK/MathProg, with scalability benchmarks.",
+      "it": "Modelli di programmazione lineare intera per ottimizzare l'assegnazione di una flotta di autobus, dal prototipo su foglio di calcolo a GLPK/MathProg, con test di scalabilità.",
+      "fr": "Modèles de programmation linéaire en nombres entiers pour optimiser l'affectation d'une flotte de bus, du prototype sur tableur à GLPK/MathProg, avec des tests de passage à l'échelle.",
+      "zh": "用整数线性规划模型优化公交车队的分配，从电子表格原型到 GLPK/MathProg，并进行可扩展性基准测试。"
+    },
+    "highlights": {
+      "es": [
+        "Formulación matemática linealizando restricciones lógicas (Big-M y variables binarias).",
+        "Modelos en GNU MathProg resueltos con GLPK y prototipo previo en LibreOffice Calc.",
+        "Generadores de instancias y benchmark automatizado para encontrar el punto en que branch-and-bound deja de ser viable.",
+        "Memoria escrita en Typst."
+      ],
+      "en": [
+        "Mathematical formulation linearising logical constraints (Big-M and binary variables).",
+        "Models in GNU MathProg solved with GLPK, after a first prototype in LibreOffice Calc.",
+        "Instance generators and an automated benchmark to find where branch-and-bound stops being viable.",
+        "Report written in Typst."
+      ],
+      "it": [
+        "Formulazione matematica con linearizzazione dei vincoli logici (Big-M e variabili binarie).",
+        "Modelli in GNU MathProg risolti con GLPK, dopo un primo prototipo in LibreOffice Calc.",
+        "Generatori di istanze e benchmark automatico per trovare il punto in cui il branch-and-bound smette di essere praticabile.",
+        "Relazione scritta in Typst."
+      ],
+      "fr": [
+        "Formulation mathématique en linéarisant les contraintes logiques (Big-M et variables binaires).",
+        "Modèles en GNU MathProg résolus avec GLPK, après un premier prototype sous LibreOffice Calc.",
+        "Générateurs d'instances et benchmark automatisé pour trouver le point où le branch-and-bound cesse d'être viable.",
+        "Rapport rédigé en Typst."
+      ],
+      "zh": [
+        "通过 Big-M 方法和二元变量将逻辑约束线性化，完成数学建模。",
+        "先用 LibreOffice Calc 制作原型，再用 GNU MathProg 建模并以 GLPK 求解。",
+        "编写实例生成器和自动化基准测试，找出分支定界法不再可行的临界点。",
+        "使用 Typst 撰写报告。"
+      ]
+    },
+    "links": [
+      { "type": "github", "url": "https://github.com/nico-maire/Linear-Programming--Fleet-Optimization-" }
+    ],
+    "media": [
+      { "type": "image", "src": "assets/media/fleet-ilp/scalability.png", "tint": true }
+    ]
+  },
+  {
+    "id": "radar-astar",
+    "file": "RADAR_A",
+    "title": {
+      "es": "Búsqueda heurística A* para evadir radares",
+      "en": "A* Heuristic Search for Radar Evasion",
+      "it": "Ricerca euristica A* per evitare i radar",
+      "fr": "Recherche heuristique A* pour échapper aux radars",
+      "zh": "躲避雷达的 A* 启发式搜索"
+    },
+    "year": "2024",
+    "sort": 2024.9,
+    "context": "uc3m",
+    "course": {
+      "es": "Inteligencia Artificial",
+      "en": "Artificial Intelligence",
+      "it": "Intelligenza Artificiale",
+      "fr": "Intelligence artificielle",
+      "zh": "人工智能"
+    },
+    "visibility": "public",
+    "categories": ["ai", "algorithms"],
+    "skills": ["python"],
+    "summary": {
+      "es": "Planificador de rutas que guía a un avión espía por territorio hostil minimizando el riesgo de ser detectado, sobre un mapa de costes generado por modelos gaussianos de radar.",
+      "en": "Route planner that guides a spy plane through hostile territory while minimising the risk of detection, on a cost map generated by Gaussian radar models.",
+      "it": "Pianificatore di percorsi che guida un aereo spia in territorio ostile riducendo al minimo il rischio di essere rilevato, su una mappa dei costi generata da modelli radar gaussiani.",
+      "fr": "Planificateur d'itinéraires qui guide un avion espion en territoire hostile en minimisant le risque de détection, sur une carte de coûts générée par des modèles radar gaussiens.",
+      "zh": "路径规划器：在由高斯雷达模型生成的代价地图上，引导侦察机穿越敌方区域，并将被发现的风险降到最低。"
+    },
+    "highlights": {
+      "es": [
+        "A* con heurísticas admisibles que garantizan la ruta óptima.",
+        "Mapa de costes continuo: cada radar emite una probabilidad de detección gaussiana.",
+        "Escenarios configurables en JSON y diseño orientado a objetos."
+      ],
+      "en": [
+        "A* with admissible heuristics that guarantee the optimal route.",
+        "Continuous cost map: every radar emits a Gaussian detection probability.",
+        "Scenarios configurable in JSON and an object-oriented design."
+      ],
+      "it": [
+        "A* con euristiche ammissibili che garantiscono il percorso ottimale.",
+        "Mappa dei costi continua: ogni radar emette una probabilità di rilevamento gaussiana.",
+        "Scenari configurabili in JSON e progettazione orientata agli oggetti."
+      ],
+      "fr": [
+        "A* avec des heuristiques admissibles qui garantissent l'itinéraire optimal.",
+        "Carte de coûts continue : chaque radar émet une probabilité de détection gaussienne.",
+        "Scénarios configurables en JSON et conception orientée objet."
+      ],
+      "zh": [
+        "使用可采纳启发函数的 A* 算法，保证得到最优路线。",
+        "连续代价地图：每个雷达都发出服从高斯分布的探测概率。",
+        "场景可通过 JSON 配置，采用面向对象设计。"
+      ]
+    },
+    "links": [
+      { "type": "github", "url": "https://github.com/nico-maire/Heuristic-Search-for-Radar-Evasion" }
+    ],
+    "media": [
+      { "type": "image", "src": "assets/media/radar-astar/route.png" }
+    ]
+  },
+  {
+    "id": "mario",
+    "file": "MARIO",
+    "title": "Mario Bros. Arcade Clone",
+    "year": "2023",
+    "sort": 2023.9,
+    "context": "uc3m",
+    "featured": true,
+    "course": {
+      "es": "Programación (1.º curso)",
+      "en": "Programming (1st year)",
+      "it": "Programmazione (1º anno)",
+      "fr": "Programmation (1re année)",
+      "zh": "程序设计（一年级）"
+    },
+    "team": {
+      "es": "Con Héctor Molina",
+      "en": "With Héctor Molina",
+      "it": "Con Héctor Molina",
+      "fr": "Avec Héctor Molina",
+      "zh": "与 Héctor Molina 合作"
+    },
+    "visibility": "public",
+    "categories": ["games"],
+    "skills": ["python"],
+    "summary": {
+      "es": "Recreación del clásico arcade Mario Bros. en Python con Pyxel, construida desde cero con una arquitectura orientada a objetos.",
+      "en": "Recreation of the classic Mario Bros. arcade game in Python with Pyxel, built from scratch with an object-oriented architecture.",
+      "it": "Ricreazione del classico arcade Mario Bros. in Python con Pyxel, costruita da zero con un'architettura orientata agli oggetti.",
+      "fr": "Recréation du jeu d'arcade classique Mario Bros. en Python avec Pyxel, construite de zéro avec une architecture orientée objet.",
+      "zh": "用 Python 和 Pyxel 从零重制经典街机游戏《马里奥兄弟》，采用面向对象架构。"
+    },
+    "highlights": {
+      "es": [
+        "Física, saltos, colisiones y el bloque POW.",
+        "Enemigos con comportamiento propio: tortugas, cangrejos, moscas, bolas de fuego y carámbanos.",
+        "10 fases, vidas, monedas, puntuación y récords guardados.",
+        "Mi primer juego completo, de primero de carrera."
+      ],
+      "en": [
+        "Physics, jumps, collisions and the POW block.",
+        "Enemies with their own behaviour: turtles, crabs, flies, fireballs and icicles.",
+        "10 phases, lives, coins, score and saved high scores.",
+        "My first complete game, from my first year at university."
+      ],
+      "it": [
+        "Fisica, salti, collisioni e il blocco POW.",
+        "Nemici con comportamento proprio: tartarughe, granchi, mosche, palle di fuoco e ghiaccioli.",
+        "10 fasi, vite, monete, punteggio e record salvati.",
+        "Il mio primo gioco completo, del primo anno di università."
+      ],
+      "fr": [
+        "Physique, sauts, collisions et le bloc POW.",
+        "Des ennemis au comportement propre : tortues, crabes, mouches, boules de feu et stalactites de glace.",
+        "10 phases, vies, pièces, score et meilleurs scores sauvegardés.",
+        "Mon premier jeu complet, de ma première année d'université."
+      ],
+      "zh": [
+        "物理、跳跃、碰撞检测以及 POW 砖块。",
+        "各具行为的敌人：乌龟、螃蟹、苍蝇、火球和冰锥。",
+        "10 个关卡，包含生命、金币、分数和保存的最高分。",
+        "大一时完成的第一款完整游戏。"
+      ]
+    },
+    "links": [
+      { "type": "github", "url": "https://github.com/nico-maire/Mario-Bros.-Arcade-Clone" }
+    ],
+    "media": [
+      { "type": "video", "src": "assets/media/mario/gameplay.mp4", "poster": "assets/media/mario/poster.png", "pixel": true }
+    ]
+  },
+  {
+    "id": "travel-web",
+    "file": "TRAVEL",
+    "title": {
+      "es": "Web de viajes responsive",
+      "en": "Responsive Travel Website",
+      "it": "Sito di viaggi responsive",
+      "fr": "Site de voyage responsive",
+      "zh": "响应式旅行网站"
+    },
+    "year": "2025",
+    "sort": 2025.88,
+    "context": "uc3m",
+    "course": {
+      "es": "Interfaces de Usuario",
+      "en": "User Interfaces",
+      "it": "Interfacce Utente",
+      "fr": "Interfaces utilisateur",
+      "zh": "用户界面"
+    },
+    "visibility": "public",
+    "categories": ["web"],
+    "skills": ["html5", "css", "javascript"],
+    "summary": {
+      "es": "Web de una comunidad de viajes y mochileros construida sin frameworks: HTML5 semántico, CSS modular y JavaScript nativo.",
+      "en": "Website for a travel and backpacking community built without frameworks: semantic HTML5, modular CSS and vanilla JavaScript.",
+      "it": "Sito di una community di viaggi e zaino in spalla costruito senza framework: HTML5 semantico, CSS modulare e JavaScript nativo.",
+      "fr": "Site d'une communauté de voyageurs et de routards construit sans framework : HTML5 sémantique, CSS modulaire et JavaScript natif.",
+      "zh": "不依赖任何框架构建的旅行与背包客社区网站：语义化 HTML5、模块化 CSS 和原生 JavaScript。"
+    },
+    "highlights": {
+      "es": [
+        "Web multipágina (destinos, comunidad, reservas, foro, acceso) adaptada a móvil, tablet y escritorio.",
+        "Arquitectura CSS por componentes con variables, Flexbox y Grid.",
+        "Módulos ES con datos simulados para pintar el contenido dinámico."
+      ],
+      "en": [
+        "Multi-page site (destinations, community, bookings, forum, login) adapted to mobile, tablet and desktop.",
+        "Component-based CSS architecture with variables, Flexbox and Grid.",
+        "ES modules with mock data to render the dynamic content."
+      ],
+      "it": [
+        "Sito multipagina (destinazioni, community, prenotazioni, forum, accesso) adattato a mobile, tablet e desktop.",
+        "Architettura CSS a componenti con variabili, Flexbox e Grid.",
+        "Moduli ES con dati simulati per generare i contenuti dinamici."
+      ],
+      "fr": [
+        "Site multipage (destinations, communauté, réservations, forum, connexion) adapté au mobile, à la tablette et au bureau.",
+        "Architecture CSS par composants avec variables, Flexbox et Grid.",
+        "Modules ES avec des données simulées pour afficher le contenu dynamique."
+      ],
+      "zh": [
+        "多页面网站（目的地、社区、预订、论坛、登录），适配手机、平板和桌面端。",
+        "基于组件的 CSS 架构，使用 CSS 变量、Flexbox 和 Grid。",
+        "使用 ES 模块和模拟数据渲染动态内容。"
+      ]
+    },
+    "links": [
+      { "type": "github", "url": "https://github.com/nico-maire/Responsive-Travel-Website" }
+    ],
+    "media": [
+      { "type": "image", "src": "assets/media/travel-web/desktop.jpg" },
+      { "type": "image", "src": "assets/media/travel-web/mobile.jpg" }
+    ]
+  },
+  {
+    "id": "neural-calculator",
+    "file": "NEURCALC",
+    "title": {
+      "es": "Calculadora neuronal: generalización aritmética",
+      "en": "Neural Calculator: Arithmetic Generalisation",
+      "it": "Calcolatrice neurale: generalizzazione aritmetica",
+      "fr": "Calculatrice neuronale : généralisation arithmétique",
+      "zh": "神经计算器：算术泛化"
+    },
+    "year": "2026",
+    "sort": 2026.45,
+    "context": "unibo",
+    "featured": true,
+    "course": "Machine Learning",
+    "team": {
+      "es": "Equipo de 3 personas",
+      "en": "Team of 3",
+      "it": "Squadra di 3 persone",
+      "fr": "Équipe de 3 personnes",
+      "zh": "3 人团队"
+    },
+    "visibility": "public",
+    "categories": ["ai"],
+    "skills": ["python", "pytorch", "jupyter", "pandas"],
+    "summary": {
+      "es": "Entrenamiento y evaluación de modelos Seq2Seq y Transformer que aprenden aritmética a partir de texto, midiendo hasta dónde generalizan más allá de los datos de entrenamiento.",
+      "en": "Training and evaluation of Seq2Seq and Transformer models that learn arithmetic from text, measuring how far they generalise beyond the training data.",
+      "it": "Addestramento e valutazione di modelli Seq2Seq e Transformer che imparano l'aritmetica dal testo, misurando quanto generalizzano oltre i dati di addestramento.",
+      "fr": "Entraînement et évaluation de modèles Seq2Seq et Transformer qui apprennent l'arithmétique à partir de texte, en mesurant jusqu'où ils généralisent au-delà des données d'entraînement.",
+      "zh": "训练并评估从文本中学习算术的 Seq2Seq 与 Transformer 模型，衡量它们在训练数据之外的泛化能力。"
+    },
+    "highlights": {
+      "es": [
+        "Conjuntos de datos diseñados para poner a prueba al modelo: dentro de distribución, expresiones más largas y fuera de distribución (OOD).",
+        "Modelos en PyTorch con tokenización, entrenamiento y evaluación propios.",
+        "Análisis de dónde se rompe la representación neuronal: generalización en longitud frente a memorización."
+      ],
+      "en": [
+        "Datasets designed to stress the model: in-distribution, longer expressions and out-of-distribution (OOD).",
+        "PyTorch models with their own tokenisation, training and evaluation pipeline.",
+        "Analysis of where neural representations break: length generalisation versus memorisation."
+      ],
+      "it": [
+        "Dataset progettati per mettere alla prova il modello: in distribuzione, espressioni più lunghe e fuori distribuzione (OOD).",
+        "Modelli in PyTorch con tokenizzazione, addestramento e valutazione propri.",
+        "Analisi di dove si rompe la rappresentazione neurale: generalizzazione sulla lunghezza contro memorizzazione."
+      ],
+      "fr": [
+        "Jeux de données conçus pour mettre le modèle à l'épreuve : dans la distribution, expressions plus longues et hors distribution (OOD).",
+        "Modèles PyTorch avec tokenisation, entraînement et évaluation maison.",
+        "Analyse de l'endroit où la représentation neuronale se brise : généralisation en longueur contre mémorisation."
+      ],
+      "zh": [
+        "专门设计的数据集用于检验模型：分布内、更长的表达式以及分布外（OOD）样本。",
+        "基于 PyTorch 的模型，自建分词、训练和评估流程。",
+        "分析神经表示在何处失效：长度泛化与死记硬背之间的差异。"
+      ]
+    },
+    "links": [
+      { "type": "github", "url": "https://github.com/nico-maire/ML-Neural-Calculator" }
+    ],
+    "media": [
+      { "type": "image", "src": "assets/media/neural-calculator/results.png", "tint": true }
+    ]
+  },
+  {
+    "id": "dist-minesweeper",
+    "file": "MINESWPR",
+    "title": {
+      "es": "Buscaminas distribuido",
+      "en": "Distributed Minesweeper",
+      "it": "Campo minato distribuito",
+      "fr": "Démineur distribué",
+      "zh": "分布式扫雷"
+    },
+    "year": "2026",
+    "sort": 2026.5,
+    "context": "unibo",
+    "featured": true,
+    "course": {
+      "es": "Sistemas Distribuidos",
+      "en": "Distributed Systems",
+      "it": "Sistemi Distribuiti",
+      "fr": "Systèmes distribués",
+      "zh": "分布式系统"
+    },
+    "visibility": "public",
+    "categories": ["systems"],
+    "skills": ["python", "sockets", "docker"],
+    "summary": {
+      "es": "Buscaminas multijugador tolerante a fallos: máquina de estados replicada sobre una cadena Líder-Seguidor con replicación en dos fases PREPARE/COMMIT sobre TCP.",
+      "en": "Fault-tolerant multiplayer minesweeper: a replicated state machine over a Leader–Follower chain with two-phase PREPARE/COMMIT replication over TCP.",
+      "it": "Campo minato multigiocatore tollerante ai guasti: macchina a stati replicata su una catena Leader–Follower con replica in due fasi PREPARE/COMMIT su TCP.",
+      "fr": "Démineur multijoueur tolérant aux pannes : machine à états répliquée sur une chaîne Leader–Follower avec réplication en deux phases PREPARE/COMMIT sur TCP.",
+      "zh": "容错多人扫雷：基于主从（Leader–Follower）链的复制状态机，通过 TCP 进行 PREPARE/COMMIT 两阶段复制。"
+    },
+    "highlights": {
+      "es": [
+        "Replicación de máquina de estados con orden estricto de comandos (números de secuencia).",
+        "Replicación en cadena con PREPARE/COMMIT y promoción automática de un seguidor cuando cae el líder.",
+        "Garantías CP: rechaza las escrituras que no puede replicar y evita escrituras fantasma.",
+        "Cliente en Tkinter (MVC) con failover, despliegue con Docker Compose y tests de caídas en cascada."
+      ],
+      "en": [
+        "State machine replication with strict command ordering (sequence numbers).",
+        "Chain replication with PREPARE/COMMIT and automatic promotion of a follower when the leader goes down.",
+        "CP guarantees: rejects writes it cannot replicate and prevents phantom writes.",
+        "Tkinter client (MVC) with failover, Docker Compose deployment and tests of cascading crashes."
+      ],
+      "it": [
+        "Replica della macchina a stati con ordinamento rigoroso dei comandi (numeri di sequenza).",
+        "Replica a catena con PREPARE/COMMIT e promozione automatica di un follower quando il leader cade.",
+        "Garanzie CP: rifiuta le scritture che non può replicare ed evita scritture fantasma.",
+        "Client in Tkinter (MVC) con failover, deploy con Docker Compose e test di guasti a cascata."
+      ],
+      "fr": [
+        "Réplication de machine à états avec un ordre strict des commandes (numéros de séquence).",
+        "Réplication en chaîne avec PREPARE/COMMIT et promotion automatique d'un follower quand le leader tombe.",
+        "Garanties CP : refuse les écritures qu'il ne peut pas répliquer et évite les écritures fantômes.",
+        "Client Tkinter (MVC) avec basculement, déploiement Docker Compose et tests de pannes en cascade."
+      ],
+      "zh": [
+        "状态机复制，命令通过序列号严格排序。",
+        "采用 PREPARE/COMMIT 的链式复制，主节点宕机时自动提升从节点。",
+        "CP 保证：拒绝无法复制的写入，杜绝幻写。",
+        "Tkinter 客户端（MVC）支持故障转移，使用 Docker Compose 部署，并测试级联故障。"
+      ]
+    },
+    "links": [
+      { "type": "github", "url": "https://github.com/nico-maire/DS--Distributed-Minesweeper" }
+    ],
+    "media": [
+      { "type": "image", "src": "assets/media/dist-minesweeper/cluster.png" }
+    ]
+  },
+  {
+    "id": "llm-security",
+    "file": "LLMSEC",
+    "title": {
+      "es": "Seguridad en LLM: vulnerabilidades y mitigaciones en agentes de IA",
+      "en": "LLM Security: Vulnerabilities & Mitigations for AI Agents",
+      "it": "Sicurezza degli LLM: vulnerabilità e mitigazioni negli agenti IA",
+      "fr": "Sécurité des LLM : vulnérabilités et mitigations des agents IA",
+      "zh": "大语言模型安全：AI 智能体的漏洞与缓解"
+    },
+    "year": "2026",
+    "sort": 2026.48,
+    "context": "unibo",
+    "featured": true,
+    "course": {
+      "es": "Seguridad de la Información",
+      "en": "Information Security",
+      "it": "Sicurezza dell'Informazione",
+      "fr": "Sécurité de l'information",
+      "zh": "信息安全"
+    },
+    "visibility": "public",
+    "categories": ["security", "ai"],
+    "skills": ["python", "typst"],
+    "summary": {
+      "es": "Investigación y prueba de concepto sobre inyección de prompts y llamadas a herramientas inseguras: un agente vulnerable frente a uno protegido.",
+      "en": "Research and proof of concept on prompt injection and insecure tool calling: a vulnerable agent versus a hardened one.",
+      "it": "Ricerca e proof of concept su prompt injection e chiamate a strumenti non sicure: un agente vulnerabile contro uno protetto.",
+      "fr": "Recherche et preuve de concept sur l'injection de prompt et les appels d'outils non sécurisés : un agent vulnérable face à un agent durci.",
+      "zh": "关于提示词注入和不安全工具调用的研究与概念验证：对比存在漏洞的智能体和经过加固的智能体。"
+    },
+    "highlights": {
+      "es": [
+        "Modelo de amenazas basado en el OWASP Top 10 para LLM.",
+        "PoC: una inyección de prompt indirecta lleva al agente vulnerable a ejecutar acciones no autorizadas.",
+        "Mitigaciones: validación estructural (esquemas JSON), guardarraíles, mínimo privilegio en las herramientas y un humano en el bucle.",
+        "Artículo escrito en Typst."
+      ],
+      "en": [
+        "Threat model based on the OWASP Top 10 for LLMs.",
+        "PoC: an indirect prompt injection makes the vulnerable agent execute unauthorised actions.",
+        "Mitigations: structural validation (JSON schemas), guardrails, least privilege for tools and a human in the loop.",
+        "Paper written in Typst."
+      ],
+      "it": [
+        "Modello delle minacce basato sull'OWASP Top 10 per gli LLM.",
+        "PoC: una prompt injection indiretta porta l'agente vulnerabile a eseguire azioni non autorizzate.",
+        "Mitigazioni: validazione strutturale (schemi JSON), guardrail, privilegio minimo sugli strumenti e un umano nel ciclo.",
+        "Articolo scritto in Typst."
+      ],
+      "fr": [
+        "Modèle de menaces fondé sur l'OWASP Top 10 pour les LLM.",
+        "PoC : une injection de prompt indirecte pousse l'agent vulnérable à exécuter des actions non autorisées.",
+        "Mitigations : validation structurelle (schémas JSON), garde-fous, moindre privilège pour les outils et un humain dans la boucle.",
+        "Article rédigé en Typst."
+      ],
+      "zh": [
+        "基于 OWASP 大语言模型十大风险建立威胁模型。",
+        "概念验证：间接提示词注入使存在漏洞的智能体执行未授权操作。",
+        "缓解措施：结构化校验（JSON Schema）、防护栏、工具最小权限以及人工审核环节。",
+        "论文使用 Typst 撰写。"
+      ]
+    },
+    "links": [
+      { "type": "github", "url": "https://github.com/nico-maire/LLM-Security-Vulnerability---Mitigation-Framework-for-AI-Agents" }
+    ],
+    "media": [
+      { "type": "image", "src": "assets/media/llm-security/vulnerable.png", "caption": { "es": "Agente vulnerable", "en": "Vulnerable agent", "it": "Agente vulnerabile", "fr": "Agent vulnérable", "zh": "存在漏洞的智能体" } },
+      { "type": "image", "src": "assets/media/llm-security/secure.png", "caption": { "es": "Agente protegido", "en": "Hardened agent", "it": "Agente protetto", "fr": "Agent durci", "zh": "加固后的智能体" } }
+    ]
+  },
+  {
+    "id": "rag-encryption",
+    "file": "RAGCRYPT",
+    "title": "RAG Database Encryption Engine",
+    "year": "2026",
+    "sort": 2026.47,
+    "context": "unibo",
+    "course": {
+      "es": "Proyecto de Ciberseguridad",
+      "en": "Cybersecurity Project Work",
+      "it": "Project Work di Cybersecurity",
+      "fr": "Projet de cybersécurité",
+      "zh": "网络安全项目"
+    },
+    "visibility": "public",
+    "categories": ["security", "ai"],
+    "skills": ["python"],
+    "summary": {
+      "es": "Arquitectura de cifrado en reposo para las bases de datos vectoriales de sistemas RAG con datos sensibles, usando cifrado de sobre y AES-GCM.",
+      "en": "Encryption-at-rest architecture for the vector databases of RAG systems handling sensitive data, using envelope encryption and AES-GCM.",
+      "it": "Architettura di cifratura a riposo per i database vettoriali dei sistemi RAG con dati sensibili, basata su envelope encryption e AES-GCM.",
+      "fr": "Architecture de chiffrement au repos pour les bases vectorielles des systèmes RAG traitant des données sensibles, avec chiffrement d'enveloppe et AES-GCM.",
+      "zh": "为处理敏感数据的 RAG 系统向量数据库设计的静态加密架构，采用信封加密和 AES-GCM。"
+    },
+    "highlights": {
+      "es": [
+        "Cifrado de sobre: una KEK gestionada por un KMS envuelve la DEK que cifra los datos.",
+        "AES-256-GCM (AEAD): confidencialidad e integridad verificada con etiqueta de autenticación.",
+        "La DEK en claro se borra de memoria; en disco solo quedan los datos cifrados y la clave envuelta."
+      ],
+      "en": [
+        "Envelope encryption: a KMS-managed KEK wraps the DEK that encrypts the data.",
+        "AES-256-GCM (AEAD): confidentiality plus integrity checked with an authentication tag.",
+        "The plaintext DEK is wiped from memory; only the encrypted data and the wrapped key are stored on disk."
+      ],
+      "it": [
+        "Envelope encryption: una KEK gestita da un KMS avvolge la DEK che cifra i dati.",
+        "AES-256-GCM (AEAD): riservatezza e integrità verificata con un tag di autenticazione.",
+        "La DEK in chiaro viene cancellata dalla memoria; su disco restano solo i dati cifrati e la chiave avvolta."
+      ],
+      "fr": [
+        "Chiffrement d'enveloppe : une KEK gérée par un KMS enveloppe la DEK qui chiffre les données.",
+        "AES-256-GCM (AEAD) : confidentialité et intégrité vérifiée par une étiquette d'authentification.",
+        "La DEK en clair est effacée de la mémoire ; seules les données chiffrées et la clé enveloppée restent sur disque."
+      ],
+      "zh": [
+        "信封加密：由 KMS 管理的 KEK 封装用于加密数据的 DEK。",
+        "AES-256-GCM（AEAD）：同时提供机密性，并通过认证标签校验完整性。",
+        "明文 DEK 会从内存中清除，磁盘上只保存加密数据和被封装的密钥。"
+      ]
+    },
+    "links": [
+      { "type": "github", "url": "https://github.com/nico-maire/RAG-Database-Encryption-Engine" }
+    ],
+    "media": [
+      { "type": "terminal", "src": "assets/media/rag-encryption/run.txt" }
+    ]
+  },
+  {
+    "id": "iot",
+    "file": "IOTLABS",
+    "title": {
+      "es": "Laboratorios IoT y Atlas IoT IDE",
+      "en": "IoT Labs & Atlas IoT IDE",
+      "it": "Laboratori IoT e Atlas IoT IDE",
+      "fr": "Labos IoT et Atlas IoT IDE",
+      "zh": "物联网实验与 Atlas IoT IDE"
+    },
+    "year": "2026",
+    "sort": 2026.46,
+    "context": "unibo",
+    "featured": true,
+    "course": "Programming the Internet of Things",
+    "team": {
+      "es": "Equipo IoTalianos (3 personas)",
+      "en": "Team IoTalianos (3 people)",
+      "it": "Squadra IoTalianos (3 persone)",
+      "fr": "Équipe IoTalianos (3 personnes)",
+      "zh": "IoTalianos 团队（3 人）"
+    },
+    "visibility": "public",
+    "categories": ["iot"],
+    "skills": ["raspberrypi", "mqtt", "cplusplus", "python", "flask", "socketio", "javascript"],
+    "summary": {
+      "es": "Cinco laboratorios de IoT con Raspberry Pi que culminan en un IDE visual para descubrir y programar los dispositivos de un Smart Space.",
+      "en": "Five IoT labs with Raspberry Pi, culminating in a visual IDE to discover and program the devices of a Smart Space.",
+      "it": "Cinque laboratori IoT con Raspberry Pi che culminano in un IDE visuale per scoprire e programmare i dispositivi di uno Smart Space.",
+      "fr": "Cinq labos IoT avec Raspberry Pi qui aboutissent à un IDE visuel pour découvrir et programmer les objets d'un Smart Space.",
+      "zh": "五个基于树莓派的物联网实验，最终完成一个用于发现并编程智能空间设备的可视化 IDE。"
+    },
+    "highlights": {
+      "es": [
+        "Metrónomo con API REST en C++ (cpprest, PWM con pigpio) y panel web; después migrado a MQTT (QoS, mensajes retenidos, LWT).",
+        "Monitor de humedad del suelo con riego automático entre dos Raspberry Pi (ADC por I2C, servo, LED RGB).",
+        "Atlas IoT IDE: descubrimiento por UDP multicast, WebSockets y editor de nodos de arrastrar y soltar (Flask, Socket.IO y Drawflow)."
+      ],
+      "en": [
+        "Metronome with a C++ REST API (cpprest, PWM with pigpio) and a web dashboard, later migrated to MQTT (QoS, retained messages, LWT).",
+        "Soil-moisture monitor with automatic irrigation across two Raspberry Pis (I2C ADC, servo, RGB LED).",
+        "Atlas IoT IDE: discovery over UDP multicast, WebSockets and a drag-and-drop node editor (Flask, Socket.IO and Drawflow)."
+      ],
+      "it": [
+        "Metronomo con API REST in C++ (cpprest, PWM con pigpio) e dashboard web, poi migrato a MQTT (QoS, messaggi retained, LWT).",
+        "Monitor dell'umidità del suolo con irrigazione automatica su due Raspberry Pi (ADC via I2C, servo, LED RGB).",
+        "Atlas IoT IDE: discovery via UDP multicast, WebSocket ed editor a nodi drag-and-drop (Flask, Socket.IO e Drawflow)."
+      ],
+      "fr": [
+        "Métronome avec API REST en C++ (cpprest, PWM avec pigpio) et tableau de bord web, migré ensuite vers MQTT (QoS, messages retenus, LWT).",
+        "Moniteur d'humidité du sol avec arrosage automatique réparti sur deux Raspberry Pi (ADC en I2C, servo, LED RGB).",
+        "Atlas IoT IDE : découverte par UDP multicast, WebSockets et éditeur de nœuds en glisser-déposer (Flask, Socket.IO et Drawflow)."
+      ],
+      "zh": [
+        "节拍器：C++ REST API（cpprest，使用 pigpio 输出 PWM）加 Web 控制面板，之后迁移到 MQTT（QoS、保留消息、遗嘱消息）。",
+        "土壤湿度监测与自动灌溉系统，分布在两台树莓派上（I2C 模数转换、舵机、RGB LED）。",
+        "Atlas IoT IDE：通过 UDP 组播发现设备，使用 WebSocket 和拖放式节点编辑器（Flask、Socket.IO 和 Drawflow）。"
+      ]
+    },
+    "links": [
+      { "type": "github", "url": "https://github.com/nico-maire/IOT-Projects" },
+      { "type": "youtube", "url": "https://youtu.be/iOblaSw2kRk" }
+    ],
+    "media": [
+      { "type": "video", "src": "assets/media/iot/mqtt-dashboard.mp4", "poster": "assets/media/iot/mqtt-dashboard.jpg", "caption": { "es": "Metrónomo MQTT con panel web", "en": "MQTT metronome with web dashboard", "it": "Metronomo MQTT con dashboard web", "fr": "Métronome MQTT avec tableau de bord web", "zh": "带 Web 面板的 MQTT 节拍器" } },
+      { "type": "video", "src": "assets/media/iot/soil-moisture.mp4", "poster": "assets/media/iot/soil-moisture.jpg", "caption": { "es": "Monitor de humedad y riego automático", "en": "Soil-moisture monitor and automatic irrigation", "it": "Monitor dell'umidità e irrigazione automatica", "fr": "Moniteur d'humidité et arrosage automatique", "zh": "土壤湿度监测与自动灌溉" } },
+      { "type": "video", "src": "assets/media/iot/metronome.mp4", "poster": "assets/media/iot/metronome.jpg", "caption": { "es": "Metrónomo con API REST", "en": "Metronome with REST API", "it": "Metronomo con API REST", "fr": "Métronome avec API REST", "zh": "带 REST API 的节拍器" } }
+    ]
+  }
+]

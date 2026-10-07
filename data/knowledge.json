@@ -1,0 +1,114 @@
+[
+  {
+    "id": "ai-ml",
+    "file": "IA_ML",
+    "title": { "es": "Inteligencia Artificial y Machine Learning", "en": "Artificial Intelligence & Machine Learning", "it": "Intelligenza Artificiale e Machine Learning", "fr": "Intelligence artificielle et Machine Learning", "zh": "人工智能与机器学习" },
+    "summary": {
+      "es": "Modelos neuronales, búsqueda heurística y agentes basados en LLM.",
+      "en": "Neural models, heuristic search and LLM-based agents.",
+      "it": "Modelli neurali, ricerca euristica e agenti basati su LLM.",
+      "fr": "Modèles neuronaux, recherche heuristique et agents à base de LLM.",
+      "zh": "神经网络模型、启发式搜索与基于大语言模型的智能体。"
+    },
+    "concepts": ["Seq2Seq", "Transformers", "OOD generalisation", "PyTorch", "A* / IDA*", "CSP", "LLM agents", "Multi-agent systems", "Prompt engineering"],
+    "projects": ["neural-calculator", "radar-astar", "binairo", "agent-builder", "detector-research", "llm-security"]
+  },
+  {
+    "id": "security",
+    "file": "SEGURIDA",
+    "title": { "es": "Ciberseguridad y criptografía", "en": "Cybersecurity & cryptography", "it": "Cybersecurity e crittografia", "fr": "Cybersécurité et cryptographie", "zh": "网络安全与密码学" },
+    "summary": {
+      "es": "Criptografía aplicada, PKI, gestión de claves y seguridad de sistemas con IA.",
+      "en": "Applied cryptography, PKI, key management and security of AI systems.",
+      "it": "Crittografia applicata, PKI, gestione delle chiavi e sicurezza dei sistemi di IA.",
+      "fr": "Cryptographie appliquée, PKI, gestion des clés et sécurité des systèmes d'IA.",
+      "zh": "应用密码学、PKI、密钥管理以及 AI 系统安全。"
+    },
+    "concepts": ["AES-GCM (AEAD)", "RSA-OAEP / RSA-PSS", "PBKDF2", "PKI / X.509", "Envelope encryption (KMS, KEK, DEK)", "Prompt injection", "OWASP Top 10 for LLMs", "Threat modelling"],
+    "projects": ["crypto", "rag-encryption", "llm-security", "detector-research"]
+  },
+  {
+    "id": "distributed",
+    "file": "DISTRIB",
+    "title": { "es": "Sistemas distribuidos", "en": "Distributed systems", "it": "Sistemi distribuiti", "fr": "Systèmes distribués", "zh": "分布式系统" },
+    "summary": {
+      "es": "Replicación, consenso práctico y tolerancia a fallos.",
+      "en": "Replication, practical consensus and fault tolerance.",
+      "it": "Replica, consenso pratico e tolleranza ai guasti.",
+      "fr": "Réplication, consensus pratique et tolérance aux pannes.",
+      "zh": "复制、实用共识与容错。"
+    },
+    "concepts": ["State machine replication", "Chain replication", "Two-phase commit", "Leader election / failover", "CP consistency", "TCP sockets", "UDP multicast", "Docker Compose"],
+    "projects": ["dist-minesweeper", "iot"]
+  },
+  {
+    "id": "os",
+    "file": "SO_CONC",
+    "title": { "es": "Sistemas operativos y concurrencia", "en": "Operating systems & concurrency", "it": "Sistemi operativi e concorrenza", "fr": "Systèmes d'exploitation et concurrence", "zh": "操作系统与并发" },
+    "summary": {
+      "es": "Programación de sistemas en C sobre POSIX.",
+      "en": "Systems programming in C on POSIX.",
+      "it": "Programmazione di sistema in C su POSIX.",
+      "fr": "Programmation système en C sous POSIX.",
+      "zh": "基于 POSIX 的 C 语言系统编程。"
+    },
+    "concepts": ["System calls", "Processes (fork / exec / wait)", "POSIX threads", "Mutexes & condition variables", "Semaphores", "Producer–consumer", "IPC"],
+    "projects": ["factory", "syscalls"]
+  },
+  {
+    "id": "hpc",
+    "file": "RENDIMIE",
+    "title": { "es": "Alto rendimiento", "en": "High-performance computing", "it": "Calcolo ad alte prestazioni", "fr": "Calcul haute performance", "zh": "高性能计算" },
+    "summary": {
+      "es": "Medir, entender y optimizar el rendimiento y el consumo.",
+      "en": "Measuring, understanding and optimising performance and energy.",
+      "it": "Misurare, capire e ottimizzare prestazioni e consumi.",
+      "fr": "Mesurer, comprendre et optimiser la performance et la consommation.",
+      "zh": "测量、理解并优化性能与能耗。"
+    },
+    "concepts": ["AOS vs SOA", "Cache locality", "Intel TBB", "Grain size / partitioners", "Speedup & scalability", "Energy measurement", "Slurm clusters"],
+    "projects": ["raytracing", "binairo"]
+  },
+  {
+    "id": "optimization",
+    "file": "OPTIMIZA",
+    "title": { "es": "Optimización e investigación operativa", "en": "Optimisation & operations research", "it": "Ottimizzazione e ricerca operativa", "fr": "Optimisation et recherche opérationnelle", "zh": "优化与运筹学" },
+    "summary": {
+      "es": "Modelado matemático y algoritmos de búsqueda.",
+      "en": "Mathematical modelling and search algorithms.",
+      "it": "Modellazione matematica e algoritmi di ricerca.",
+      "fr": "Modélisation mathématique et algorithmes de recherche.",
+      "zh": "数学建模与搜索算法。"
+    },
+    "concepts": ["Integer linear programming", "Big-M", "Branch and bound", "GLPK / MathProg", "Constraint satisfaction", "Heuristic search", "NP-hardness"],
+    "projects": ["fleet-ilp", "binairo", "radar-astar"]
+  },
+  {
+    "id": "iot",
+    "file": "IOT",
+    "title": { "es": "Internet de las cosas", "en": "Internet of Things", "it": "Internet delle cose", "fr": "Internet des objets", "zh": "物联网" },
+    "summary": {
+      "es": "Del hardware (GPIO, sensores) a los protocolos y el middleware.",
+      "en": "From hardware (GPIO, sensors) to protocols and middleware.",
+      "it": "Dall'hardware (GPIO, sensori) ai protocolli e al middleware.",
+      "fr": "Du matériel (GPIO, capteurs) aux protocoles et au middleware.",
+      "zh": "从硬件（GPIO、传感器）到通信协议与中间件。"
+    },
+    "concepts": ["Raspberry Pi GPIO", "PWM", "I2C / ADC", "REST APIs", "MQTT (QoS, retained, LWT)", "WebSockets", "Atlas middleware / IoT-DDL"],
+    "projects": ["iot"]
+  },
+  {
+    "id": "product",
+    "file": "PRODUCTO",
+    "title": { "es": "Producto, web y automatización", "en": "Product, web & automation", "it": "Prodotto, web e automazione", "fr": "Produit, web et automatisation", "zh": "产品、Web 与自动化" },
+    "summary": {
+      "es": "Llevar una idea a un producto que la gente usa.",
+      "en": "Taking an idea to a product people actually use.",
+      "it": "Portare un'idea fino a un prodotto che le persone usano davvero.",
+      "fr": "Transformer une idée en un produit que les gens utilisent vraiment.",
+      "zh": "把一个想法变成真正有人使用的产品。"
+    },
+    "concepts": ["B2B SaaS", "Multi-tenancy", "Next.js / React", "FastAPI", "Supabase / PostgreSQL", "Payments & notifications", "n8n workflows", "Responsive design"],
+    "projects": ["citasalon", "via", "agent-builder", "travel-web"]
+  }
+]

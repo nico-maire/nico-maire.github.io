@@ -1,586 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolás Maire Bravo | Portfolio</title>
-    
-    <!-- Google Fonts - Roboto Mono -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- AOS - Animate on Scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nicolás Maire Bravo · NicOS</title>
+  <meta name="description" content="Portfolio de Nicolás Maire Bravo: estudiante de Ingeniería Informática (UC3M) especializado en IA y ciberseguridad, desarrollador full-stack y emprendedor. Explóralo como un ordenador de los 80.">
+  <meta name="author" content="Nicolás Maire Bravo">
+  <meta name="theme-color" content="#020a04">
+  <link rel="canonical" href="https://nico-maire.github.io/">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nico-maire.github.io/">
+  <meta property="og:title" content="Nicolás Maire Bravo · NicOS">
+  <meta property="og:description" content="Computer Science student · AI & Cybersecurity · Full-stack developer · Entrepreneur. A portfolio you explore like a 1980s computer.">
+  <meta property="og:image" content="https://nico-maire.github.io/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="assets/fonts/vt323-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/scene.css">
+  <link rel="stylesheet" href="css/crt.css">
+  <link rel="stylesheet" href="css/os.css">
+  <link rel="stylesheet" href="css/apps.css">
+  <link rel="stylesheet" href="css/phone.css">
+  <link rel="stylesheet" href="css/quick.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nicolás Maire Bravo",
+    "url": "https://nico-maire.github.io/",
+    "email": "mailto:nico.maibra@gmail.com",
+    "jobTitle": "Computer Science Student · Developer · AI & Cybersecurity",
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "Universidad Carlos III de Madrid"},
+      {"@type": "CollegeOrUniversity", "name": "Università di Bologna"},
+      {"@type": "CollegeOrUniversity", "name": "Universidad Argentina de la Empresa"}
+    ],
+    "knowsLanguage": ["es", "en", "it", "fr", "zh"],
+    "sameAs": [
+      "https://github.com/nico-maire",
+      "https://www.linkedin.com/in/nicol%C3%A1s-maire-bravo/"
+    ]
+  }
+  </script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
-        <div class="nav-brand">Nicolás Maire Bravo</div>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="assets/CV-NicolasMaireBravo.pdf" class="cv-link" download>CV</a></li>
-        </ul>
-    </nav>
+  <a class="skip-link" href="#/quick">Vista rápida / Quick view</a>
 
-    <!-- Hero Section -->
-    <header id="home">
-        <div class="hero-content">
-            <h1 data-aos="fade-down" data-aos-duration="1000">Hi, I'm Nicolás Maire Bravo! 👋</h1>
-            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Computer Science Student | Developer & AI/Cybersecurity Enthusiast | Entrepreneur</h2>
-            <blockquote data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
-                <i>"Your idea. Your code. Your reality"</i>
-            </blockquote>
-        </div>
-    </header>
+  <!-- The whole UI is mounted here by js/main.js -->
+  <div id="app" aria-live="polite"></div>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>My Skills</h2>
-        
-        <!-- Category 1: Languages -->
-        <h3>Languages</h3>
-        <div class="skills-grid">
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/python.png" alt="Python">
-                <p>Python</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/c.png" alt="C">
-                <p>C</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/cpp.png" alt="C++">
-                <p>C++</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/javascript.png" alt="JavaScript">
-                <p>JavaScript</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/react.png" alt="React">
-                <p>React</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/rstudio.png" alt="R Studio">
-                <p>R Studio</p>
-            </div>
-        </div>
+  <noscript>
+    <main class="noscript">
+      <h1>Nicolás Maire Bravo</h1>
+      <p>Computer Science student (UC3M · Università di Bologna · UADE) · AI &amp; Cybersecurity · Full-stack developer · Founder of CitaSalon.online.</p>
+      <p>Looking for a job: Madrid (on-site or hybrid) or fully remote.</p>
+      <p>
+        <a href="mailto:nico.maibra@gmail.com">nico.maibra@gmail.com</a> ·
+        <a href="https://www.linkedin.com/in/nicol%C3%A1s-maire-bravo/">LinkedIn</a> ·
+        <a href="https://github.com/nico-maire">GitHub</a> ·
+        <a href="assets/cv/CV-NicolasMaireBravo-EN.pdf">CV (EN)</a> ·
+        <a href="assets/cv/CV-NicolasMaireBravo-ES.pdf">CV (ES)</a>
+      </p>
+      <p>This portfolio is an interactive retro computer and needs JavaScript. Selected projects:</p>
+      <ul>
+        <li><a href="https://citasalon.online">CitaSalon.online</a>: B2B SaaS for online bookings</li>
+        <li><a href="https://github.com/nico-maire/DS--Distributed-Minesweeper">Distributed Minesweeper</a>: replicated state machine with failover</li>
+        <li><a href="https://github.com/nico-maire/LLM-Security-Vulnerability---Mitigation-Framework-for-AI-Agents">LLM Security</a>: prompt injection PoC and mitigations</li>
+        <li><a href="https://github.com/nico-maire/Performance-Oriented-Ray-Tracing">Performance-Oriented Ray Tracing</a>: C++, Intel TBB, AOS vs SOA</li>
+        <li><a href="https://github.com/nico-maire/IOT-Projects">IoT Labs &amp; Atlas IoT IDE</a>: Raspberry Pi, MQTT, UDP multicast</li>
+      </ul>
+    </main>
+  </noscript>
 
-        <!-- Category 2: Web & Databases -->
-        <h3>Web & Databases</h3>
-        <div class="skills-grid">
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/html.png" alt="HTML">
-                <p>HTML</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/css.png" alt="CSS">
-                <p>CSS</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/mysql.png" alt="MySQL">
-                <p>MySQL</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/postgresql.png" alt="PostgreSQL">
-                <p>PostgreSQL</p>
-            </div>
-        </div>
-
-        <!-- Category 3: Tools & Frameworks -->
-        <h3>Tools & Frameworks</h3>
-        <div class="skills-grid">
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/huggingface.png" alt="Hugging Face">
-                <p>Hugging Face</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/n8n.png" alt="n8n">
-                <p>n8n</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/fastapi.png" alt="FastAPI">
-                <p>FastAPI</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/flutter.png" alt="Flutter">
-                <p>Flutter</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/celonis.png" alt="Celonis">
-                <p>Celonis</p>
-            </div>
-        </div>
-
-        <!-- Category 4: Systems & DevOps -->
-        <h3>Systems & DevOps</h3>
-        <div class="skills-grid">
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/git.png" alt="Git">
-                <p>Git</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/github.png" alt="GitHub">
-                <p>GitHub</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/linux.png" alt="Linux">
-                <p>Linux</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/docker.png" alt="Docker">
-                <p>Docker</p>
-            </div>
-        </div>
-
-        <!-- Category 5: AI, IoT & Security -->
-        <h3>AI & IoT</h3>
-        <div class="skills-grid">
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/pytorch.png" alt="PyTorch">
-                <p>PyTorch</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/raspberrypi.png" alt="Raspberry Pi">
-                <p>Raspberry Pi</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/mqtt.png" alt="MQTT">
-                <p>MQTT</p>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/jupyter.png" alt="Jupyter">
-                <p>Jupyter</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-
-        <!-- Category 1: Entrepreneurial & Key Projects -->
-        <h3>Entrepreneurial & Key Projects</h3>
-        <div class="projects-grid">
-            <!-- Project 1: VIA Platform -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>VIA Platform (Intelligent Automation)</h4>
-                    <div class="project-tags">
-                        <span>React</span>
-                        <span>FastAPI</span>
-                        <span>n8n</span>
-                        <span>Hugging Face</span>
-                        <span>Python</span>
-                    </div>
-                    <p>Full-stack development of the VIA brand. Built the public-facing animated website (React/AOS) with an integrated AI chatbot, a secure client portal, and the backend automation workflows (FastAPI, n8n).</p>
-                    <div class="project-links">
-                        <span>[CONFIDENTIAL]</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 2: AI Detector Bypass -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>AI Detector Bypass Tool</h4>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>LLM</span>
-                        <span>NLP</span>
-                    </div>
-                    <p>A tool to rewrite LLM-generated text to be undetectable, based on token probability analysis.</p>
-                    <div class="project-links">
-                        <span>[PRIVATE REPO]</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 3: AI Agent Automation Builder -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>AI Agent Automation Builder</h4>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>AI Agents</span>
-                        <span>UI</span>
-                    </div>
-                    <p>A personal tool with a visual interface that uses interconnected AI agents to analyze business logic and auto-generate complex automation workflows.</p>
-                    <div class="project-links">
-                        <span>[PRIVATE TOOL]</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 4: AI Agent Auditor -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>AI Agent Auditor Framework</h4>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>AI Agents</span>
-                        <span>Celonis</span>
-                    </div>
-                    <p>Conceptualized an interconnected AI agent system for complex process auditing.</p>
-                    <div class="project-links">
-                        <span>[CONFIDENTIAL]</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project: CitaSalon -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image">
-                    <img src="assets/projects/citasalon.jpg" alt="CitaSalon Platform">
-                </div>
-                <div class="project-content">
-                    <h4>CitaSalon.online (SaaS Platform)</h4>
-                    <div class="project-tags">
-                        <span>Web Development</span>
-                        <span>SaaS</span>
-                        <span>Digitalization</span>
-                        <span>Full-Stack</span>
-                    </div>
-                    <p>Founded and developed citasalon.online, a B2B SaaS platform designed to digitize local salons and businesses, streamlining their daily workflow, appointment scheduling, and customer management.</p>
-                    <div class="project-links">
-                        <a href="https://citasalon.online" target="_blank">Visit Platform</a>
-                    </div>
-                </div>
-            </article>
-        </div>
-
-        <!-- Category 2: Academic & Foundational Projects -->
-        <h3>Academic & Foundational Projects</h3>
-        <div class="projects-grid">
-            <!-- Project 4: Crypto App -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>Hybrid Cryptography Application</h4>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Crypto</span>
-                        <span>AES-256</span>
-                        <span>RSA-2048</span>
-                    </div>
-                    <p>A Client-Server CLI in Python for secure file exchange, implementing hybrid encryption (AES-GCM & RSA-OAEP) and authentication (PBKDF2-HMAC-SHA256).</p>
-                    <div class="project-links">
-                        <a href="https://github.com/nico-maire/Hybrid-Cryptography-Application.git" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 5: Multi-thread Factory -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>Multi-threaded Factory Simulator</h4>
-                    <div class="project-tags">
-                        <span>C</span>
-                        <span>Pthreads</span>
-                        <span>Concurrency</span>
-                        <span>POSIX</span>
-                    </div>
-                    <p>Solved the classic Producer-Consumer problem in a factory simulation using pthreads, a circular buffer, mutexes, condition variables, and POSIX semaphores.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/nico-maire/Multi-threaded-Factory-Simulator.git" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 6: Ray Tracing -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>Performance-Oriented Ray Tracing</h4>
-                    <div class="project-tags">
-                        <span>C++23</span>
-                        <span>Performance</span>
-                        <span>AOS/SOA</span>
-                    </div>
-                    <p>Optimized a 3D Ray Tracing application in C++23 by implementing and comparing two memory representation strategies: Structure of Arrays (SOA) and Array of Structures (AOS).</p>
-                    <div class="project-links">
-                        <a href="https://github.com/nico-maire/Performance-Oriented-Ray-Tracing.git" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 7: Script Interpreter -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>C-Based Script Interpreter</h4>
-                    <div class="project-tags">
-                        <span>C</span>
-                        <span>Process Management</span>
-                        <span>Pipes</span>
-                        <span>Shell</span>
-                    </div>
-                    <p>Developed a command interpreter in C that executes Linux scripts, implementing process management (fork, wait), IPC (pipes), and I/O redirection (dup, open).</p>
-                    <div class="project-links">
-                        <a href="https://github.com/nico-maire/C-Based-Script-Interpreter.git" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 8: Binairo CSP & US Pathfinding Engine -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>Binairo CSP & US Pathfinding Engine.</h4>
-                    <div class="project-tags">
-                        <span>Optimizacion</span>
-                        <span>CSP</span>
-                        <span>Heuristic search</span>
-                    </div>
-                    <p>A Heuristics & Optimization proyect. The system implements a Constraint Satisfaction Problem (CSP) engine to solve the Binairo game and an advanced multi-core heuristic search engine (A*, IDA*, Hill Climbing, BFS) to calculate optimal routes on real-scale U.S. road networks.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/nico-maire/Binairo-CSP---US-Pathfinding-Engine.git" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 9: Mario Bros Clone -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>Mario Bros. Arcade Clone</h4>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Pyxel</span>
-                        <span>OOP</span>
-                    </div>
-                    <p>A recreation of the classic Mario Bros arcade game in Python (Pyxel), focusing on an Object-Oriented architecture to manage physics, collisions, and enemy logic.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/nico-maire/Mario-Bros.-Arcade-Clone.git" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 10: Heuristic Search (A*) -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>Heuristic Search (A*) for Radar Evasion</h4>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>A* Algorithm</span>
-                        <span>AI Search</span>
-                    </div>
-                    <p>Developed a route-planning system for a spy plane using the A* algorithm and admissible heuristics, navigating a cost map generated by Gaussian radar models.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/nico-maire/Heuristic-Search-for-Radar-Evasion.git" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 11: Linear Programming -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>Linear Programming (Fleet Optimization)</h4>
-                    <div class="project-tags">
-                        <span>Optimization</span>
-                        <span>ILP</span>
-                        <span>GLPK</span>
-                    </div>
-                    <p>Modeled and solved a bus fleet optimization problem by applying Integer Linear Programming (ILP) techniques, using GLPK and Calc for resolution.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/nico-maire/Linear-Programming--Fleet-Optimization-.git" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 12: Responsive Website -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>Responsive Travel Website</h4>
-                    <div class="project-tags">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                        <span>jQuery</span>
-                    </div>
-                    <p>Developed a responsive website for a backpacking travel platform, using semantic HTML5 and CSS3 with multiple breakpoints for mobile and tablet.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/nico-maire/Responsive-Travel-Website.git" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 13: ML Neural Calculator -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>ML: Neural Calculator & Arithmetic Generalization Engine</h4>
-                    <div class="project-tags">
-                        <span>Machine Learning</span>
-                        <span>Jupyter</span>
-                        <span>PyTorch</span>
-                        <span>Transformers</span>
-                        <span>NLP</span>
-                        <span>OOD Generalization</span>
-                        <span>Pandas</span>
-                        <span>Deep Learning</span>
-                    </div>
-                    <p>Artificial Intelligence project developed at the University of Bologna (UniBO) to design, train, and evaluate the structural and out-of-distribution (OOD) generalization capabilities of deep learning models in arithmetic reasoning tasks.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/nico-maire/ML-Neural-Calculator.git" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 14: Distributed Minesweeper -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>Distributed Minesweeper</h4>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Distributed Systems</span>
-                        <span>TCP Sockets</span>
-                        <span>SMR</span>
-                        <span>Docker</span>
-                        <span>Fault Tolerance</span>
-                    </div>
-                    <p>Distributed system project developed at the University of Bologna (UniBO). A fault-tolerant, multiplayer minesweeper game built on a replicated state machine backed by a Leader–Follower chain using a two-phase PREPARE/COMMIT replication protocol over TCP sockets.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/nico-maire/DS--Distributed-Minesweeper.git" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 15: LLM Security: Vulnerability & Mitigation Framework for AI Agents -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>LLM Security: Vulnerability & Mitigation Framework for AI Agents</h4>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Cybersecurity</span>
-                        <span>LLM Security</span>
-                        <span>AI Agents</span>
-                        <span>Prompt Injection</span>
-                    </div>
-                    <p>A cybersecurity project developed at the University of Bologna (UniBO). It consists of a threat analysis and a Proof of Concept (PoC) demonstrating critical vulnerabilities in LLM-based agents (such as prompt injection) by comparing a vulnerable implementation against a secured and mitigated environment.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/nico-maire/LLM-Security-Vulnerability---Mitigation-Framework-for-AI-Agents.git" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 16: RAG Database Encryption Engine -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>RAG Database Encryption Engine</h4>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Cybersecurity</span>
-                        <span>AES-256-GCM</span>
-                        <span>Cryptography</span>
-                        <span>Envelope Encryption</span>
-                    </div>
-                    <p>Cybersecurity project developed at the University of Bologna (UniBO). Implementation of an "Encryption at Rest" cryptographic architecture using AES-GCM and an Envelope Encryption strategy (KMS/DEK/KEK) to protect RAG vector databases against physical exfiltration.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/nico-maire/RAG-Database-Encryption-Engine.git" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </article>
-
-
-            <!-- Project 17: IOT projects -->
-            <article class="project-card" data-aos="fade-up">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h4>IOT projects</h4>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>IOT</span>
-                        <span>Raspberry Pi</span>
-                        <span>C++</span>
-                        <span>MQTT</span>
-                        <span>REST APIs</span>
-                    </div>
-                    <p>Set of IOT projects developed at the University of Bologna (UniBO). Final project is about orchestrating distributed IoT devices and services within a Smart Space using the Atlas Middleware architecture. It provides a web-based visual programming environment (IDE) to dynamically discover, manage, and program IoT "Things" via a node-based interface.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/nico-maire/IOT-Projects.git" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <p>I'm currently looking for new opportunities. Whether you have a question or just want to connect, feel free to reach out!</p>
-        <div class="contact-links">
-            <a href="mailto:nico.maibra@gmail.com" class="cta-button email" data-aos="fade-up">Send Email</a>
-            <p>nico.maibra@gmail.com</p>
-            <a href="https://www.linkedin.com/in/nicol%C3%A1s-maire-bravo/" class="cta-button linkedin" data-aos="fade-up" target="_blank">Connect on LinkedIn</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-socials">
-            <a href="https://www.linkedin.com/in/nicol%C3%A1s-maire-bravo/" target="_blank">
-                <img src="assets/linkedin.png" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/nico-maire" target="_blank">
-                <img src="assets/github.png" alt="GitHub">
-            </a>
-        </div>
-        <p class="footer-copyright">© 2025 Nicolás Maire Bravo. All rights reserved.</p>
-    </footer>
-    
-    <!-- AOS Script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-        
-        // Hamburger Menu Toggle
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('navLinks');
-        
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-        
-        // Close menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', (e) => {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('active');
-                // Don't prevent default for CV download link
-            });
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('nav')) {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('active');
-            }
-        });
-    </script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

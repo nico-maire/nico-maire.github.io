@@ -1,0 +1,401 @@
+/* ==========================================================================
+   NicOS shell: desktop, icons, widget, windows, taskbar, menus, boot, guide
+   All sizes are logical pixels of the 1024x768 screen.
+   ========================================================================== */
+
+.os, .os * { cursor: var(--cur-arrow, default); }
+.os button, .os a, .os [role="button"], .os summary, .os label[for] { cursor: var(--cur-hand, pointer); }
+.os input, .os textarea { cursor: var(--cur-text, text); }
+.os .win-bar { cursor: var(--cur-move, move); }
+.os .win-bar .win-btn { cursor: var(--cur-hand, pointer); }
+.os button:disabled { cursor: var(--cur-arrow, default); }
+
+.os ::selection { background: var(--ph); color: var(--bg); }
+.os * { scrollbar-width: thin; scrollbar-color: var(--ph-dim) var(--bg); }
+.os ::-webkit-scrollbar { width: 14px; height: 14px; }
+.os ::-webkit-scrollbar-track { background: var(--bg); border-left: 1px solid var(--ph-dark); }
+.os ::-webkit-scrollbar-thumb { background: var(--ph-dark); border: 2px solid var(--ph-dim); }
+.os ::-webkit-scrollbar-corner { background: var(--bg); }
+
+.os p { margin: 0 0 8px; }
+.os h1, .os h2, .os h3 { font-weight: normal; }
+.dim { color: var(--ph-dim); }
+.small { font-size: 18px; }
+
+/* ---------- Buttons and links ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 1px 12px 3px;
+  border: 2px solid var(--ph);
+  background: var(--bg);
+  color: var(--ph);
+  font-size: 21px;
+  line-height: 1.05;
+  text-decoration: none;
+  box-shadow: 3px 3px 0 var(--ph-dark);
+  white-space: nowrap;
+}
+.btn:hover, .btn:focus-visible { background: var(--ph-deep); }
+.btn:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--ph-dark); }
+.btn-primary, .btn[aria-pressed="true"] { background: var(--ph); color: var(--bg); text-shadow: none; }
+.btn-primary:hover, .btn[aria-pressed="true"]:hover { background: var(--ph-hi); }
+.btn:disabled { opacity: .35; box-shadow: none; }
+.btn .px-ico, .btn .brand-ico { width: 18px; height: 18px; }
+.btn-sm { font-size: 18px; padding: 0 8px 1px; gap: 6px; box-shadow: 2px 2px 0 var(--ph-dark); }
+.btn-sm .px-ico, .btn-sm .brand-ico { width: 15px; height: 15px; }
+.btn-icon { padding: 2px 4px; box-shadow: none; border-width: 1px; }
+.btn-icon .px-ico { width: 20px; height: 20px; }
+.btn-ghost { border-color: transparent; box-shadow: none; }
+.btn-link .ext-mark { width: 13px; height: 13px; opacity: .7; }
+
+.link {
+  color: var(--ph-hi);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-align: left;
+}
+.link:hover, .link:focus-visible { background: var(--ph); color: var(--bg); text-shadow: none; text-decoration: none; }
+
+/* ---------- Desktop ---------- */
+.os-desktop {
+  position: absolute;
+  inset: 0 0 36px 0;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 1px 1px, var(--ph-deep) 1px, transparent 1.5px) 0 0 / 16px 16px,
+    var(--bg);
+}
+
+.os-wallpaper {
+  position: absolute;
+  right: 36px;
+  bottom: 20px;
+  text-align: right;
+  color: var(--ph-dark);
+  pointer-events: none;
+}
+.wall-logo { margin: 0 !important; font-size: 150px; line-height: .8; letter-spacing: 4px; color: var(--ph-deep); text-shadow: 0 0 1px var(--ph-dark), 3px 3px 0 var(--ph-dark); }
+.wall-quote { margin: 10px 0 2px !important; font-size: 24px; color: var(--ph-dim); }
+.wall-hint { font-size: 19px; color: var(--ph-dim); animation: blink 2.4s steps(1) infinite; }
+
+.os-icons {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  bottom: 8px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(6, 112px);
+  grid-auto-columns: 118px;
+  gap: 4px 4px;
+}
+.d-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 2px;
+  color: var(--ph);
+  outline-offset: -2px;
+}
+.d-icon-img { width: 48px; height: 48px; }
+.d-icon-label {
+  max-width: 116px;
+  padding: 0 4px 1px;
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+}
+.d-icon:hover .d-icon-label { text-decoration: underline; text-underline-offset: 3px; }
+.d-icon.is-selected .d-icon-label { background: var(--ph); color: var(--bg); text-shadow: none; }
+.d-icon.is-selected .d-icon-img { filter: drop-shadow(0 0 6px var(--glow)); }
+
+/* Status widget for recruiters */
+.os-widget {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 340px;
+  padding-bottom: 10px;
+  border: 2px solid var(--ph);
+  background: var(--bg);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, .55);
+}
+.w-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 10px 3px;
+  background: var(--ph);
+  color: var(--bg);
+  text-shadow: none;
+  font-size: 22px;
+}
+.w-head .px-ico { width: 20px; height: 20px; }
+.w-role { margin: 8px 12px 0 !important; font-size: 19px; color: var(--ph-mid); }
+.w-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 12px 0 !important;
+  color: var(--ph-hi);
+  font-size: 23px;
+}
+.w-dot {
+  flex: none;
+  width: 12px;
+  height: 12px;
+  background: var(--ph-hi);
+  box-shadow: 0 0 8px var(--ph);
+  animation: blink 1.2s steps(1) infinite;
+}
+.w-loc { margin: 2px 12px 0 !important; font-size: 18px; color: var(--ph-dim); }
+.w-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 12px 0; }
+.w-sub {
+  margin: 12px 12px 4px !important;
+  padding-top: 8px;
+  border-top: 1px dashed var(--ph-dim);
+  font-size: 18px;
+  color: var(--ph-dim);
+}
+.w-list { list-style: none; margin: 0; padding: 0 12px; font-size: 19px; }
+.w-list li { margin: 2px 0; }
+
+/* ---------- Windows ---------- */
+.os-windows { position: absolute; inset: 0; pointer-events: none; }
+.win {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  min-height: 180px;
+  pointer-events: auto;
+  background: var(--bg);
+  border: 2px solid var(--ph-dim);
+  box-shadow: 7px 7px 0 rgba(0, 0, 0, .6);
+  outline: none;
+}
+.win.is-active { border-color: var(--ph); }
+.win.is-opening { animation: win-open .18s steps(4) both; }
+@keyframes win-open { from { transform: scale(.55); opacity: .2; } }
+.win.is-max { left: 0 !important; top: 0 !important; width: 100% !important; height: 100% !important; box-shadow: none; }
+.win.is-dragging { opacity: .92; }
+
+.win-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+  height: 30px;
+  padding: 0 4px 0 8px;
+  border-bottom: 2px solid var(--ph-dim);
+  background: repeating-linear-gradient(to bottom, var(--ph-deep) 0 2px, transparent 2px 4px);
+  touch-action: none;
+}
+.win.is-active .win-bar { background: var(--ph); color: var(--bg); text-shadow: none; border-bottom-color: var(--ph); }
+.win-ico { width: 18px; height: 18px; }
+.win-title {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 21px;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.win-btns { display: flex; gap: 4px; }
+.win-btn {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 22px;
+  border: 2px solid currentColor;
+  background: var(--bg);
+  color: var(--ph);
+}
+.win.is-active .win-btn { background: var(--ph); color: var(--bg); border-color: var(--bg); }
+.win-btn .px-ico, .win-btn svg { width: 16px; height: 16px; }
+.win-btn:hover { background: var(--ph-hi) !important; color: var(--bg) !important; }
+
+.win-body {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 14px 18px 18px;
+  font-size: 21px;
+  line-height: 1.16;
+}
+.win-status {
+  flex: none;
+  padding: 1px 10px 2px;
+  border-top: 1px solid var(--ph-dim);
+  color: var(--ph-dim);
+  font-size: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.win-grip {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  cursor: nwse-resize !important;
+  touch-action: none;
+  background: linear-gradient(135deg, transparent 52%, var(--ph-dim) 52% 60%, transparent 60% 70%, var(--ph-dim) 70% 78%, transparent 78%);
+}
+.win.is-max .win-grip { display: none; }
+
+/* ---------- Taskbar ---------- */
+.os-taskbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 6px;
+  border-top: 2px solid var(--ph);
+  background: var(--bg-2);
+}
+.tb-start {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
+  padding: 0 10px 2px 6px;
+  border: 2px solid var(--ph);
+  font-size: 22px;
+  box-shadow: 2px 2px 0 var(--ph-dark);
+}
+.tb-start .px-ico { width: 20px; height: 20px; }
+.tb-start[aria-expanded="true"], .tb-start:hover { background: var(--ph); color: var(--bg); text-shadow: none; }
+.tb-tasks { flex: 1; display: flex; gap: 4px; min-width: 0; overflow: hidden; }
+.tb-task {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 0 1 180px;
+  min-width: 56px;
+  height: 28px;
+  padding: 0 8px;
+  border: 1px solid var(--ph-dim);
+  font-size: 18px;
+  overflow: hidden;
+}
+.tb-task .px-ico { width: 16px; height: 16px; flex: none; }
+.tb-task-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tb-task.is-active { border: 2px solid var(--ph); background: var(--ph-deep); }
+.tb-task.is-min { opacity: .6; border-style: dashed; }
+.tb-tray { display: flex; align-items: center; gap: 2px; padding-left: 8px; border-left: 1px solid var(--ph-dim); }
+.tb-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 28px;
+  min-width: 30px;
+  padding: 0 6px;
+  border: 1px solid transparent;
+  font-size: 20px;
+}
+.tb-btn .px-ico { width: 18px; height: 18px; }
+.tb-btn:hover, .tb-btn:focus-visible { border-color: var(--ph-dim); background: var(--ph-deep); }
+.tb-clock { padding: 0 6px; font-size: 21px; }
+
+/* ---------- Menus ---------- */
+.os-start {
+  position: absolute;
+  left: 6px;
+  bottom: 38px;
+  z-index: 6000;
+  display: flex;
+  width: 310px;
+  border: 2px solid var(--ph);
+  background: var(--bg);
+  box-shadow: 7px 7px 0 rgba(0, 0, 0, .6);
+}
+.start-band {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 34px;
+  padding: 10px 0;
+  background: var(--ph);
+  color: var(--bg);
+  text-shadow: none;
+  font-size: 26px;
+}
+.start-band span { writing-mode: vertical-rl; transform: rotate(180deg); letter-spacing: 2px; }
+.start-items { flex: 1; padding: 4px 0; }
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 2px 12px 3px;
+  text-align: left;
+  font-size: 20px;
+  white-space: pre;
+}
+.menu-item .px-ico { width: 18px; height: 18px; }
+.menu-item:hover, .menu-item:focus-visible { background: var(--ph); color: var(--bg); text-shadow: none; outline: none; }
+.menu-sep { margin: 4px 10px; border-top: 1px dashed var(--ph-dim); }
+.os-popup {
+  position: absolute;
+  right: 60px;
+  bottom: 38px;
+  z-index: 6000;
+  min-width: 190px;
+  padding: 4px 0;
+  border: 2px solid var(--ph);
+  background: var(--bg);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, .6);
+}
+
+/* ---------- Boot screen ---------- */
+.boot { position: absolute; inset: 0; padding: 22px 28px; background: var(--bg); }
+.boot-text { margin: 0; font-size: 22px; line-height: 1.12; white-space: pre; font-family: var(--font); }
+.boot-hint { position: absolute; right: 24px; bottom: 16px; color: var(--ph-dim); font-size: 19px; animation: blink 1.4s steps(1) infinite; }
+
+/* ---------- Guided tour ---------- */
+.guide-layer { position: absolute; inset: 0; z-index: 8500; }
+.guide-ring {
+  position: absolute;
+  border: 3px dashed var(--ph-hi);
+  box-shadow: 0 0 0 4000px rgba(0, 0, 0, .58), 0 0 18px var(--glow);
+  pointer-events: none;
+  transition: left .25s, top .25s, width .25s, height .25s;
+}
+.guide-box {
+  position: absolute;
+  padding: 0 0 12px;
+  border: 2px solid var(--ph);
+  background: var(--bg);
+  box-shadow: 7px 7px 0 rgba(0, 0, 0, .6);
+  transition: left .25s, top .25s;
+}
+.guide-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 10px 3px;
+  background: var(--ph);
+  color: var(--bg);
+  text-shadow: none;
+  font-size: 21px;
+}
+.guide-head .px-ico { width: 18px; height: 18px; }
+.guide-count { margin-left: auto; }
+.guide-text { margin: 12px 14px 14px !important; font-size: 21px; line-height: 1.18; white-space: pre-line; }
+.guide-actions { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 14px; }
+
+@keyframes blink { 50% { opacity: 0; } }
