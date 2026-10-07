@@ -154,7 +154,8 @@
   text-decoration: none;
 }
 .ph-item .px-ico, .ph-item .brand-ico { width: 24px; height: 24px; }
-.ph-item-label { min-width: 0; overflow-wrap: anywhere; }
+.ph-item-label { min-width: 0; overflow-wrap: break-word; }
+.ph-item-note { display: block; font-size: 18px; opacity: .8; }
 .ph-item-sub { font-size: 18px; white-space: nowrap; }
 .ph-chev { text-align: right; }
 .ph-item:active, .ph-item:focus-visible, .ph-item.is-checked { background: var(--lcd-px); color: var(--lcd-bg); text-shadow: none; outline: none; }

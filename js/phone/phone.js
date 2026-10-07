@@ -15,6 +15,7 @@ const MENU = ['about', 'projects', 'skills', 'knowledge', 'experience', 'educati
 
 export function mountPhone(app, { deepLink } = {}) {
   let screen = { type: 'home' };
+  const trail = []; // screens visited, for the Back soft key
   let menuIndex = 0;
   let clockTimer = null;
 
@@ -32,7 +33,10 @@ export function mountPhone(app, { deepLink } = {}) {
   app.replaceChildren(root);
 
   // ------------------------------------------------------------------ navigation
-  function show(next, { push = true } = {}) {
+  function show(next, { push = true, remember = true } = {}) {
+    if (next.type === 'home') trail.length = 0;
+    else if (remember && !(screen.type === next.type && screen.id === next.id)) trail.push(screen);
+    if (trail.length > 50) trail.shift();
     screen = next;
     if (push) {
       const path = next.type === 'node' ? openPath(next.id) : next.type === 'menu' ? 'menu' : '';
@@ -45,9 +49,11 @@ export function mountPhone(app, { deepLink } = {}) {
     sfx.nokia();
     if (screen.type === 'home') return;
     if (screen.type === 'menu') { show({ type: 'home' }); return; }
+    const prev = trail.pop();
+    if (prev && prev.type !== 'home') { show(prev, { remember: false }); return; }
     const parent = parentOf(screen.id);
-    if (!parent || parent === 'root') { show({ type: 'menu' }); return; }
-    show({ type: 'node', id: parent });
+    if (!parent || parent === 'root') { show({ type: 'menu' }, { remember: false }); return; }
+    show({ type: 'node', id: parent }, { remember: false });
   }
 
   function openNode(id) {
@@ -59,6 +65,7 @@ export function mountPhone(app, { deepLink } = {}) {
   }
 
   function fromRoute(route) {
+    trail.length = 0;
     if (route.name === 'open' && getNode(route.arg)) { screen = { type: 'node', id: route.arg }; render(); }
     else if (route.name === 'menu') { screen = { type: 'menu' }; render(); }
     else if (route.name === 'home') { screen = { type: 'home' }; render(); }
@@ -72,9 +79,9 @@ export function mountPhone(app, { deepLink } = {}) {
     return h('ul', { class: 'ph-list', role: 'list' }, items.filter(Boolean).map((it) => h('li', {},
       it.href
         ? h('a', { class: 'ph-item', href: it.href, target: it.href.startsWith('mailto:') ? null : '_blank', rel: 'noopener', download: it.download ? '' : null },
-          it.icon || h('span'), h('span', { class: 'ph-item-label' }, it.label), it.sub ? h('span', { class: 'ph-item-sub' }, it.sub) : h('span'), h('span', { class: 'ph-chev', 'aria-hidden': 'true' }, '>'))
+          it.icon || h('span'), h('span', { class: 'ph-item-label' }, it.label, it.note ? h('small', { class: 'ph-item-note' }, it.note) : null), it.sub ? h('span', { class: 'ph-item-sub' }, it.sub) : h('span'), h('span', { class: 'ph-chev', 'aria-hidden': 'true' }, '>'))
         : h('button', { class: ['ph-item', it.checked && 'is-checked'], type: 'button', role: it.radio ? 'radio' : null, 'aria-checked': it.radio ? String(Boolean(it.checked)) : null, onClick: it.onClick },
-          it.icon || h('span'), h('span', { class: 'ph-item-label' }, it.label), it.sub ? h('span', { class: 'ph-item-sub' }, it.sub) : h('span'),
+          it.icon || h('span'), h('span', { class: 'ph-item-label' }, it.label, it.note ? h('small', { class: 'ph-item-note' }, it.note) : null), it.sub ? h('span', { class: 'ph-item-sub' }, it.sub) : h('span'),
           h('span', { class: 'ph-chev', 'aria-hidden': 'true' }, it.radio ? (it.checked ? '(*)' : '( )') : '>')))));
   }
 
@@ -185,7 +192,8 @@ export function mountPhone(app, { deepLink } = {}) {
     return list(childrenOf(node.id).map((n) => ({
       icon: n.brand !== undefined ? brand(n.brand) : px(n.kind === 'folder' ? 'folder' : n.icon),
       label: n.label(),
-      sub: n.meta?.() || (n.kind === 'folder' ? String(childrenOf(n.id).length) : ''),
+      note: n.meta?.() || '',
+      sub: n.kind === 'folder' ? String(childrenOf(n.id).length) : '',
       onClick: () => openNode(n.id),
     })));
   }
@@ -211,7 +219,7 @@ export function mountPhone(app, { deepLink } = {}) {
     return h('article', { class: 'ph-article' },
       h('div', { class: 'ph-skill-head' }, brand(s.icon, 'ph-skill-ico'), h('h1', { class: 'ph-title-big' }, s.name)),
       section(t('skill.used', { n: projects.length }),
-        projects.length ? list(projects.map((p) => ({ icon: px('disk'), label: tr(p.title), sub: tr(p.year), onClick: () => openNode(`p/${p.id}`) }))) : h('p', {}, t('skill.none'))));
+        projects.length ? list(projects.map((p) => ({ icon: px('disk'), label: tr(p.title), note: tr(p.year), onClick: () => openNode(`p/${p.id}`) }))) : h('p', {}, t('skill.none'))));
   }
 
   function knowledgeScreen(k) {
