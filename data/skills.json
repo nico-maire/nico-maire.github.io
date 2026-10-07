@@ -1,0 +1,55 @@
+{
+  "categories": [
+    { "id": "lang", "file": "LENGUAJ", "title": { "es": "Lenguajes", "en": "Languages", "it": "Linguaggi", "fr": "Langages", "zh": "编程语言" } },
+    { "id": "web", "file": "WEB_DB", "title": { "es": "Web y bases de datos", "en": "Web & databases", "it": "Web e database", "fr": "Web et bases de données", "zh": "Web 与数据库" } },
+    { "id": "ai", "file": "IA_DATOS", "title": { "es": "IA, datos y automatización", "en": "AI, data & automation", "it": "IA, dati e automazione", "fr": "IA, données et automatisation", "zh": "人工智能、数据与自动化" } },
+    { "id": "sys", "file": "SISTEMAS", "title": { "es": "Sistemas y DevOps", "en": "Systems & DevOps", "it": "Sistemi e DevOps", "fr": "Systèmes et DevOps", "zh": "系统与 DevOps" } },
+    { "id": "iot", "file": "IOT", "title": { "es": "IoT", "en": "IoT", "it": "IoT", "fr": "IoT", "zh": "物联网" } }
+  ],
+  "skills": [
+    { "id": "python", "name": "Python", "cat": "lang", "icon": "python" },
+    { "id": "c", "name": "C", "cat": "lang", "icon": "c" },
+    { "id": "cplusplus", "name": "C++", "cat": "lang", "icon": "cplusplus" },
+    { "id": "javascript", "name": "JavaScript", "cat": "lang", "icon": "javascript" },
+    { "id": "typescript", "name": "TypeScript", "cat": "lang", "icon": "typescript" },
+    { "id": "sql", "name": "SQL", "cat": "lang", "icon": null },
+    { "id": "r", "name": "R", "cat": "lang", "icon": "r" },
+    { "id": "html5", "name": "HTML5", "cat": "lang", "icon": "html5" },
+    { "id": "css", "name": "CSS", "cat": "lang", "icon": "css" },
+
+    { "id": "react", "name": "React", "cat": "web", "icon": "react" },
+    { "id": "nextjs", "name": "Next.js", "cat": "web", "icon": "nextjs" },
+    { "id": "tailwindcss", "name": "Tailwind CSS", "cat": "web", "icon": "tailwindcss" },
+    { "id": "fastapi", "name": "FastAPI", "cat": "web", "icon": "fastapi" },
+    { "id": "flask", "name": "Flask", "cat": "web", "icon": "flask" },
+    { "id": "supabase", "name": "Supabase", "cat": "web", "icon": "supabase" },
+    { "id": "postgresql", "name": "PostgreSQL", "cat": "web", "icon": "postgresql" },
+    { "id": "mysql", "name": "MySQL", "cat": "web", "icon": "mysql" },
+    { "id": "sqlite", "name": "SQLite", "cat": "web", "icon": "sqlite" },
+    { "id": "flutter", "name": "Flutter", "cat": "web", "icon": "flutter" },
+
+    { "id": "pytorch", "name": "PyTorch", "cat": "ai", "icon": "pytorch" },
+    { "id": "huggingface", "name": "Hugging Face", "cat": "ai", "icon": "huggingface" },
+    { "id": "jupyter", "name": "Jupyter", "cat": "ai", "icon": "jupyter" },
+    { "id": "numpy", "name": "NumPy", "cat": "ai", "icon": "numpy" },
+    { "id": "pandas", "name": "pandas", "cat": "ai", "icon": "pandas" },
+    { "id": "opencv", "name": "OpenCV", "cat": "ai", "icon": "opencv" },
+    { "id": "n8n", "name": "n8n", "cat": "ai", "icon": "n8n" },
+    { "id": "celonis", "name": "Celonis", "cat": "ai", "icon": null },
+
+    { "id": "linux", "name": "Linux", "cat": "sys", "icon": "linux" },
+    { "id": "git", "name": "Git", "cat": "sys", "icon": "git" },
+    { "id": "github", "name": "GitHub", "cat": "sys", "icon": "github" },
+    { "id": "docker", "name": "Docker", "cat": "sys", "icon": "docker" },
+    { "id": "bash", "name": "Bash", "cat": "sys", "icon": "bash" },
+    { "id": "cmake", "name": "CMake", "cat": "sys", "icon": "cmake" },
+    { "id": "posix", "name": "POSIX (pthreads)", "cat": "sys", "icon": null },
+    { "id": "sockets", "name": "TCP/UDP sockets", "cat": "sys", "icon": null },
+    { "id": "tbb", "name": "Intel TBB", "cat": "sys", "icon": "intel" },
+    { "id": "typst", "name": "Typst", "cat": "sys", "icon": "typst" },
+
+    { "id": "raspberrypi", "name": "Raspberry Pi", "cat": "iot", "icon": "raspberrypi" },
+    { "id": "mqtt", "name": "MQTT", "cat": "iot", "icon": "mqtt" },
+    { "id": "socketio", "name": "Socket.IO / WebSockets", "cat": "iot", "icon": "socketio" }
+  ]
+}

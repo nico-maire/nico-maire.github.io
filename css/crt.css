@@ -1,0 +1,68 @@
+/* ==========================================================================
+   CRT effects, drawn in the 1024x768 logical space of the OS
+   [data-crt] on <html>: high | low | off
+   ========================================================================== */
+
+.os {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  color: var(--ph);
+  background: var(--bg);
+  font-size: 22px;
+  line-height: 1.12;
+  text-shadow: 0 0 1px var(--glow), 0 0 7px var(--glow-soft);
+}
+[data-crt="low"] .os { text-shadow: 0 0 1px var(--glow); }
+[data-crt="off"] .os { text-shadow: none; }
+
+.crt-fx {
+  position: absolute;
+  inset: 0;
+  z-index: 9000;
+  pointer-events: none;
+}
+
+/* Scanlines */
+.crt-fx::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, .26) 0 1px, transparent 1px 3px);
+  mix-blend-mode: multiply;
+}
+
+/* Vignette + glass reflection + slow rolling refresh band */
+.crt-fx::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, .035) 48%, rgba(255, 255, 255, .06) 50%, transparent 52%) 0 -100% / 100% 200% no-repeat,
+    linear-gradient(128deg, rgba(255, 255, 255, .07) 0%, rgba(255, 255, 255, .015) 30%, transparent 31%),
+    radial-gradient(ellipse at center, transparent 58%, rgba(0, 0, 0, .55) 100%);
+  animation: roll 9s linear infinite;
+}
+@keyframes roll {
+  from { background-position: 0 -100%, 0 0, 0 0; }
+  to { background-position: 0 200%, 0 0, 0 0; }
+}
+
+.crt-flicker { animation: flicker 6s infinite steps(1); }
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  41% { opacity: .985; }
+  42% { opacity: 1; }
+  77% { opacity: .99; }
+  78% { opacity: 1; }
+}
+
+[data-crt="low"] .crt-fx::before { background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, .14) 0 1px, transparent 1px 3px); }
+[data-crt="low"] .crt-fx::after { animation: none; background: radial-gradient(ellipse at center, transparent 62%, rgba(0, 0, 0, .4) 100%); }
+[data-crt="low"] .crt-flicker,
+[data-crt="off"] .crt-flicker { animation: none; }
+[data-crt="off"] .crt-fx { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .crt-fx::after, .crt-flicker { animation: none !important; }
+}

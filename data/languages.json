@@ -1,0 +1,32 @@
+[
+  {
+    "code": "es",
+    "name": { "es": "Español", "en": "Spanish", "it": "Spagnolo", "fr": "Espagnol", "zh": "西班牙语" },
+    "level": { "es": "Nativo", "en": "Native", "it": "Madrelingua", "fr": "Langue maternelle", "zh": "母语" },
+    "score": 10
+  },
+  {
+    "code": "en",
+    "name": { "es": "Inglés", "en": "English", "it": "Inglese", "fr": "Anglais", "zh": "英语" },
+    "level": { "es": "C1 · Cambridge C1 Advanced", "en": "C1 · Cambridge C1 Advanced", "it": "C1 · Cambridge C1 Advanced", "fr": "C1 · Cambridge C1 Advanced", "zh": "C1 · 剑桥 C1 Advanced" },
+    "score": 9
+  },
+  {
+    "code": "it",
+    "name": { "es": "Italiano", "en": "Italian", "it": "Italiano", "fr": "Italien", "zh": "意大利语" },
+    "level": { "es": "Alto", "en": "Advanced", "it": "Avanzato", "fr": "Avancé", "zh": "高级" },
+    "score": 8
+  },
+  {
+    "code": "fr",
+    "name": { "es": "Francés", "en": "French", "it": "Francese", "fr": "Français", "zh": "法语" },
+    "level": { "es": "Intermedio", "en": "Intermediate", "it": "Intermedio", "fr": "Intermédiaire", "zh": "中级" },
+    "score": 6
+  },
+  {
+    "code": "zh",
+    "name": { "es": "Chino mandarín", "en": "Mandarin Chinese", "it": "Cinese mandarino", "fr": "Chinois mandarin", "zh": "汉语" },
+    "level": { "es": "HSK 3 (estudiado hasta HSK 5)", "en": "HSK 3 (studied up to HSK 5)", "it": "HSK 3 (studiato fino all'HSK 5)", "fr": "HSK 3 (étudié jusqu'au HSK 5)", "zh": "HSK 3（学习至 HSK 5）" },
+    "score": 5
+  }
+]

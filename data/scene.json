@@ -1,0 +1,31 @@
+{
+  "_comment": "Stage is 1920x1080. To use a photo/AI image instead of the SVG illustration, replace `layers` with a single image and update screen, power, leds and hotspots to its coordinates.",
+  "width": 1920,
+  "height": 1080,
+  "layers": [
+    { "src": "assets/scene/office-back.svg", "depth": 18 },
+    { "src": "assets/scene/office-front.svg", "depth": 0 }
+  ],
+  "screen": { "x": 750, "y": 250, "w": 420, "h": 315, "radius": 22 },
+  "power": { "x": 688, "y": 708, "w": 58, "h": 40 },
+  "leds": [
+    { "id": "case", "x": 770, "y": 728, "r": 5 },
+    { "id": "monitor", "x": 1160, "y": 619, "r": 4.5 }
+  ],
+  "callout": { "x": 600, "y": 728 },
+  "hotspots": [
+    { "id": "diploma", "x": 192, "y": 148, "w": 262, "h": 196, "open": "education", "label": "hot.diploma" },
+    { "id": "map", "x": 1248, "y": 138, "w": 384, "h": 234, "open": "languages", "label": "hot.map" },
+    { "id": "books", "x": 586, "y": 40, "w": 300, "h": 112, "open": "knowledge", "label": "hot.books" },
+    { "id": "binders", "x": 996, "y": 52, "w": 136, "h": 100, "open": "experience", "label": "hot.binders" },
+    { "id": "robot", "x": 1140, "y": 64, "w": 64, "h": 88, "open": "skills", "label": "hot.robot" },
+    { "id": "postit-mail", "x": 678, "y": 228, "w": 72, "h": 70, "open": "contact", "label": "hot.mail" },
+    { "id": "postit-github", "x": 1170, "y": 216, "w": 74, "h": 72, "url": "github", "label": "hot.github" },
+    { "id": "postit-linkedin", "x": 1174, "y": 296, "w": 70, "h": 68, "url": "linkedin", "label": "hot.linkedin" },
+    { "id": "floppies", "x": 492, "y": 818, "w": 136, "h": 100, "open": "projects", "label": "hot.floppies" },
+    { "id": "keyboard", "x": 676, "y": 818, "w": 572, "h": 116, "open": "terminal", "label": "hot.keyboard" },
+    { "id": "mug", "x": 1418, "y": 700, "w": 124, "h": 148, "open": "coffee", "label": "hot.mug" },
+    { "id": "nokia", "x": 1540, "y": 806, "w": 104, "h": 158, "open": "contact", "label": "hot.nokia" },
+    { "id": "cvsheet", "x": 1656, "y": 858, "w": 222, "h": 190, "open": "cv", "label": "hot.cv" }
+  ]
+}
