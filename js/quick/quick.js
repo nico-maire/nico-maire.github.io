@@ -48,7 +48,7 @@ function render(onClose) {
       h('p', {}, db.timeline.certificates.map((c) => `${tr(c.title)} (${tr(c.text)})`).join(' · '))),
     section(t('quick.projects'), featured.map((pr) => h('div', { class: 'q-entry q-project' },
       h('p', { class: 'q-entry-head' }, h('strong', {}, tr(pr.title)),
-        h('span', { class: 'q-date' }, [pr.year, t(`ctx.${pr.context}`)].filter(Boolean).join(' · '))),
+        h('span', { class: 'q-date' }, [tr(pr.year), t(`ctx.${pr.context}`)].filter(Boolean).join(' · '))),
       h('p', {}, tr(pr.summary)),
       h('p', { class: 'q-tags' }, pr.skills.map((s) => db.skillById.get(s)?.name).filter(Boolean).join(' / ')),
       pr.links.length

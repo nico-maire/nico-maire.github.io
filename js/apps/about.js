@@ -14,7 +14,7 @@ export default function about(node, os) {
       body.append(h('article', { class: 'about' },
         h('div', { class: 'about-side' },
           h('figure', { class: 'about-photo' },
-            h('div', { class: 'photo-frame' }, h('div', { class: 'photo-dither', role: 'img', 'aria-label': p.name, style: { '--photo': `url(${p.photo})` } })),
+            h('div', { class: 'photo-frame' }, h('div', { class: 'photo-dither', role: 'img', 'aria-label': p.name, style: { '--photo': `url("${new URL(p.photo, location.href)}")` } })),
             h('figcaption', { class: 'dim' }, 'NICOLAS.BMP')),
           h('div', { class: 'status-box' },
             h('p', { class: 'w-status' }, h('span', { class: 'w-dot', 'aria-hidden': 'true' }), tr(p.status).toUpperCase()),

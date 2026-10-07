@@ -20,7 +20,7 @@ export default function skill(node, os) {
         projects.length
           ? h('ul', { class: 'link-list' }, projects.map((p) => h('li', {},
             h('button', { class: 'link', type: 'button', onClick: () => os.open(`p/${p.id}`) }, `> ${tr(p.title)}`),
-            h('span', { class: 'dim' }, ` ${p.year}`))))
+            h('span', { class: 'dim' }, ` ${tr(p.year)}`))))
           : h('p', { class: 'dim' }, t('skill.none'))));
     },
   };

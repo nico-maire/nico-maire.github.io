@@ -40,8 +40,8 @@ function handleRoute(route) {
     return;
   }
   closeQuick();
-  if (route.name === 'open' && getNode(route.arg)) current?.openNode(route.arg);
-  else if (route.name === 'home') current?.home?.();
+  if (current?.route) current.route(route);
+  else if (route.name === 'open' && getNode(route.arg)) current?.openNode(route.arg);
 }
 
 async function start() {

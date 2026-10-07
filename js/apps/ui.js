@@ -59,7 +59,7 @@ export function skillChip(skillId, os) {
 
 export function contextLabel(project) {
   const parts = [];
-  if (project.year) parts.push(project.year);
+  if (project.year) parts.push(tr(project.year));
   parts.push(t(`ctx.${project.context}`));
   if (project.course) parts.push(tr(project.course));
   return parts.join(' · ');

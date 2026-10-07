@@ -1,0 +1,29 @@
+$ python envelope_encryption_poc.py
+=== Envelope Encryption Proof of Concept ===
+Read 'pii_dataset.csv' (756 bytes).
+
+[MockKMS] Generated a 256-bit KEK inside MockKMS.
+[MockKMS] Generated a 256-bit DEK.
+[MockKMS] Encrypted DEK with KEK via AES-GCM.
+
+[VectorDBStorage] Encrypted the CSV data safely using the given DEK via AES-GCM.
+
+[Disk] Saved the encrypted data (IV + Tag + Ciphertext) to 'encrypted_database.bin'.
+[Disk] Saved the encrypted DEK (IV + encrypted DEK blob) to 'encrypted_dek.bin'.
+
+=== Simulating Decryption Request ===
+[Disk] Loaded 'encrypted_dek.bin'.
+[Disk] Loaded 'encrypted_database.bin'.
+
+[MockKMS] Decrypted the DEK using the KEK successfully.
+[VectorDBStorage] Decrypted the data payload using the plaintext DEK.
+
+Success! The decrypted payload exactly matches the original plaintext CSV.
+
+$ head -c 64 pii_dataset.csv
+id,full_name,email,ssn,credit_card,medical_condition,consultatio
+$ od -A x -t x1z encrypted_database.bin | head -4
+000000 0d 78 93 36 87 1e 94 2c db e2 ef a4 43 e4 d1 dd  >.x.6...,....C...<
+000010 4f 75 1f 16 a8 7a 4e 7e 7b 23 00 d3 bb 4d 6e 26  >Ou...zN~{#...Mn&<
+000020 24 22 79 98 3a d6 3c c5 11 ac 29 ab 7d 72 b6 5c  >$"y.:.<...).}r.\<
+000030 fa 65 19 cd 86 47 1f fe d6 5a 77 f7 68 7b 76 d1  >.e...G...Zw.h{v.<

@@ -38,7 +38,7 @@ export function buildFs() {
       id: `p/${p.id}`, kind: 'file', app: 'project', icon: PROJECT_ICON[p.visibility],
       name: () => `${p.file}.${EXT[p.visibility]}`,
       label: () => tr(p.title),
-      meta: () => p.year,
+      meta: () => tr(p.year),
       args: { project: p.id },
     });
   }

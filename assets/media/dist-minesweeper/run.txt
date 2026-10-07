@@ -1,0 +1,25 @@
+# Replication chain (two-phase PREPARE/COMMIT over TCP)
+#
+#  client --> LEADER:5000 --PREPARE--> F1:6000 --PREPARE--> F2:7000
+#                       <----ACK----          <----ACK----
+#             LEADER --------------- COMMIT ---------------> all
+#  if LEADER dies: F1 is promoted and clients fail over automatically
+#
+$ python -m pytest tests -v
+collected 13 items
+
+test_consistency_failures::NoConfirmIfF2Down                 PASSED [  7%]
+test_consistency_failures::UncommittedDiscardedAfterFailover PASSED [ 15%]
+test_failover::SurvivesLeaderCrash                           PASSED [ 23%]
+test_failover::SurvivesLeaderAndF1Crash                      PASSED [ 30%]
+test_failover::F2AcceptsClientsAfterBothCrashes              PASSED [ 38%]
+test_model::FirstClickIsNeverAMine                           PASSED [ 46%]
+test_model::InitialStateIsPlaying                            PASSED [ 53%]
+test_model::RevealingForcedMineSetsLostState                 PASSED [ 61%]
+test_model::ToggleFlagDoesNotRevealCell                      PASSED [ 69%]
+test_multiplayer_rooms::TwoClientsSameRoom                   PASSED [ 76%]
+test_multiplayer_rooms::RoomIsolation                        PASSED [ 84%]
+test_replication::AllReplicasSameState                       PASSED [ 92%]
+test_replication::OperationOrderPreserved                    PASSED [100%]
+
+============== 13 passed in 89.07s (0:01:29) ==============

@@ -72,7 +72,7 @@ export default function terminal(node, os) {
         if (n.app === 'project') {
           const p = db.projectById.get(n.args.project);
           print(tr(p.title), 'hi');
-          print(`${p.year || ''} · ${t(`ctx.${p.context}`)} · ${t(`vis.${p.visibility}`)}`, 'dim');
+          print(`${tr(p.year) || ''} · ${t(`ctx.${p.context}`)} · ${t(`vis.${p.visibility}`)}`, 'dim');
           print(tr(p.summary));
           for (const x of tr(p.highlights)) print(`  - ${x}`);
           for (const l of p.links) print(`  ${l.type.toUpperCase()}: ${l.url}`, 'dim');
@@ -170,7 +170,7 @@ export default function terminal(node, os) {
             break;
           }
           case 'projects':
-            for (const p of db.projects) print(`${p.file.padEnd(10)} ${(p.year || '').padEnd(12)} ${tr(p.title)}`);
+            for (const p of db.projects) print(`${p.file.padEnd(10)} ${String(tr(p.year) || '').padEnd(14)} ${tr(p.title)}`);
             print(t('term.projtip'), 'dim');
             break;
           case 'skills':

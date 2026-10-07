@@ -3,7 +3,7 @@
     "id": "citasalon",
     "file": "CITASALON",
     "title": "CitaSalon.online",
-    "year": "2026 –",
+    "year": { "es": "2026 – hoy", "en": "2026 – present", "it": "2026 – oggi", "fr": "2026 – auj.", "zh": "2026 年至今" },
     "sort": 2026.9,
     "context": "startup",
     "visibility": "product",
@@ -573,7 +573,7 @@
       { "type": "github", "url": "https://github.com/nico-maire/Binairo-CSP---US-Pathfinding-Engine" }
     ],
     "media": [
-      { "type": "image", "src": "assets/media/binairo/board.png" }
+      { "type": "image", "src": "assets/media/binairo/board.png", "tint": true }
     ]
   },
   {
@@ -881,27 +881,32 @@
       "es": [
         "Conjuntos de datos diseñados para poner a prueba al modelo: dentro de distribución, expresiones más largas y fuera de distribución (OOD).",
         "Modelos en PyTorch con tokenización, entrenamiento y evaluación propios.",
-        "Análisis de dónde se rompe la representación neuronal: generalización en longitud frente a memorización."
+        "Análisis de dónde se rompe la representación neuronal: generalización en longitud frente a memorización.",
+        "Transformer con codificación posicional relativa: 71,2 % de acierto exacto dentro de distribución, 59,3 % fuera de distribución y 38 % en expresiones largas, por encima de todos los umbrales exigidos."
       ],
       "en": [
         "Datasets designed to stress the model: in-distribution, longer expressions and out-of-distribution (OOD).",
         "PyTorch models with their own tokenisation, training and evaluation pipeline.",
-        "Analysis of where neural representations break: length generalisation versus memorisation."
+        "Analysis of where neural representations break: length generalisation versus memorisation.",
+        "Transformer with relative positional encoding: 71.2% exact-match accuracy in-distribution, 59.3% out-of-distribution and 38% on longer expressions, above every required threshold."
       ],
       "it": [
         "Dataset progettati per mettere alla prova il modello: in distribuzione, espressioni più lunghe e fuori distribuzione (OOD).",
         "Modelli in PyTorch con tokenizzazione, addestramento e valutazione propri.",
-        "Analisi di dove si rompe la rappresentazione neurale: generalizzazione sulla lunghezza contro memorizzazione."
+        "Analisi di dove si rompe la rappresentazione neurale: generalizzazione sulla lunghezza contro memorizzazione.",
+        "Transformer con codifica posizionale relativa: 71,2% di accuratezza esatta in distribuzione, 59,3% fuori distribuzione e 38% sulle espressioni lunghe, sopra tutte le soglie richieste."
       ],
       "fr": [
         "Jeux de données conçus pour mettre le modèle à l'épreuve : dans la distribution, expressions plus longues et hors distribution (OOD).",
         "Modèles PyTorch avec tokenisation, entraînement et évaluation maison.",
-        "Analyse de l'endroit où la représentation neuronale se brise : généralisation en longueur contre mémorisation."
+        "Analyse de l'endroit où la représentation neuronale se brise : généralisation en longueur contre mémorisation.",
+        "Transformer avec encodage positionnel relatif : 71,2 % d'exactitude stricte dans la distribution, 59,3 % hors distribution et 38 % sur les expressions longues, au-dessus de tous les seuils exigés."
       ],
       "zh": [
         "专门设计的数据集用于检验模型：分布内、更长的表达式以及分布外（OOD）样本。",
         "基于 PyTorch 的模型，自建分词、训练和评估流程。",
-        "分析神经表示在何处失效：长度泛化与死记硬背之间的差异。"
+        "分析神经表示在何处失效：长度泛化与死记硬背之间的差异。",
+        "采用相对位置编码的 Transformer：分布内完全匹配准确率 71.2%，分布外 59.3%，长表达式 38%，均高于要求的阈值。"
       ]
     },
     "links": [
@@ -978,7 +983,7 @@
       { "type": "github", "url": "https://github.com/nico-maire/DS--Distributed-Minesweeper" }
     ],
     "media": [
-      { "type": "image", "src": "assets/media/dist-minesweeper/cluster.png" }
+      { "type": "terminal", "src": "assets/media/dist-minesweeper/run.txt" }
     ]
   },
   {

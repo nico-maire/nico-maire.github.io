@@ -498,3 +498,33 @@ Si es posible, pide también una **segunda versión idéntica con la pantalla en
 me permite detectar las cuatro esquinas de la pantalla con precisión de píxel. Con la imagen, se
 actualizan en `data/scene.json` la ruta, el rectángulo de la pantalla, el botón de encendido y las
 zonas clicables de los objetos.
+
+---
+
+## Anexo B: estado (7 oct 2026)
+
+Hecho: fases 1 a 5 completas, la mayoría de la 6 y la 7.
+
+- Escena del despacho (SVG generado, dos capas con parallax), encendido con aviso visible, BIOS y arranque,
+  zoom al CRT, objetos clicables y modo "monitor" para tablets.
+- NicOS: gestor de ventanas, escritorio, panel de estado, barra de tareas (idioma, color, sonido, reloj),
+  menú Inicio, guía paso a paso, terminal con comandos, explorador, fichas de proyecto, archivos
+  clasificados, habilidades, conocimientos, experiencia, formación, idiomas, contacto, CV, ajustes,
+  papelera y café.
+- Móvil estilo Nokia (LCD o fósforo) con pantalla de inicio, menú carrusel, listas y fichas.
+- Vista rápida imprimible (listado de impresora matricial).
+- 5 idiomas en interfaz y contenido; CV en PDF en los 5 idiomas generado desde `cv/cv.typ`.
+- Medios reales por proyecto: vídeo de CitaSalon, 3 clips de los labs de IoT, partida de Mario jugada
+  por un bot (fase 1 superada), renders y speedup del ray tracer, capturas del PoC de seguridad LLM,
+  gráficas del ILP y de la calculadora neuronal, ruta A* real, tablero Binairo resuelto con el CSP del
+  repo, salidas reales de terminal (fábrica multihilo, llamadas al sistema, RAG, tests del Buscaminas).
+- QA: 96 nodos abiertos sin errores, sin 404, carga inicial de ~430 KB, capturas en escritorio, tablet
+  y móvil; `node scripts/check.mjs` en verde.
+
+Pendiente o a decidir por Nicolás:
+
+- Imagen del despacho generada con IA (anexo A) para sustituir la ilustración SVG (ver
+  `docs/CONTENIDO.md`).
+- Renombrar los repos de C cruzados y revisar los READMEs con restos `[cite: N]` (sección 6.1).
+- Publicar la web de viajes en GitHub Pages para tener demo en vivo (sus fotos vienen de Unsplash).
+- Proyectos de UADE cuando estén terminados (carpeta EN_CURSO).
