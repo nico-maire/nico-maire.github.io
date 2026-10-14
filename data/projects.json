@@ -3,13 +3,29 @@
     "id": "citasalon",
     "file": "CITASALON",
     "title": "CitaSalon.online",
-    "year": { "es": "2026 – hoy", "en": "2026 – present", "it": "2026 – oggi", "fr": "2026 – auj.", "zh": "2026 年至今" },
+    "year": {
+      "es": "2026 – hoy",
+      "en": "2026 – present",
+      "it": "2026 – oggi",
+      "fr": "2026 – auj.",
+      "zh": "2026 年至今"
+    },
     "sort": 2026.9,
     "context": "startup",
     "visibility": "product",
     "featured": true,
-    "categories": ["startup", "web"],
-    "skills": ["nextjs", "react", "typescript", "supabase", "postgresql", "tailwindcss"],
+    "categories": [
+      "startup",
+      "web"
+    ],
+    "skills": [
+      "nextjs",
+      "react",
+      "typescript",
+      "supabase",
+      "postgresql",
+      "tailwindcss"
+    ],
     "role": {
       "es": "Fundación y desarrollo full-stack",
       "en": "Founder & full-stack developer",
@@ -57,10 +73,17 @@
       ]
     },
     "links": [
-      { "type": "web", "url": "https://citasalon.online" }
+      {
+        "type": "web",
+        "url": "https://citasalon.online"
+      }
     ],
     "media": [
-      { "type": "video", "src": "assets/media/citasalon/demo.mp4", "poster": "assets/media/citasalon/poster.jpg" }
+      {
+        "type": "video",
+        "src": "assets/media/citasalon/demo.mp4",
+        "poster": "assets/media/citasalon/poster.jpg"
+      }
     ]
   },
   {
@@ -72,14 +95,24 @@
     "context": "startup",
     "visibility": "confidential",
     "featured": true,
-    "categories": ["startup", "ai", "web"],
-    "skills": ["react", "fastapi", "n8n", "huggingface", "python"],
+    "categories": [
+      "startup",
+      "ai",
+      "web"
+    ],
+    "skills": [
+      "react",
+      "fastapi",
+      "n8n",
+      "huggingface",
+      "python"
+    ],
     "role": {
-      "es": "Desarrollo principal y arquitectura de automatización",
-      "en": "Lead developer & automation architect",
-      "it": "Sviluppo principale e architettura dell'automazione",
-      "fr": "Développement principal et architecture de l'automatisation",
-      "zh": "首席开发者兼自动化架构师"
+      "es": "Fundador, desarrollador full-stack y arquitecto de automatización",
+      "en": "Founder, full-stack developer & automation architect",
+      "it": "Fondatore, sviluppatore full-stack e architetto dell'automazione",
+      "fr": "Fondateur, développeur full-stack et architecte d'automatisation",
+      "zh": "创始人、全栈开发者兼自动化架构师"
     },
     "summary": {
       "es": "Plataforma full-stack de una marca de automatización con IA: web pública animada con chatbot de IA integrado, portal privado para clientes y flujos de automatización en el backend.",
@@ -126,8 +159,14 @@
     "sort": 2025.8,
     "context": "personal",
     "visibility": "private",
-    "categories": ["startup", "ai"],
-    "skills": ["python", "n8n"],
+    "categories": [
+      "startup",
+      "ai"
+    ],
+    "skills": [
+      "python",
+      "n8n"
+    ],
     "role": {
       "es": "Proyecto personal",
       "en": "Personal project",
@@ -180,8 +219,14 @@
     "sort": 2025.7,
     "context": "personal",
     "visibility": "confidential",
-    "categories": ["startup", "ai"],
-    "skills": ["python", "celonis"],
+    "categories": [
+      "startup",
+      "ai"
+    ],
+    "skills": [
+      "python",
+      "celonis"
+    ],
     "summary": {
       "es": "Diseño de un sistema de agentes de IA interconectados para auditar procesos de negocio complejos, combinando datos de minería de procesos (Celonis) con análisis automatizado.",
       "en": "Design of a system of interconnected AI agents for auditing complex business processes, combining process-mining data (Celonis) with automated analysis.",
@@ -228,8 +273,14 @@
     "sort": 2025.6,
     "context": "personal",
     "visibility": "confidential",
-    "categories": ["ai", "security"],
-    "skills": ["python", "huggingface"],
+    "categories": [
+      "ai",
+      "security"
+    ],
+    "skills": [
+      "python",
+      "huggingface"
+    ],
     "summary": {
       "es": "Investigación sobre cómo funcionan los detectores de texto generado por IA: análisis de las señales de probabilidad de tokens en las que se basan y evaluación de cómo la reescritura afecta a su fiabilidad.",
       "en": "Research into how AI-generated-text detectors work: analysis of the token-probability signals they rely on and evaluation of how rewriting affects their reliability.",
@@ -275,8 +326,13 @@
     "sort": 2025.9,
     "context": "uc3m",
     "visibility": "public",
-    "categories": ["security"],
-    "skills": ["python", "sqlite"],
+    "categories": [
+      "security"
+    ],
+    "skills": [
+      "python",
+      "sqlite"
+    ],
     "summary": {
       "es": "Aplicación de línea de comandos para intercambiar archivos de forma segura con su propia PKI de dos niveles: registro de usuarios, firma, cifrado híbrido y verificación de extremo a extremo.",
       "en": "Command-line app for exchanging files securely with its own two-level PKI: user registration, signing, hybrid encryption and end-to-end verification.",
@@ -317,10 +373,17 @@
       ]
     },
     "links": [
-      { "type": "github", "url": "https://github.com/nico-maire/Hybrid-Cryptography-Application" }
+      {
+        "type": "github",
+        "url": "https://github.com/nico-maire/Hybrid-Cryptography-Application"
+      }
     ],
     "media": [
-      { "type": "image", "src": "assets/media/crypto/uml.png", "tint": true }
+      {
+        "type": "image",
+        "src": "assets/media/crypto/uml.png",
+        "tint": true
+      }
     ]
   },
   {
@@ -338,8 +401,14 @@
       "zh": "操作系统"
     },
     "visibility": "public",
-    "categories": ["systems"],
-    "skills": ["c", "posix", "linux"],
+    "categories": [
+      "systems"
+    ],
+    "skills": [
+      "c",
+      "posix",
+      "linux"
+    ],
     "summary": {
       "es": "Simulación concurrente en C de una fábrica con varias cintas transportadoras: el problema productor-consumidor resuelto con hilos POSIX y semáforos.",
       "en": "Concurrent simulation in C of a factory with several conveyor belts: the producer–consumer problem solved with POSIX threads and semaphores.",
@@ -375,10 +444,16 @@
       ]
     },
     "links": [
-      { "type": "github", "url": "https://github.com/nico-maire/C-Based-Script-Interpreter" }
+      {
+        "type": "github",
+        "url": "https://github.com/nico-maire/C-Based-Script-Interpreter"
+      }
     ],
     "media": [
-      { "type": "terminal", "src": "assets/media/factory/run.txt" }
+      {
+        "type": "terminal",
+        "src": "assets/media/factory/run.txt"
+      }
     ]
   },
   {
@@ -396,8 +471,14 @@
       "zh": "操作系统"
     },
     "visibility": "public",
-    "categories": ["systems"],
-    "skills": ["c", "posix", "linux"],
+    "categories": [
+      "systems"
+    ],
+    "skills": [
+      "c",
+      "posix",
+      "linux"
+    ],
     "summary": {
       "es": "Utilidades de línea de comandos en C construidas directamente sobre llamadas al sistema: creación atómica de archivos con permisos exactos y procesamiento de registros binarios con estadísticas.",
       "en": "Command-line utilities in C built directly on system calls: atomic file creation with exact permissions and processing of binary records with statistics.",
@@ -433,10 +514,16 @@
       ]
     },
     "links": [
-      { "type": "github", "url": "https://github.com/nico-maire/Multi-threaded-Factory-Simulator" }
+      {
+        "type": "github",
+        "url": "https://github.com/nico-maire/Multi-threaded-Factory-Simulator"
+      }
     ],
     "media": [
-      { "type": "terminal", "src": "assets/media/syscalls/run.txt" }
+      {
+        "type": "terminal",
+        "src": "assets/media/syscalls/run.txt"
+      }
     ]
   },
   {
@@ -462,8 +549,16 @@
       "zh": "4 人团队项目"
     },
     "visibility": "public",
-    "categories": ["systems"],
-    "skills": ["cplusplus", "tbb", "cmake", "linux", "python"],
+    "categories": [
+      "systems"
+    ],
+    "skills": [
+      "cplusplus",
+      "tbb",
+      "cmake",
+      "linux",
+      "python"
+    ],
     "summary": {
       "es": "Motor de ray tracing escrito desde cero en C++ para estudiar el rendimiento: organización de memoria (AOS frente a SOA), paralelismo con Intel TBB y medición de energía en un clúster.",
       "en": "Ray-tracing engine written from scratch in C++ to study performance: memory layout (AOS vs SOA), parallelism with Intel TBB and energy measurements on a cluster.",
@@ -504,13 +599,29 @@
       ]
     },
     "links": [
-      { "type": "github", "url": "https://github.com/nico-maire/Performance-Oriented-Ray-Tracing" }
+      {
+        "type": "github",
+        "url": "https://github.com/nico-maire/Performance-Oriented-Ray-Tracing"
+      }
     ],
     "media": [
-      { "type": "image", "src": "assets/media/raytracing/scene3.jpg" },
-      { "type": "image", "src": "assets/media/raytracing/scene5.jpg" },
-      { "type": "image", "src": "assets/media/raytracing/scene4.jpg" },
-      { "type": "image", "src": "assets/media/raytracing/speedup.png", "tint": true }
+      {
+        "type": "image",
+        "src": "assets/media/raytracing/scene3.jpg"
+      },
+      {
+        "type": "image",
+        "src": "assets/media/raytracing/scene5.jpg"
+      },
+      {
+        "type": "image",
+        "src": "assets/media/raytracing/scene4.jpg"
+      },
+      {
+        "type": "image",
+        "src": "assets/media/raytracing/speedup.png",
+        "tint": true
+      }
     ]
   },
   {
@@ -528,8 +639,15 @@
       "zh": "启发式与优化"
     },
     "visibility": "public",
-    "categories": ["algorithms", "ai"],
-    "skills": ["python", "numpy", "opencv"],
+    "categories": [
+      "algorithms",
+      "ai"
+    ],
+    "skills": [
+      "python",
+      "numpy",
+      "opencv"
+    ],
     "summary": {
       "es": "Dos módulos: un resolutor de satisfacción de restricciones para el puzle Binairo y un motor de búsqueda que calcula rutas óptimas sobre redes de carreteras reales de EE. UU.",
       "en": "Two modules: a constraint-satisfaction solver for the Binairo puzzle and a search engine that computes optimal routes over real US road networks.",
@@ -570,10 +688,17 @@
       ]
     },
     "links": [
-      { "type": "github", "url": "https://github.com/nico-maire/Binairo-CSP---US-Pathfinding-Engine" }
+      {
+        "type": "github",
+        "url": "https://github.com/nico-maire/Binairo-CSP---US-Pathfinding-Engine"
+      }
     ],
     "media": [
-      { "type": "image", "src": "assets/media/binairo/board.png", "tint": true }
+      {
+        "type": "image",
+        "src": "assets/media/binairo/board.png",
+        "tint": true
+      }
     ]
   },
   {
@@ -597,8 +722,13 @@
       "zh": "启发式与优化"
     },
     "visibility": "public",
-    "categories": ["algorithms"],
-    "skills": ["python", "typst"],
+    "categories": [
+      "algorithms"
+    ],
+    "skills": [
+      "python",
+      "typst"
+    ],
     "summary": {
       "es": "Modelos de programación lineal entera para optimizar la asignación de una flota de autobuses, desde el prototipo en hoja de cálculo hasta GLPK/MathProg, con pruebas de escalabilidad.",
       "en": "Integer linear programming models to optimise the allocation of a bus fleet, from a spreadsheet prototype to GLPK/MathProg, with scalability benchmarks.",
@@ -639,10 +769,17 @@
       ]
     },
     "links": [
-      { "type": "github", "url": "https://github.com/nico-maire/Linear-Programming--Fleet-Optimization-" }
+      {
+        "type": "github",
+        "url": "https://github.com/nico-maire/Linear-Programming--Fleet-Optimization-"
+      }
     ],
     "media": [
-      { "type": "image", "src": "assets/media/fleet-ilp/scalability.png", "tint": true }
+      {
+        "type": "image",
+        "src": "assets/media/fleet-ilp/scalability.png",
+        "tint": true
+      }
     ]
   },
   {
@@ -666,8 +803,13 @@
       "zh": "人工智能"
     },
     "visibility": "public",
-    "categories": ["ai", "algorithms"],
-    "skills": ["python"],
+    "categories": [
+      "ai",
+      "algorithms"
+    ],
+    "skills": [
+      "python"
+    ],
     "summary": {
       "es": "Planificador de rutas que guía a un avión espía por territorio hostil minimizando el riesgo de ser detectado, sobre un mapa de costes generado por modelos gaussianos de radar.",
       "en": "Route planner that guides a spy plane through hostile territory while minimising the risk of detection, on a cost map generated by Gaussian radar models.",
@@ -703,10 +845,16 @@
       ]
     },
     "links": [
-      { "type": "github", "url": "https://github.com/nico-maire/Heuristic-Search-for-Radar-Evasion" }
+      {
+        "type": "github",
+        "url": "https://github.com/nico-maire/Heuristic-Search-for-Radar-Evasion"
+      }
     ],
     "media": [
-      { "type": "image", "src": "assets/media/radar-astar/route.png" }
+      {
+        "type": "image",
+        "src": "assets/media/radar-astar/route.png"
+      }
     ]
   },
   {
@@ -732,8 +880,12 @@
       "zh": "与 Héctor Molina 合作"
     },
     "visibility": "public",
-    "categories": ["games"],
-    "skills": ["python"],
+    "categories": [
+      "games"
+    ],
+    "skills": [
+      "python"
+    ],
     "summary": {
       "es": "Recreación del clásico arcade Mario Bros. en Python con Pyxel, construida desde cero con una arquitectura orientada a objetos.",
       "en": "Recreation of the classic Mario Bros. arcade game in Python with Pyxel, built from scratch with an object-oriented architecture.",
@@ -774,10 +926,18 @@
       ]
     },
     "links": [
-      { "type": "github", "url": "https://github.com/nico-maire/Mario-Bros.-Arcade-Clone" }
+      {
+        "type": "github",
+        "url": "https://github.com/nico-maire/Mario-Bros.-Arcade-Clone"
+      }
     ],
     "media": [
-      { "type": "video", "src": "assets/media/mario/gameplay.mp4", "poster": "assets/media/mario/poster.png", "pixel": true }
+      {
+        "type": "video",
+        "src": "assets/media/mario/gameplay.mp4",
+        "poster": "assets/media/mario/poster.png",
+        "pixel": true
+      }
     ]
   },
   {
@@ -801,8 +961,14 @@
       "zh": "用户界面"
     },
     "visibility": "public",
-    "categories": ["web"],
-    "skills": ["html5", "css", "javascript"],
+    "categories": [
+      "web"
+    ],
+    "skills": [
+      "html5",
+      "css",
+      "javascript"
+    ],
     "summary": {
       "es": "Web de una comunidad de viajes y mochileros construida sin frameworks: HTML5 semántico, CSS modular y JavaScript nativo.",
       "en": "Website for a travel and backpacking community built without frameworks: semantic HTML5, modular CSS and vanilla JavaScript.",
@@ -838,11 +1004,20 @@
       ]
     },
     "links": [
-      { "type": "github", "url": "https://github.com/nico-maire/Responsive-Travel-Website" }
+      {
+        "type": "github",
+        "url": "https://github.com/nico-maire/Responsive-Travel-Website"
+      }
     ],
     "media": [
-      { "type": "image", "src": "assets/media/travel-web/desktop.jpg" },
-      { "type": "image", "src": "assets/media/travel-web/mobile.jpg" }
+      {
+        "type": "image",
+        "src": "assets/media/travel-web/desktop.jpg"
+      },
+      {
+        "type": "image",
+        "src": "assets/media/travel-web/mobile.jpg"
+      }
     ]
   },
   {
@@ -868,8 +1043,15 @@
       "zh": "3 人团队"
     },
     "visibility": "public",
-    "categories": ["ai"],
-    "skills": ["python", "pytorch", "jupyter", "pandas"],
+    "categories": [
+      "ai"
+    ],
+    "skills": [
+      "python",
+      "pytorch",
+      "jupyter",
+      "pandas"
+    ],
     "summary": {
       "es": "Entrenamiento y evaluación de modelos Seq2Seq y Transformer que aprenden aritmética a partir de texto, midiendo hasta dónde generalizan más allá de los datos de entrenamiento.",
       "en": "Training and evaluation of Seq2Seq and Transformer models that learn arithmetic from text, measuring how far they generalise beyond the training data.",
@@ -910,10 +1092,17 @@
       ]
     },
     "links": [
-      { "type": "github", "url": "https://github.com/nico-maire/ML-Neural-Calculator" }
+      {
+        "type": "github",
+        "url": "https://github.com/nico-maire/ML-Neural-Calculator"
+      }
     ],
     "media": [
-      { "type": "image", "src": "assets/media/neural-calculator/results.png", "tint": true }
+      {
+        "type": "image",
+        "src": "assets/media/neural-calculator/results.png",
+        "tint": true
+      }
     ]
   },
   {
@@ -938,8 +1127,14 @@
       "zh": "分布式系统"
     },
     "visibility": "public",
-    "categories": ["systems"],
-    "skills": ["python", "sockets", "docker"],
+    "categories": [
+      "systems"
+    ],
+    "skills": [
+      "python",
+      "sockets",
+      "docker"
+    ],
     "summary": {
       "es": "Buscaminas multijugador tolerante a fallos: máquina de estados replicada sobre una cadena Líder-Seguidor con replicación en dos fases PREPARE/COMMIT sobre TCP.",
       "en": "Fault-tolerant multiplayer minesweeper: a replicated state machine over a Leader–Follower chain with two-phase PREPARE/COMMIT replication over TCP.",
@@ -980,10 +1175,16 @@
       ]
     },
     "links": [
-      { "type": "github", "url": "https://github.com/nico-maire/DS--Distributed-Minesweeper" }
+      {
+        "type": "github",
+        "url": "https://github.com/nico-maire/DS--Distributed-Minesweeper"
+      }
     ],
     "media": [
-      { "type": "terminal", "src": "assets/media/dist-minesweeper/run.txt" }
+      {
+        "type": "terminal",
+        "src": "assets/media/dist-minesweeper/run.txt"
+      }
     ]
   },
   {
@@ -1008,8 +1209,14 @@
       "zh": "信息安全"
     },
     "visibility": "public",
-    "categories": ["security", "ai"],
-    "skills": ["python", "typst"],
+    "categories": [
+      "security",
+      "ai"
+    ],
+    "skills": [
+      "python",
+      "typst"
+    ],
     "summary": {
       "es": "Investigación y prueba de concepto sobre inyección de prompts y llamadas a herramientas inseguras: un agente vulnerable frente a uno protegido.",
       "en": "Research and proof of concept on prompt injection and insecure tool calling: a vulnerable agent versus a hardened one.",
@@ -1050,11 +1257,34 @@
       ]
     },
     "links": [
-      { "type": "github", "url": "https://github.com/nico-maire/LLM-Security-Vulnerability---Mitigation-Framework-for-AI-Agents" }
+      {
+        "type": "github",
+        "url": "https://github.com/nico-maire/LLM-Security-Vulnerability---Mitigation-Framework-for-AI-Agents"
+      }
     ],
     "media": [
-      { "type": "image", "src": "assets/media/llm-security/vulnerable.png", "caption": { "es": "Agente vulnerable", "en": "Vulnerable agent", "it": "Agente vulnerabile", "fr": "Agent vulnérable", "zh": "存在漏洞的智能体" } },
-      { "type": "image", "src": "assets/media/llm-security/secure.png", "caption": { "es": "Agente protegido", "en": "Hardened agent", "it": "Agente protetto", "fr": "Agent durci", "zh": "加固后的智能体" } }
+      {
+        "type": "image",
+        "src": "assets/media/llm-security/vulnerable.png",
+        "caption": {
+          "es": "Agente vulnerable",
+          "en": "Vulnerable agent",
+          "it": "Agente vulnerabile",
+          "fr": "Agent vulnérable",
+          "zh": "存在漏洞的智能体"
+        }
+      },
+      {
+        "type": "image",
+        "src": "assets/media/llm-security/secure.png",
+        "caption": {
+          "es": "Agente protegido",
+          "en": "Hardened agent",
+          "it": "Agente protetto",
+          "fr": "Agent durci",
+          "zh": "加固后的智能体"
+        }
+      }
     ]
   },
   {
@@ -1072,8 +1302,13 @@
       "zh": "网络安全项目"
     },
     "visibility": "public",
-    "categories": ["security", "ai"],
-    "skills": ["python"],
+    "categories": [
+      "security",
+      "ai"
+    ],
+    "skills": [
+      "python"
+    ],
     "summary": {
       "es": "Arquitectura de cifrado en reposo para las bases de datos vectoriales de sistemas RAG con datos sensibles, usando cifrado de sobre y AES-GCM.",
       "en": "Encryption-at-rest architecture for the vector databases of RAG systems handling sensitive data, using envelope encryption and AES-GCM.",
@@ -1109,10 +1344,16 @@
       ]
     },
     "links": [
-      { "type": "github", "url": "https://github.com/nico-maire/RAG-Database-Encryption-Engine" }
+      {
+        "type": "github",
+        "url": "https://github.com/nico-maire/RAG-Database-Encryption-Engine"
+      }
     ],
     "media": [
-      { "type": "terminal", "src": "assets/media/rag-encryption/run.txt" }
+      {
+        "type": "terminal",
+        "src": "assets/media/rag-encryption/run.txt"
+      }
     ]
   },
   {
@@ -1138,8 +1379,18 @@
       "zh": "IoTalianos 团队（3 人）"
     },
     "visibility": "public",
-    "categories": ["iot"],
-    "skills": ["raspberrypi", "mqtt", "cplusplus", "python", "flask", "socketio", "javascript"],
+    "categories": [
+      "iot"
+    ],
+    "skills": [
+      "raspberrypi",
+      "mqtt",
+      "cplusplus",
+      "python",
+      "flask",
+      "socketio",
+      "javascript"
+    ],
     "summary": {
       "es": "Cinco laboratorios de IoT con Raspberry Pi que culminan en un IDE visual para descubrir y programar los dispositivos de un Smart Space.",
       "en": "Five IoT labs with Raspberry Pi, culminating in a visual IDE to discover and program the devices of a Smart Space.",
@@ -1175,13 +1426,52 @@
       ]
     },
     "links": [
-      { "type": "github", "url": "https://github.com/nico-maire/IOT-Projects" },
-      { "type": "youtube", "url": "https://youtu.be/iOblaSw2kRk" }
+      {
+        "type": "github",
+        "url": "https://github.com/nico-maire/IOT-Projects"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/iOblaSw2kRk"
+      }
     ],
     "media": [
-      { "type": "video", "src": "assets/media/iot/mqtt-dashboard.mp4", "poster": "assets/media/iot/mqtt-dashboard.jpg", "caption": { "es": "Metrónomo MQTT con panel web", "en": "MQTT metronome with web dashboard", "it": "Metronomo MQTT con dashboard web", "fr": "Métronome MQTT avec tableau de bord web", "zh": "带 Web 面板的 MQTT 节拍器" } },
-      { "type": "video", "src": "assets/media/iot/soil-moisture.mp4", "poster": "assets/media/iot/soil-moisture.jpg", "caption": { "es": "Monitor de humedad y riego automático", "en": "Soil-moisture monitor and automatic irrigation", "it": "Monitor dell'umidità e irrigazione automatica", "fr": "Moniteur d'humidité et arrosage automatique", "zh": "土壤湿度监测与自动灌溉" } },
-      { "type": "video", "src": "assets/media/iot/metronome.mp4", "poster": "assets/media/iot/metronome.jpg", "caption": { "es": "Metrónomo con API REST", "en": "Metronome with REST API", "it": "Metronomo con API REST", "fr": "Métronome avec API REST", "zh": "带 REST API 的节拍器" } }
+      {
+        "type": "video",
+        "src": "assets/media/iot/mqtt-dashboard.mp4",
+        "poster": "assets/media/iot/mqtt-dashboard.jpg",
+        "caption": {
+          "es": "Metrónomo MQTT con panel web",
+          "en": "MQTT metronome with web dashboard",
+          "it": "Metronomo MQTT con dashboard web",
+          "fr": "Métronome MQTT avec tableau de bord web",
+          "zh": "带 Web 面板的 MQTT 节拍器"
+        }
+      },
+      {
+        "type": "video",
+        "src": "assets/media/iot/soil-moisture.mp4",
+        "poster": "assets/media/iot/soil-moisture.jpg",
+        "caption": {
+          "es": "Monitor de humedad y riego automático",
+          "en": "Soil-moisture monitor and automatic irrigation",
+          "it": "Monitor dell'umidità e irrigazione automatica",
+          "fr": "Moniteur d'humidité et arrosage automatique",
+          "zh": "土壤湿度监测与自动灌溉"
+        }
+      },
+      {
+        "type": "video",
+        "src": "assets/media/iot/metronome.mp4",
+        "poster": "assets/media/iot/metronome.jpg",
+        "caption": {
+          "es": "Metrónomo con API REST",
+          "en": "Metronome with REST API",
+          "it": "Metronomo con API REST",
+          "fr": "Métronome avec API REST",
+          "zh": "带 REST API 的节拍器"
+        }
+      }
     ]
   }
 ]

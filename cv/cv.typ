@@ -1,24 +1,19 @@
-// CV of Nicolás Maire Bravo — one single-column layout, five languages.
-// Single column, standard headings and selectable text so applicant-tracking systems (ATS) parse it
-// cleanly. Build every PDF with: python3 scripts/build-cv.py
+// Visual CV of Nicolás Maire Bravo — two columns, photo and colour, published on the portfolio.
+// One source, five languages. Build every PDF with: python3 scripts/build-cv.py
 // A single language: typst compile cv/cv.typ out.pdf --input lang=es
-//
-// A photo is off by default (most ATS and international/remote postings prefer no photo). For a
-// Spain-oriented version with a photo, set show-photo to true below.
 
 #let lang = sys.inputs.at("lang", default: "en")
-#let show-photo = false
 
-#set page(paper: "a4", margin: (x: 1.45cm, top: 1.0cm, bottom: 0.9cm))
+#set page(paper: "a4", margin: 1.35cm)
 #set text(
   // Inter for Latin scripts; CJK falls back to a system font. All real, selectable text.
   font: ("Inter", "Libertinus Serif", "Noto Sans CJK SC", "Noto Serif CJK SC", "WenQuanYi Zen Hei"),
   fallback: true,
-  size: 9.0pt,
+  size: 8.9pt,
   lang: if lang == "zh" { "zh" } else { lang },
 )
-#set par(justify: true, leading: 0.45em)
-#set list(indent: 0.5em, body-indent: 0.35em, spacing: 0.4em)
+#set par(justify: true, leading: 0.47em)
+#set list(indent: 0.6em, body-indent: 0.4em, spacing: 0.4em)
 
 // ---------------------------------------------------------------- texts
 #let T = (
@@ -32,8 +27,8 @@
     exp-h: "Experience",
     cs-role: "Founder & Full-Stack Developer", present: "Present",
     cs-1: [Founded and built a multi-tenant B2B SaaS platform (Next.js, FastAPI, Supabase/PostgreSQL) that digitises salons and local businesses: online booking, appointment management and automated notifications.],
-    via-role: "Lead Developer & Automation Architect",
-    via-1: [Architected the full-stack "VIA" automation platform (React/FastAPI) and backend services that connect n8n workflows with custom Python scripts and Hugging Face models.],
+    via-role: "Founder, Full-Stack Developer & Automation Architect",
+    via-1: [Founded and built a full-stack "VIA" automation platform (React/FastAPI) and backend services that connect n8n workflows with custom Python scripts and Hugging Face models.],
     agb-role: "Personal project — Python, AI agents",
     agb-1: [Built a tool that uses interconnected AI agents to analyse business logic and auto-generate complex automation workflows.],
     proj-h: "Selected projects",
@@ -55,7 +50,7 @@
     edu-1: [*Erasmus+ exchange:* Università di Bologna (UniBO), Italy — Feb–Jun 2026.],
     edu-2: [*International mobility:* UADE (Buenos Aires, Argentina) — Jul–Dec 2026.],
     edu-3: [Santander Grant for academic record · Cambridge C1 Advanced (English).],
-    langs-h: "Languages",
+    langs-h: "Languages", contact-h: "Contact",
     langs: "Spanish — native · English — C1 Advanced (Cambridge) · Italian — advanced · French — intermediate · Chinese — HSK3→HSK5",
   ),
   es: (
@@ -68,8 +63,8 @@
     exp-h: "Experiencia",
     cs-role: "Fundador y desarrollador full-stack", present: "Actualidad",
     cs-1: [Fundé y desarrollé una plataforma SaaS B2B multitenant (Next.js, FastAPI, Supabase/PostgreSQL) que digitaliza peluquerías y negocios locales: reservas online, gestión de citas y notificaciones automáticas.],
-    via-role: "Desarrollador principal y arquitecto de automatización",
-    via-1: [Diseñé la plataforma full-stack de automatización "VIA" (React/FastAPI) y los servicios de backend que conectan flujos de n8n con scripts propios en Python y modelos de Hugging Face.],
+    via-role: "Fundador, desarrollador full-stack y arquitecto de automatización",
+    via-1: [Fundé y desarrollé la plataforma de automatización full-stack "VIA" (React/FastAPI) y los servicios de backend que conectan flujos de n8n con scripts propios en Python y modelos de Hugging Face.],
     agb-role: "Proyecto personal — Python, agentes de IA",
     agb-1: [Desarrollé una herramienta con agentes de IA interconectados que analiza la lógica de un negocio y genera automáticamente flujos de automatización complejos.],
     proj-h: "Proyectos destacados",
@@ -91,7 +86,7 @@
     edu-1: [*Intercambio Erasmus+:* Università di Bologna (UniBO), Italia — feb-jun 2026.],
     edu-2: [*Movilidad internacional:* UADE (Buenos Aires, Argentina) — jul-dic 2026.],
     edu-3: [Beca Santander por expediente académico · Cambridge C1 Advanced (inglés).],
-    langs-h: "Idiomas",
+    langs-h: "Idiomas", contact-h: "Contacto",
     langs: "Español — nativo · Inglés — C1 Advanced (Cambridge) · Italiano — alto · Francés — intermedio · Chino — HSK3→HSK5",
   ),
   it: (
@@ -104,8 +99,8 @@
     exp-h: "Esperienza",
     cs-role: "Fondatore e sviluppatore full-stack", present: "Oggi",
     cs-1: [Ho fondato e sviluppato una piattaforma SaaS B2B multi-tenant (Next.js, FastAPI, Supabase/PostgreSQL) che digitalizza parrucchieri e attività locali: prenotazioni online, gestione appuntamenti e notifiche automatiche.],
-    via-role: "Sviluppatore principale e architetto dell'automazione",
-    via-1: [Ho progettato la piattaforma full-stack di automazione "VIA" (React/FastAPI) e i servizi backend che collegano flussi n8n con script Python personalizzati e modelli Hugging Face.],
+    via-role: "Fondatore, sviluppatore full-stack e architetto dell'automazione",
+    via-1: [Ho fondato e sviluppato la piattaforma di automazione full-stack "VIA" (React/FastAPI) e i servizi backend che collegano flussi n8n con script Python personalizzati e modelli Hugging Face.],
     agb-role: "Progetto personale — Python, agenti IA",
     agb-1: [Ho sviluppato uno strumento con agenti IA interconnessi che analizza la logica di business e genera automaticamente flussi di automazione complessi.],
     proj-h: "Progetti selezionati",
@@ -127,7 +122,7 @@
     edu-1: [*Scambio Erasmus+:* Università di Bologna (UniBO), Italia — feb-giu 2026.],
     edu-2: [*Mobilità internazionale:* UADE (Buenos Aires, Argentina) — lug-dic 2026.],
     edu-3: [Borsa Santander per merito accademico · Cambridge C1 Advanced (inglese).],
-    langs-h: "Lingue",
+    langs-h: "Lingue", contact-h: "Contatti",
     langs: "Spagnolo — madrelingua · Inglese — C1 Advanced (Cambridge) · Italiano — avanzato · Francese — intermedio · Cinese — HSK3→HSK5",
   ),
   fr: (
@@ -140,8 +135,8 @@
     exp-h: "Expérience",
     cs-role: "Fondateur et développeur full-stack", present: "Aujourd'hui",
     cs-1: [J'ai fondé et développé une plateforme SaaS B2B multi-tenant (Next.js, FastAPI, Supabase/PostgreSQL) qui numérise salons et commerces de proximité : réservation en ligne, gestion des rendez-vous et notifications automatiques.],
-    via-role: "Développeur principal et architecte d'automatisation",
-    via-1: [J'ai conçu la plateforme full-stack d'automatisation « VIA » (React/FastAPI) et les services backend reliant des workflows n8n à des scripts Python sur mesure et à des modèles Hugging Face.],
+    via-role: "Fondateur, développeur full-stack et architecte d'automatisation",
+    via-1: [J'ai fondé et développé la plateforme d'automatisation full-stack « VIA » (React/FastAPI) et les services backend reliant des workflows n8n à des scripts Python sur mesure et à des modèles Hugging Face.],
     agb-role: "Projet personnel — Python, agents IA",
     agb-1: [J'ai développé un outil à base d'agents IA interconnectés qui analyse la logique métier et génère automatiquement des workflows d'automatisation complexes.],
     proj-h: "Projets sélectionnés",
@@ -163,7 +158,7 @@
     edu-1: [*Échange Erasmus+ :* Università di Bologna (UniBO), Italie — févr.-juin 2026.],
     edu-2: [*Mobilité internationale :* UADE (Buenos Aires, Argentine) — juil.-déc. 2026.],
     edu-3: [Bourse Santander pour le dossier académique · Cambridge C1 Advanced (anglais).],
-    langs-h: "Langues",
+    langs-h: "Langues", contact-h: "Contact",
     langs: "Espagnol — langue maternelle · Anglais — C1 Advanced (Cambridge) · Italien — avancé · Français — intermédiaire · Chinois — HSK3→HSK5",
   ),
   zh: (
@@ -176,8 +171,8 @@
     exp-h: "工作经历",
     cs-role: "创始人兼全栈开发者", present: "至今",
     cs-1: [创办并开发了一个多租户 B2B SaaS 平台（Next.js、FastAPI、Supabase/PostgreSQL），帮助美发店和本地商家数字化：在线预约、预约管理和自动通知。],
-    via-role: "首席开发者兼自动化架构师",
-    via-1: [设计了全栈自动化平台“VIA”（React/FastAPI）及其后端服务，将 n8n 工作流与自定义 Python 脚本和 Hugging Face 模型连接起来。],
+    via-role: "创始人、全栈开发者兼自动化架构师",
+    via-1: [创办并开发了全栈自动化平台“VIA”（React/FastAPI）及其后端服务，将 n8n 工作流与自定义 Python 脚本和 Hugging Face 模型连接起来。],
     agb-role: "个人项目 — Python、AI 智能体",
     agb-1: [开发了一款工具，利用多个互联的 AI 智能体分析业务逻辑并自动生成复杂的自动化工作流。],
     proj-h: "精选项目",
@@ -199,7 +194,7 @@
     edu-1: [*伊拉斯谟+ 交换：* 博洛尼亚大学（UniBO），意大利 —— 2026 年 2 月至 6 月。],
     edu-2: [*国际交换：* UADE（阿根廷布宜诺斯艾利斯）—— 2026 年 7 月至 12 月。],
     edu-3: [因学业成绩获桑坦德奖学金 · 剑桥 C1 Advanced（英语）。],
-    langs-h: "语言能力",
+    langs-h: "语言能力", contact-h: "联系方式",
     langs: "西班牙语（母语）· 英语（C1 Advanced，剑桥）· 意大利语（高级）· 法语（中级）· 汉语（HSK3，学习至 HSK5）",
   ),
 ).at(lang)
@@ -215,86 +210,100 @@
 
 // ---------------------------------------------------------------- helpers
 #let accent = rgb("#1f6feb")
+#let ink = luma(55)
 
-#let section(title) = {
-  v(0.28em)
-  text(size: 11pt, weight: "bold", fill: accent)[#title]
-  v(-0.42em)
+#let section_title(title) = {
+  v(0.15em)
+  text(size: 11.5pt, weight: "bold", fill: accent)[#title]
+  v(-0.4em)
   line(length: 100%, stroke: 0.6pt + accent)
-  v(0.22em)
+  v(0.3em)
 }
 
-// Experience / education entry: title + role on the left, dates on the right, then bullets.
 #let entry(title, role, date, body) = {
   grid(
-    columns: (1fr, auto), align: (left, right + horizon), column-gutter: 0.6em,
-    [#text(weight: "bold")[#title]#if role != none [ · #text(style: "italic")[#role]]],
-    text(size: 8.6pt, fill: luma(90))[#date],
+    columns: (1fr, auto), align: (left, right + horizon), column-gutter: 0.5em,
+    [#text(weight: "bold")[#title]#if role != none [ \ #text(style: "italic", size: 8.6pt, fill: ink)[#role]]],
+    text(style: "italic", size: 8.4pt, fill: luma(110))[#date],
   )
-  body
   v(0.22em)
+  body
+  v(0.5em)
 }
 
-// Compact single-line-ish project: bold name, one-sentence description, stack in grey.
 #let proj(name, stack, desc) = {
-  block(below: 0.42em, [#text(weight: "bold")[#name.] #desc #text(size: 8.4pt, fill: luma(110))[ #sym.bar.v #stack]])
+  block(below: 0.5em, [
+    #text(weight: "bold")[#name] #text(size: 8pt, fill: luma(120))[· #stack] \
+    #desc
+  ])
 }
 
-#let skill(label, items) = {
-  block(below: 0.32em, [#text(weight: "bold")[#label:] #items])
+#let contact_link_img(icon, label, href) = {
+  v(0.26em)
+  grid(
+    columns: (14pt, 1fr), column-gutter: 0.45em, align: (center + horizon, left + horizon),
+    image(icon, width: 12pt), link(href)[#text(size: 8.4pt)[#label]],
+  )
 }
 
-// ---------------------------------------------------------------- CV
-#grid(
-  columns: if show-photo { (1fr, auto) } else { (1fr,) },
-  column-gutter: 1em, align: (left + horizon, right + horizon),
-  [
-    #text(size: 21pt, weight: "bold")[Nicolás Maire Bravo]
-    #v(0.1em)
-    #text(size: 10.5pt, fill: luma(60))[#T.title]
-  ],
-  ..if show-photo { (box(clip: true, radius: 50%, width: 72pt, image("assets/profile.jpg", width: 100%)),) } else { () },
-)
-#v(0.25em)
-#text(size: 9pt)[
-  #link("mailto:nico.maibra@gmail.com")[nico.maibra\@gmail.com]
-  #sym.bar.v #link("https://www.linkedin.com/in/nicol%C3%A1s-maire-bravo/")[linkedin.com/in/nicolás-maire-bravo]
-  #sym.bar.v #link("https://github.com/nico-maire")[github.com/nico-maire]
-  #sym.bar.v #link("https://nico-maire.github.io/")[nico-maire.github.io]
+#let sidebar = [
+  #set text(size: 8.4pt, hyphenate: false)
+  #set par(justify: false)
+  #align(center)[#text(size: 15.5pt, weight: "bold")[Nicolás Maire Bravo]]
+  #v(0.4em)
+  #align(center)[#box(clip: true, radius: 50%, width: 78pt, image("assets/profile.jpg", width: 100%))]
+  #v(0.45em)
+  #align(center)[#text(size: 9.6pt, fill: accent)[#T.title]]
+  #v(0.2em)
+  #align(center)[#text(size: 8.2pt, fill: ink)[#T.location]]
+  #v(0.6em)
+
+  #section_title(T.summary-h)
+  #T.summary
+  #v(0.32em)
+
+  #section_title(T.skills-h)
+  #block(below: 0.38em)[#text(weight: "bold")[#T.sk-lang:] #SK.lang]
+  #block(below: 0.38em)[#text(weight: "bold")[#T.sk-ai:] #SK.ai]
+  #block(below: 0.38em)[#text(weight: "bold")[#T.sk-web:] #SK.web]
+  #block(below: 0.38em)[#text(weight: "bold")[#T.sk-sec:] #SK.sec]
+  #block(below: 0.38em)[#text(weight: "bold")[#T.sk-sys:] #SK.sys]
+  #v(0.3em)
+
+  #section_title(T.langs-h)
+  #for l in T.langs.split(" · ") [ #text[#l] \ ]
+  #v(0.3em)
+
+  #section_title(T.contact-h)
+  #contact_link_img("assets/email.png", "nico.maibra@gmail.com", "mailto:nico.maibra@gmail.com")
+  #contact_link_img("assets/linkedin.png", "linkedin.com/in/nicolás-maire-bravo", "https://www.linkedin.com/in/nicol%C3%A1s-maire-bravo/")
+  #contact_link_img("assets/github.png", "github.com/nico-maire", "https://github.com/nico-maire")
+  #v(0.22em)
+  #text(size: 8.4pt)[#link("https://nico-maire.github.io/")[nico-maire.github.io]]
 ]
-#v(0.1em)
-#text(size: 9pt, fill: luma(80))[#T.location]
 
-#section(T.summary-h)
-#T.summary
+#let main = [
+  #section_title(T.exp-h)
+  #entry("CitaSalon.online — B2B SaaS", T.cs-role, [2026 – #T.present], [- #T.cs-1])
+  #entry("VIA · VisiónIAutomatización", T.via-role, "2025 – 2026", [- #T.via-1])
+  #entry("AI Agent Automation Builder", T.agb-role, "2025", [- #T.agb-1])
 
-#section(T.skills-h)
-#skill(T.sk-lang, SK.lang)
-#skill(T.sk-ai, SK.ai)
-#skill(T.sk-web, SK.web)
-#skill(T.sk-sec, SK.sec)
-#skill(T.sk-sys, SK.sys)
+  #section_title(T.proj-h)
+  #proj(T.p-ml, "Python, PyTorch, Transformers, Deep Learning", T.p-ml-1)
+  #proj(T.p-sec, "Python, LLM security, prompt injection, AES-GCM", T.p-sec-1)
+  #proj(T.p-ds, "Python, distributed systems, TCP sockets, Docker", T.p-ds-1)
+  #proj(T.p-iot, "Python, JavaScript, WebSockets, UDP/TCP, IoT", T.p-iot-1)
+  #proj(T.p-rt, "C++23, Intel TBB, performance, SoA/AoS", T.p-rt-1)
+  #proj(T.p-astar, "Python, A*, admissible heuristics, AI", T.p-astar-1)
+  #text(size: 8.2pt, fill: ink)[#T.more]
 
-#section(T.exp-h)
-#entry("CitaSalon.online — B2B SaaS", T.cs-role, [2026 – #T.present], [- #T.cs-1])
-#entry("VIA · VisiónIAutomatización", T.via-role, "2025 – 2026", [- #T.via-1])
-#entry("AI Agent Automation Builder", T.agb-role, "2025", [- #T.agb-1])
+  #section_title(T.edu-h)
+  #entry(T.degree, "Universidad Carlos III de Madrid (UC3M)", [2023 – #T.present], [
+    - #T.edu-1
+    - #T.edu-2
+    - #T.edu-3
+  ])
+]
 
-#section(T.proj-h)
-#proj(T.p-ml, "Python, PyTorch, Transformers, Deep Learning", T.p-ml-1)
-#proj(T.p-sec, "Python, LLM security, prompt injection, AES-GCM", T.p-sec-1)
-#proj(T.p-ds, "Python, distributed systems, TCP sockets, Docker", T.p-ds-1)
-#proj(T.p-iot, "Python, JavaScript, WebSockets, UDP/TCP, IoT", T.p-iot-1)
-#proj(T.p-rt, "C++23, Intel TBB, performance, SoA/AoS", T.p-rt-1)
-#proj(T.p-astar, "Python, A*, admissible heuristics, AI", T.p-astar-1)
-#text(size: 8.8pt)[#T.more]
-
-#section(T.edu-h)
-#entry(T.degree, "Universidad Carlos III de Madrid (UC3M)", [2023 – #T.present], [
-  - #T.edu-1
-  - #T.edu-2
-  - #T.edu-3
-])
-
-#section(T.langs-h)
-#text(size: 8.7pt)[#T.langs]
+// ---------------------------------------------------------------- CV (narrow sidebar + wide main)
+#grid(columns: (33%, 1fr), column-gutter: 0.75cm, align: top, sidebar, main)
